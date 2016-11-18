@@ -1,0 +1,401 @@
+/******************************************
+    File Name: colors.css
+    Template Name: Convert
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: https://psdconverthtml.com
+    Version: 1.0
+    Support: support@psdconverthtml.com
+********************************************/
+
+
+/****** FIRST COLOR *******/
+
+.copyrights .copylink a,
+.tp-caption.PostSlider-Category,
+.WebProduct-SubTitle,
+.tp-caption.WebProduct-SubTitle,
+.PostSlider-Category,
+.Creative-SubTitle,
+.tp-caption.Creative-SubTitle,
+.portfolio-filter .btn-default:focus,
+.portfolio-filter .btn-default.focus,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.element,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default:active.focus,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.colormagnifier .hovericons i,
+.image-box-1.colormagnifier .hovericons i,
+.editaccount a,
+.shop-carousel .service-content .btn,
+.topbar-text i,
+.service-ver-1.theme-color i,
+.service-ver-2 i,
+.shop-item .new-price,
+.tp-caption.Newspaper-Subtitle,
+.Newspaper-Subtitle,
+.block .sign p,
+a:hover,
+.clients-name,
+a:focus,
+.breadcrumb a:hover,
+.site__title,
+.big-number,
+.section.db .service-ver-2.db.lastdb .big-number,
+.image-box-1 .readmore,
+.color,
+.serviceBox2 .service-icon i,
+.footer a:hover,
+.popover-test a,
+.popover-test strong,
+#testimonials-rotate small,
+.btn-primary.no-bg,
+.btn-primary:hover.no-bg,
+.team-boxes.withsmall small,
+.blog-meta ul li i,
+.btn-primary:focus.no-bg,
+.copyrights li:hover a,
+.navbar-nav > li:hover a,
+.flat .plan li > strong,
+.custom_fact_item .fa,
+.navbar-nav > li:focus a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #1CAADE !important;
+}
+
+.fullscreen-carousel.owl-theme .owl-nav [class*="owl-"]:hover,
+.fullscreen-carousel.owl-theme .owl-nav [class*="owl-"]:focus,
+.owl-theme .owl-nav [class*="owl-"],
+.withicontable .nav-tabs > li > a i,
+.customtab .nav-pills > li.active a,
+.customtab .nav-pills > li:hover a,
+.customtab .nav-pills > li:focus a,
+.flat .btn,
+.pricing-box-05 ul li:hover,
+.pricing-box-05 .btn:focus,
+#infscr-loading em,
+.pricing-box-05 .btn.focus,
+.gc-icon,
+.flat .plan li.plan-name,
+.pricing-box-05 .btn:hover,
+.pricing-box-05 .btn:active,
+.pricing-box-05 .btn.active,
+.pricing-box-05 .btn:active:hover,
+.pricing-box-05 .btn.active:hover,
+.wan-spinner a,
+.open > .dropdown-toggle.pricing-box-05 .btn:hover,
+.pricing-box-05:active:focus,
+.pricing-box-05.active:focus,
+.open > .dropdown-toggle.pricing-box-05 .btn:focus,
+.pricing-box-05:active.focus,
+.pricing-box-05.active.focus,
+.open > .dropdown-toggle.pricing-box-05 .btn.focus,
+.stat-count-1 i,
+hr.circle1::before,
+.tags a,
+#normalportfolio.text-center .gallery-desc-full,
+.colormagnifier .magnifier,
+.carousel-control,
+.pagination > li > a,
+.pagination > li > span,
+hr.style16::after,
+body.login,
+hr.style17::after,
+hr.style15::after,
+.image-box-1.colormagnifier .magnifier,
+.popover-title,
+div.bbp-template-notice.info,
+#bbpress-forums li.bbp-body ul.forum li.bbp-forum-reply-count,
+#bbpress-forums li.bbp-body ul.forum li.bbp-forum-topic-count,
+#bbpress-forums li.bbp-body ul.forum li.bbp-forum-reply-count,
+.hovericons,
+.serviceBox3 .service-icon a > span,
+.ribbon-pt1,
+.serviceBox1 .service-icon i,
+.serviceBox:hover .service-icon,
+.skills .progress-bar span,
+.service-ver-3:hover i,
+.service-ver-2.db.lastdb,
+.pricing-box-05 .btn,
+.contact-details li i,
+.blog-media blockquote,
+.service-ver-1.theme-color,
+.serviceBox2 .read a,
+.pricing-box-05 ul li .fa,
+#slider-thumbs .thumbnail:hover,
+.service-ver-1 i,
+.milestone-details,
+.section-title hr,
+.social-version-1 .fa,
+.skills .progress-bar,
+.with-blog-cat .blog-category,
+#slider h4,
+.pager li:hover > a,
+.pager li:hover > span,
+.page-title-color,
+.section-small-title hr,
+.header .label-success,
+.wps-class-btn-primary,
+#wps-right button,
+#wps-left button,
+.btn-primary {
+    background-color: #1CAADE;
+    color: #ffffff !important;
+    border-color: #1CAADE;
+}
+
+.color10 {
+    background-color: #1CAADE !important;
+}
+.revtp-searchform input[type="submit"],
+.revtp-form input[type="submit"],
+.mejs-controls .mejs-time-rail .mejs-time-current,
+.mejs-container .mejs-control {
+    background: #1CAADE !important;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background: #ffffff;
+}
+
+.gallery-item:hover .gallery-desc,
+.normaltable.tabs-below .nav-tabs > li.active a,
+.normaltable.tabs-below .nav-tabs > li:hover a,
+.normaltable.tabs-below .nav-tabs > li:focus a,
+.serviceBox3 .service-icon a,
+.service-ver-1.service-withbg,
+.navbar-nav > li > .dropdown-menu .dropdown-menu,
+.navbar-nav > li > .dropdown-menu,
+.navbar-nav > li.megamenu > .dropdown-menu {
+    border-bottom-color: #1CAADE !important;
+}
+
+.content-widget .widget-title h4,
+.sidebar .widget .widget-title h4,
+.progress-skills-1 p,
+.footer .widget .widget-title h4 {
+    border-left-color: #1CAADE !important;
+}
+
+.tp-tab-divider,
+.glass-case ul li.gc-active,
+.glass-case ul li.gc-active:hover,
+.titlehr,
+.shop-item:hover,
+.single-portfolio-wrapper .widget-title h4,
+hr.circle1,
+.panel-primary,
+.service-ver-3:hover,
+blockquote {
+    border-color: #1CAADE !important;
+}
+
+.panel-info > .panel-heading,
+.first_accordion.withbordertop .panel-default > .panel-heading,
+.normaltable .nav-tabs > li.active a,
+.normaltable .nav-tabs > li:hover a,
+.normaltable .nav-tabs > li:focus a,
+.ribbon-pt1::before,
+.ribbon-pt1::after,
+.ribbon-pt1::before,
+.ribbon-pt1::after,
+.pricing-box-05,
+.service-ver-1 i:after {
+    border-top-color: #1CAADE !important;
+}
+
+.serviceBox2:after {
+    border-bottom: 1px solid #1CAADE;
+    border-top: 1px solid #1CAADE;
+}
+
+.serviceBox2:before {
+    border-left: 1px solid #1CAADE;
+    border-right: 1px solid #1CAADE;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #1CAADE;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #1CAADE;
+}
+
+
+/****** FIRST COLOR HOVER *******/
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.owl-theme .owl-nav [class*="owl-"]:hover,
+.first_accordion.withicon i,
+.pricing-box-09 ul li:hover,
+.pricing-box-09 .btn:focus,
+.pricing-box-09 .btn.focus,
+.pricing-box-09 .btn:hover,
+.pricing-box-09 .btn:active,
+.pricing-box-09 .btn.active,
+.pricing-box-09 .btn:active:hover,
+.pricing-box-09 .btn.active:hover,
+.open > .dropdown-toggle.pricing-box-09 .btn:hover,
+.pricing-box-09:active:focus,
+.pricing-box-09.active:focus,
+.first_accordion .panel-primary > .panel-heading,
+.first_accordion .panel-primary > .panel-heading,
+.open > .dropdown-toggle.pricing-box-09 .btn:focus,
+.pricing-box-09:active.focus,
+.pricing-box-09.active.focus,
+.open > .dropdown-toggle.pricing-box-09 .btn.focus,
+.flat .btn:hover,
+.flat .btn:focus,
+.pricing-box-05 .btn:hover,
+.pricing-box-05 .btn:focus,
+.footer .btn:hover,
+.copyrights .footer-social i:hover,
+.wps-class-btn-primary:hover,
+.wps-class-btn-primary:focus,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+.color10 .serviceBox5:hover,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary .badge {
+    color: #ffffff !important;
+    background-color: #0b93c5;
+    border-color: #0b93c5;
+}
+
+
+/** SECOND COLOR **/
+
+.btn-default.no-bg,
+.btn-default:hover.no-bg,
+.btn-default:focus.no-bg {
+    color: #99C548 !important;
+}
+
+.btn-default,
+.header .label-success {
+    color: #ffffff !important;
+    background-color: #99C548;
+    border-color: #99C548;
+}
+
+.header .label-success:after {
+    border-top-color: #99C548 !important;
+}
+
+
+/****** SECOND COLOR HOVER *******/
+
+mark,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default,
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default .badge {
+    color: #ffffff !important;
+    background-color: #8CB238;
+    border-color: #8CB238;
+}
+
+.serviceBox3:hover .service-icon a {
+    border-color: #8CB238 !important;
+}
+
+
+/****** IMPORTANTS *******/
+
+.header-theme-color {
+    background-color: #1CAADE !important;
+}
+
+.btn-info:focus,
+.btn-inverse:focus,
+.btn-success:focus,
+.btn-danger:focus,
+.btn-warning:focus,
+.btn-info:hover,
+.btn-inverse:hover,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-warning:hover,
+.header-theme-color .navbar-default .navbar-nav > .active > a,
+.header-theme-color .navbar-default .navbar-nav > .active > a:hover,
+.header-theme-color .navbar-default .navbar-nav > .active > a:focus,
+.header-theme-color .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+
+.shop-top .selectpicker.btn-primary {
+    background-color: #ffffff !important;
+    color: #656565 !important;
+}
+
+.shop-top .bootstrap-select .btn-primary:hover,
+.shop-top .bootstrap-select .btn-primary:focus,
+.shop-top .bootstrap-select .btn-primary {
+    background-color: transparent !important;
+    border-bottom: 1px solid #ededed !important;
+    color: #656565 !important;
+}

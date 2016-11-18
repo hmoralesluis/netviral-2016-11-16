@@ -1,0 +1,22 @@
+{
+    "name": "PclZip/PclZip",
+    "type": "library",
+    "description": "PclZip, library for manage zip archive",
+    "keywords": ["PclZip","zip"],
+    "homepage": "http://www.phpconcept.net",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Vincent Blavet"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.16",
+        "ext-zip": "*"
+    },
+    "autoload": {
+        "psr-0" : {
+            "PclZip" : "lib/"
+        }
+    }
+}

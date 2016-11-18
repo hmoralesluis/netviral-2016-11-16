@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <!-- SITE META -->
+
+    <title>{% block title %}Welcome!{% endblock %}e</title>
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="{{ asset('bundles/front/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('bundles/front/images/apple-touch-icon.png') }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('bundles/front/images/apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('bundles/front/images/apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('bundles/front/images/apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('bundles/front/images/apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('bundles/front/images/apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('bundles/front/images/apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('bundles/front/images/apple-touch-icon-152x152.png') }}">
+
+    <!-- BOOTSTRAP STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/css/bootstrap.min.css') }}">
+    <!-- TEMPLATE STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/style.css') }}">
+    <!-- RESPONSIVE STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/css/responsive.css') }}">
+    <!-- COLOR STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/css/colors.css') }}">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/css/custom.css') }}">
+
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/revolution/css/settings.css') }}">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/revolution/css/layers.css') }}">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/front/revolution/css/navigation.css') }}">
+
+    {% block stylesheets %}{% endblock %}
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="body">
+    <header>
+            {% block header %}
+                {% block options %}{% endblock %}
+            {% endblock %}
+    </header>
+    {% block body %}{% endblock %}
+    {% block footer %}{% endblock %}
+
+</div>
+
+
+<!-- Main Scripts-->
+<script src="{{ asset('bundles/front/js/jquery.min.js') }}"></script>
+<script src="{{ asset('bundles/front/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('bundles/front/js/plugins.js') }}"></script>
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.actions.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.carousel.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.migration.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/front/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
+<script src="{{ asset('bundles/front/js/rev-07.js') }}"></script>
+
+<script src="https://www.google.com/jsapi"></script>
+<script src="{{ asset('bundles/front/js/chart.js') }}"></script>
+
+{% block javascripts %}{% endblock %}
+</body>
+
+</html>

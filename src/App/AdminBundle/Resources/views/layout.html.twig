@@ -1,0 +1,52 @@
+{% extends '::base-admin.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block notifications %}
+    <ul class="nav pull-right">
+        <li class="dropdown" id="header_inbox_bar">
+            <a id="nofitication_message_amount_area" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-envelope-alt"></i>
+                <span style="display: none" class="badge" id="notification_messages_amount"></span>
+            </a>
+            <ul class="dropdown-menu extended inbox">
+                <li>
+                    <p id="notification-message-title">{% trans %}Usted no tiene mensajes{% endtrans %}</p>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown" id="header_notification_bar">
+            <a href="#" id="nofitication_amount_area" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-warning-sign"></i>
+                <span style="display: none" class="badge" id="notification_amount"></span>
+            </a>
+            <ul class="dropdown-menu extended notification">
+                <li>
+                    <p id="notification-title">{% trans %}Usted no tiene notificaciones{% endtrans %}</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block menu %}
+    {% import '@Admin/Macro/macros.html.twig' as macro %}
+    {% set options = app.session.get('options_to_show') %}
+    {% for option in options if option.AsociatedOption is null %}
+        <li id="{{ option.name }}" class="treeview">
+            <a href="{% if option.path %} {{ path(option.path) }} {% else %} # {% endif %}">
+                <i class="{{ option.icon }}"></i>
+                <span class="title">{{ option.name }}</span>
+                {% if option.options | length > 0 %}<span class="arrow"></span>{% endif %}
+            </a>
+            {{ macro.recursiveList(option.options, option.id) }}
+        </li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block javascripts %}
+{% endblock %}

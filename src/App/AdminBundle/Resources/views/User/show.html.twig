@@ -1,0 +1,354 @@
+{% extends 'AdminBundle::layout.html.twig' %}
+
+{% block title %}Zona Personal {% if not fullInformation %}referente a {{ entity.name ~ ' ' ~ entity.lastName }} {% endif %}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('bundles/admin/plugins/bootstrap-datepicker/css/datepicker.css') }}"
+          xmlns="http://www.w3.org/1999/html"/>
+    <link href="{{ asset('bundles/admin/plugins/bootstrap-fileupload/bootstrap-fileupload.css') }}" rel="stylesheet"
+          type="text/css"/>
+    <link href="{{ asset('bundles/admin/plugins/chosen-bootstrap/chosen/chosen.css') }}" rel="stylesheet"
+          type="text/css"/>
+    <link href="{{ asset('bundles/admin/css/pages/profile.css') }}" rel="stylesheet" type="text/css"
+          xmlns="http://www.w3.org/1999/html"/>
+{% endblock %}
+
+{% block content %}
+    <div class="row-fluid profile">
+        <div class="span12">
+            <!--BEGIN TABS-->
+            <div class="tabbable tabbable-custom tabbable-full-width">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab_1_1" data-toggle="tab">{% trans %}Perfil{% endtrans %}</a></li>
+                    {% if fullInformation %}
+                        <li><a href="#tab_1_2" data-toggle="tab">{% trans %}Cuenta Personal{% endtrans %}</a></li>
+                    {% endif %}
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane profile-classic row-fluid active" id="tab_1_1">
+                        <div class="span2">
+                            <div class="thumbnail">
+                                {% if file_exists(web_path ~ 'bundles/admin/usuarios/' ~ entity.username ~ '.' ~ entity.PhotoExtension | default('.jpg')) %}
+                                    <img src="{{ asset('bundles/admin/usuarios/' ~ entity.username ~ '.' ~ entity.PhotoExtension | default('.jpg')) }}">
+                                {% else %}
+                                    {% if entity.sex == 'Hombre' %}
+                                        <img alt="" src="{{ asset('bundles/admin/img/hombre.jpg') }}"/>
+                                    {% else %}
+                                        <img alt="" src="{{ asset('bundles/admin/img/mujer.jpg') }}"/>
+                                    {% endif %}
+                                {% endif %}
+                            </div>
+                        </div>
+                        <ul class="unstyled span10">
+                            <li><span>{% trans %}Usuario{% endtrans %}:</span> {{ entity.username }}</li>
+                            <li><span>{% trans %}Nombre{% endtrans %}:</span> {{ entity.name }}</li>
+                            <li><span>{% trans %}Apellidos{% endtrans %}:</span> {{ entity.lastName }}</li>
+                            <li><span>{% trans %}Sexo{% endtrans %}:</span> {{ entity.sex }}</li>
+                            <li>
+                                <span>{% trans %}Cumpleaños{% endtrans %}:</span> {% if entity.birthday %} {{ entity.birthday | date('Y-n-j') }} {% endif %}
+                            </li>
+                            <li><span>{% trans %}País{% endtrans %}:</span> {{ entity.locale.name | default('') }}</li>
+                            <li><span>{% trans %}Ciudad{% endtrans %}:</span> {{ entity.city | default('') }}</li>
+                            <li><span>{% trans %}Dirección{% endtrans %}:</span> {{ entity.address | default('') }}</li>
+                            <li><span>{% trans %}Correo electrónico{% endtrans %}:</span> <a
+                                        href="mailto:{{ entity.email | default('') }}">{{ entity.email | default('') }}</a>
+                            </li>
+                            <li>
+                                <span>Registro:</span> {% if entity.signUpDate %} {{ entity.signUpDate | date('Y-n-j') }} {% endif %}
+                            </li>
+                            <li><span>Skype:</span> {{ entity.skype | default('') }}</li>
+                            <li><span>Whatsapp:</span> {{ entity.whatsapp | default('') }}</li>
+                            <li><span>Facebook:</span> {{ entity.facebook | default('') }}</li>
+                            <li><span>Twitter:</span> {{ entity.twitter | default('') }}</li>
+                            <li><span>Google:</span> {{ entity.google | default('') }}</li>
+                            <li><span>Página Personal:</span> <a
+                                        href="{{ app.request.getSchemeAndHttpHost() ~ app.request.baseurl ~ '/' ~ 'es' ~ '/' ~ entity.username }}">{{ app.request.getSchemeAndHttpHost() ~ app.request.baseurl ~ '/' ~ entity.username }}</a>
+                            </li>
+                            <li><span>Tienda:</span> <a
+                                        href="{{ path('shop',{'username':entity.username, 'category':'Todos'}) }}">{{ app.request.getSchemeAndHttpHost() ~ app.request.baseurl ~ '/' ~ entity.username ~ '/shop'}}</a>
+                            </li>
+                            <li><span>Número del Movil:</span> {{ entity.contactPhone | default('') }}</li>
+                            <li><span>Sobre mi:</span> {{ entity.about | default('') }}
+                            </li>
+                        </ul>
+                    </div>
+                    <!--tab_1_2-->
+                    {% if fullInformation %}
+                        <div class="tab-pane row-fluid profile-account" id="tab_1_2">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="span3">
+                                        <ul class="ver-inline-menu tabbable margin-bottom-10">
+                                            <li class="active">
+                                                <a data-toggle="tab" href="#tab_1-1">
+                                                    <i class="icon-cog"></i>
+                                                    Información Personal
+                                                </a>
+                                                <span class="after"></span>
+                                            </li>
+                                            <li class=""><a data-toggle="tab" href="#tab_2-2"><i
+                                                            class="icon-picture"></i> Cambiar Avatar</a></li>
+                                            <li class=""><a data-toggle="tab" href="#tab_3-3"><i
+                                                            class="icon-lock"></i> Cambiar Contraseña</a></li>
+                                            <li class=""><a data-toggle="tab" href="#tab_4-4"><i
+                                                            class="icon-eye-open"></i> Configuración de
+                                                    Notificaciones</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="span9">
+                                        <div class="tab-content">
+                                            <div id="tab_1-1" class="tab-pane active">
+                                                <div style="height: auto;" id="accordion1-1"
+                                                     class="accordion collapse">
+                                                    <form action="{{ path('management_user_update') }}" method="post"
+                                                          id="infoForm">
+                                                        <label class="control-label">Usuario</label>
+                                                        <input type="text" name="username" value="{{ entity.username }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Nombre</label>
+                                                        <input type="text" name="name" value="{{ entity.name }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Apellidos</label>
+                                                        <input type="text" name="lastName" value="{{ entity.lastName }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Sexo</label>
+                                                        <select name="sex" id="sex" class="m-wrap span8">
+                                                            {% for sex in ['Hombre', 'Mujer'] %}
+                                                                <option {% if entity.sex == sex %} selected
+                                                                                                   {% endif %}value="{{ sex }}">{{ sex }}</option>
+                                                            {% endfor %}
+                                                        </select>
+                                                        <label class="control-label">Cumpleaños</label>
+
+                                                        <div class="controls">
+                                                            <input name="birthday"
+                                                                   class="m-wrap span8 m-ctrl-medium date-picker"
+                                                                   data-date-format="yyyy-m-d" type="text"
+                                                                   value="{% if entity.birthday %}{{ entity.birthday | date('Y-n-j') }} {% endif %}"/>
+                                                        </div>
+                                                        <label class="control-label">País / Lenguaje</label>
+                                                        <select name="country" id="country" class="m-wrap span8">
+                                                            {% for country in countries %}
+                                                                <option {% if entity.locale.Alpha2Code == country.Alpha2Code %}
+                                                                        selected
+                                                                        {% endif %}value="{{ country.Alpha2Code }}">{{ country.name }}</option>
+                                                            {% endfor %}
+                                                        </select>
+                                                        <label class="control-label">Ciudad</label>
+                                                        <input type="text" name="city" value="{{ entity.city }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Dirección</label>
+                                                        <input type="text" name="address" value="{{ entity.address }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Correo</label>
+                                                        <input type="text" name="email" value="{{ entity.email }}"
+                                                               class="icon-envelope span8"/>
+                                                        <label class="control-label">Skype</label>
+                                                        <input type="text" name="skype" value="{{ entity.skype }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Whatsapp</label>
+                                                        <input type="text" name="whatsapp" value="{{ entity.whatsapp }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Facebook</label>
+                                                        <input type="text" name="facebook" value="{{ entity.facebook }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Twitter</label>
+                                                        <input type="text" name="twitter" value="{{ entity.twitter }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Google</label>
+                                                        <input type="text" name="google" value="{{ entity.google }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Teléfono de Contacto</label>
+                                                        <input type="text" name="contactPhone"
+                                                               value="{{ entity.contactPhone }}"
+                                                               class="m-wrap span8"/>
+                                                        <label class="control-label">Sobre mi</label>
+                                                    <textarea name="about" value="{{ entity.about }}"
+                                                              class="span8 m-wrap" rows="3"></textarea>
+
+                                                        <div class="submit-btn">
+                                                            <a href="javascript:$('#infoForm').submit();"
+                                                               class="btn green">Guardar
+                                                                Cambios</a>
+                                                            <input class="btn" type="reset" value="Cancelar" />
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div id="tab_2-2" class="tab-pane">
+                                                <div style="height: auto;" id="accordion2-2"
+                                                     class="accordion collapse">
+                                                    <form action="{{ path('management_user_avatar') }}" method="post"
+                                                          enctype="multipart/form-data" id="avatarForm">
+                                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high
+                                                            life accusamus terry richardson ad squid. 3 wolf moon
+                                                            officia aute, non cupidatat skateboard dolor brunch.
+                                                            Food truck quinoa nesciunt laborum eiusmod.</p>
+                                                        <br/>
+
+                                                        <div class="controls">
+                                                            <div class="thumbnail"
+                                                                 style="width: 278px; height: 250px;">
+                                                                {% if file_exists(web_path ~ 'bundles/admin/usuarios/' ~ app.user.username ~ '.' ~ app.user.PhotoExtension | default('.jpg')) %}
+                                                                    <img src="{{ asset('bundles/admin/usuarios/' ~ app.user.username ~ '.' ~ app.user.PhotoExtension | default('.jpg')) }}"
+                                                                         style="width: 278px; height: 250px;">
+                                                                {% else %}
+                                                                    {% if entity.sex == 'Hombre' %}
+                                                                        <img alt="" style="width: 278px; height: 250px;"
+                                                                             src="{{ asset('bundles/admin/img/hombre.jpg') }}"/>
+                                                                    {% else %}
+                                                                        <img alt="" style="width: 278px; height: 250px;"
+                                                                             src="{{ asset('bundles/admin/img/mujer.jpg') }}"/>
+                                                                    {% endif %}
+                                                                {% endif %}
+                                                            </div>
+                                                        </div>
+                                                        <div class="space10"></div>
+                                                        <div class="fileupload fileupload-new"
+                                                             data-provides="fileupload">
+                                                            <div class="input-append">
+                                                                <div class="uneditable-input">
+                                                                    <i class="icon-file fileupload-exists"></i>
+                                                                    <span class="fileupload-preview"></span>
+                                                                </div>
+                                                      <span class="btn btn-file">
+                                                      <span class="fileupload-new">Buscar</span>
+                                                      <span class="fileupload-exists">Cambiar</span>
+                                                      <input type="file" id="file" class="default" name="file"/>
+                                                      </span>
+                                                                <a href="#" class="btn fileupload-exists"
+                                                                   data-dismiss="fileupload">Eliminar</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                        <div class="controls">
+                                                            {% if file_exists(web_path ~ 'bundles/admin/usuarios/' ~ app.user.username ~ '.' ~ app.user.PhotoExtension | default('.jpg')) %}
+                                                                <span class="label label-important">NOTA!</span>
+                                                                <span>Usted puede eliminar su foto dando clic <a
+                                                                            href="{{ path('management_user_avatar_delete') }}">aquí</a>..</span>
+                                                            {% endif %}
+                                                        </div>
+                                                        <div class="space10"></div>
+                                                        <div class="submit-btn">
+                                                            <a href="javascript: if($('#file').val() != '') { $('#avatarForm').submit(); }"
+                                                               class="btn green">Establecer Imagen</a>
+                                                            <input class="btn" type="reset" value="Cancelar" />
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div id="tab_3-3" class="tab-pane">
+                                                <div style="height: auto;" id="accordion3-3"
+                                                     class="accordion collapse">
+                                                    <form action="{{ path('management_user_password_change') }}"
+                                                          id="changePassForm" method="post">
+                                                        <label class="control-label">Contraseña Actual</label>
+                                                        <input type="password" name="oldPassword" id="oldPassword"
+                                                               class="m-wrap span8" data-required="1"/>
+                                                        <label class="control-label">Nueva Contraseña</label>
+                                                        <input type="password" name="password" id="password"
+                                                               class="m-wrap span8" data-required="1"/>
+                                                        <label class="control-label">Confirmar Nueva Contraseña</label>
+                                                        <input type="password" name="confimPassword" id="confimPassword"
+                                                               class="m-wrap span8" data-required="1"/>
+
+                                                        <div class="submit-btn">
+                                                            <a href="javascript: if( $('#oldPassword').val() != '' && $('#password').val() != '' && $('#confimPassword').val() != '' ){
+                                                                if($('#password').val() == $('#confimPassword').val()){
+                                                                    $('#changePassForm').submit();
+                                                                } else { Codes.showMessage('Error', 'Las contraseñas proporcionadas no coinciden!') }
+                                                            }  else { Codes.showMessage('Error', 'Existen uno o varios campos vacios!'); }"
+                                                               class="btn green">Guardar Cambios</a>
+                                                            <input class="btn" type="reset" value="Cancelar" />
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div id="tab_4-4" class="tab-pane">
+                                                <div style="height: auto;" id="accordion4-4"
+                                                     class="accordion collapse">
+                                                    {% if notificationTypes | length != 0 %}
+                                                        <form action="{{ path('management_user_associate_notificationType') }}" id="notificationTypesForm" method="post">
+                                                            {% for notificationType in notificationTypes %}
+                                                                {% set associated = false %}
+                                                                {% if notificationType in associatedNotificationTypes %}
+                                                                    {% set associated = true %}
+                                                                {% endif %}
+                                                                <div class="profile-settings row-fluid">
+                                                                    <div class="span9">
+                                                                        <p>Recibir notificaciones referente
+                                                                            a {{ notificationType.name }}
+                                                                            ?</p>
+                                                                    </div>
+                                                                    <div class="control-group span3">
+                                                                        <div class="controls">
+                                                                            <label class="radio">
+                                                                                <input type="radio"
+                                                                                       name="{{ notificationType.id }}"
+                                                                                       value="1" {% if associated %} checked {% endif %}/>
+                                                                                Si
+                                                                            </label>
+                                                                            <label class="radio">
+                                                                                <input type="radio"
+                                                                                       name="{{ notificationType.id }}"
+                                                                                       value="0" {% if not associated %} checked {% endif %}/>
+                                                                                No
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            {% endfor %}
+                                                            <div class="space5"></div>
+                                                            <div class="submit-btn">
+                                                                <a href="javascript: $('#notificationTypesForm').submit();" class="btn green">Guardar Cambios</a>
+                                                            </div>
+                                                        </form>
+                                                    {% else %}
+                                                        <div class="alert alert-block alert-error fade in">
+                                                            <button type="button" class="close"
+                                                                    data-dismiss="alert"></button>
+                                                            <h4 class="alert-heading">Error!</h4>
+
+                                                            <p>
+                                                                No existen tipos de notificaciones registradas en el
+                                                                sistema aún.
+                                                            </p>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end span9-->
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <!--end tab-pane-->
+                </div>
+            </div>
+            <!--END TABS-->
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/bootstrap-fileupload/bootstrap-fileupload.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/chosen-bootstrap/chosen/chosen.jquery.min.js') }}"></script>
+    <script>
+        if (jQuery().datepicker) {
+            $('.date-picker').datepicker();
+        }
+
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+        Codes.showMessage('Información', '{{ flashMessage  }}');
+        {% endfor %}
+
+    </script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'AdminBundle:Email:message.html.twig' %}
+
+{% block titlemessage %}Nuevo Mensaje{% endblock %}
+
+{% block cuerpo %}
+    <div class="tabbable tabbable-custom tabbable-custom-profile">
+    <div class="row-fluid">
+
+    </div>
+
+    <form action="{{ path('management_user_send') }}" method="post" id="infoForm">
+    <div class="inbox-control-group mail-to">
+
+        <label class="control-label">Destinatario:</label>
+        <div class="controls controls-to">
+            <input type="text" class="m-wrap span12" name="to">
+        </div>
+    </div>
+    <div class="inbox-control-group">
+        <label class="control-label">Asunto:</label>
+        <div class="controls">
+            <input type="text" class="m-wrap span12" name="subject">
+        </div>
+    </div>
+    <div class="inbox-control-group">
+        <textarea class="span12 inbox-editor inbox-wysihtml5 m-wrap" name="message" rows="12"></textarea>
+    </div>
+    <div class="inbox-compose-btn">
+        <li class="submit-btn">
+            <a href="javascript:$('#infoForm').submit();" data-title="Compose" class="btn green">
+                <i class="icon"></i> Enviar
+            </a>
+        </li>
+
+
+        <button class="btn">Cancelar</button>
+    </div>
+    </form>
+{% endblock %}

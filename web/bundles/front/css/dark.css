@@ -1,0 +1,239 @@
+/******************************************
+    File Name: dark.css
+    Template Name: Convert
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: https://psdconverthtml.com
+    Version: 1.0
+    Support: support@psdconverthtml.com
+********************************************/
+
+.light-footer .form-control,
+.light-copyrights,
+.glass-case ul li,
+.normaltable .tab-content,
+.normaltable .nav-tabs,
+.editaccount blockquote,
+.micro-blog .blog-list,
+.section.lb .sidebar .widget,
+.vertical-skills li,
+.withpadblog,
+.first_accordion.withdescbg .panel-default > .panel-heading,
+.section.lb .classic-portfolio-second .pitem,
+blockquote,
+#bbpress-forums div.even,
+#bbpress-forums div.odd,
+#bbpress-forums ul.even,
+#bbpress-forums ul.odd,
+.flat.white-style .plan,
+.pricing-box-05.white-style,
+.fullscreen-carousel.owl-theme .owl-nav [class*="owl-"],
+.first_accordion .panel-default > .panel-heading,
+.sidebar .widget,
+.customtab .nav-pills > li > a,
+.with-blog-cat,
+#slider-thumbs .thumbnail,
+.media-list,
+.comments .media-list li,
+.block,
+.section.lb,
+.single-portfolio-wrapper .widget,
+.pricing-bigger .pricing-body ul li,
+.pricing-bigger .pricing-header,
+.testimonials blockquote,
+.service-ver-2.lb,
+.topbar,
+.order-form,
+.section.lb {
+    background-color: #212121;
+}
+
+.testimonials blockquote::before,
+.testimonials blockquote::after,
+.block::before {
+    display: none;
+}
+
+.progress-skills-1 .progress,
+.skills .progress,
+#bbpress-forums div.bbp-reply-header,
+#bbpress-forums div.bbp-topic-header,
+.service-carousel .carousel-item,
+.normaltable .nav-tabs > li,
+.normaltable .nav-tabs > li a,
+.normaltable .nav-tabs > li.active > a,
+.normaltable .nav-tabs > li.active > a:focus,
+.normaltable .nav-tabs > li.active > a:hover,
+.pricing-box-09,
+.image-boxes .img-thumbnail,
+.service-ver-2,
+.serviceBox1,
+.light-copyrights .footer-social i,
+.size-list a,
+.sidebar .form-control,
+.content-widget .form-control,
+.contact_form .form-control,
+.section,
+.header {
+    background-color: #1b1b1b;
+}
+
+.single-portfolio-wrapper .widget-title h4,
+.team-boxes h4 a,
+.team-boxes h4,
+.progress-skills-1 p,
+.colorprimary h3,
+.stat-count-2 .stat-count,
+.stat-count-1 .stat-count,
+.light-footer .form-control,
+.light-footer .check li::before,
+.light-footer li,
+.light-footer li a,
+.light-footer p,
+.light-copyrights i,
+.light-copyrights p,
+.light-copyrights li a,
+.breadcrumb > .active,
+.comments .text-success,
+.navbar-nav > li > a,
+.navbar-right li i,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff !important;
+}
+
+.sidebar .form-control::-moz-placeholder {
+    color: rgba(55, 55, 55, 1);
+    opacity: 1;
+}
+
+.sidebar .form-control:-ms-input-placeholder {
+    color: rgba(55, 55, 55, 1);
+}
+
+.sidebar .form-control::-webkit-input-placeholder {
+    color: rgba(55, 55, 55, 1);
+}
+
+.normaltable.tabs-left .tab-content,
+.normaltable.tabs-right .tab-content,
+.service-ver-1.service-withbg,
+.shoppanel .panel-heading,
+.panel-body,
+#bbpress-forums li.bbp-footer,
+#bbpress-forums li.bbp-header,
+.single-portfolio-wrapper .widget,
+.withicontable .nav-tabs > li > a,
+.wan-spinner .form-control,
+.pager li > a,
+.pager li > span,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default.focus:active,
+.normaltable.tabs-below .nav-tabs,
+.portfolio-filter .btn-default.active.focus,
+.customtab.nav-top .nav-pills > li > a,
+.portfolio-filter .btn-default {
+    border-color: #555555 !important;
+    border-radius: 0 !important;
+    background-color: #1b1b1b !important;
+    color: #ffffff !important;
+}
+
+.shop-top .bootstrap-select .btn-primary:hover,
+.shop-top .bootstrap-select .btn-primary:focus,
+.shop-top .bootstrap-select .btn-primary,
+.normaltable .nav-tabs > li {
+    border: 0 !important;
+}
+
+.first_accordion .panel-default > .panel-heading,
+.flat.white-style .plan,
+.light-footer,
+.fullscreen-carousel.owl-theme .owl-nav [class*="owl-"],
+.serviceBox1,
+.pricing-box-05.white-style,
+hr,
+.image-boxes .img-thumbnail,
+.service-list .twocolsection:nth-child(3),
+.service-list .col-md-4:nth-child(4),
+.service-list .col-md-4:nth-child(5),
+.service-list .twocolsection:nth-child(1),
+.service-list .twocolsection:nth-child(2),
+.service-list .col-md-4:nth-child(1),
+.service-list .col-md-4:nth-child(2),
+.service-list .col-md-4:nth-child(3),
+.glass-case ul li,
+.normaltable .nav-tabs > li a,
+.normaltable .tab-content,
+.size-list a,
+.pricing-bigger .pricing-body ul li,
+.classic-portfolio-second .pitem,
+.size-list a.disabled,
+.blog-list,
+.customtab.nav-top .nav-pills > li > a,
+.customtab.nav-top .nav-pills li,
+.sidebar .form-control,
+.comments .media-list li,
+.panel-default,
+.customwidget,
+.related-posts .entry,
+.content-widget .form-control,
+.contact_form .form-control,
+.serviceBox2,
+.pricing-box-05.white-style ul li:last-child,
+.customtab .nav-pills > li > a,
+.pricing-box-05.white-style ul li,
+.testimonials blockquote,
+div.bbp-reply-header,
+div.bbp-topic-header,
+#bbpress-forums .bbp-reply-author,
+#bbpress-forums ul.bbp-forums,
+#bbpress-forums ul.bbp-lead-topic,
+#bbpress-forums ul.bbp-replies,
+#bbpress-forums ul.bbp-topics,
+#slider h2,
+#bbpress-forums li.bbp-body ul.forum,
+#bbpress-forums li.bbp-body ul.topic,
+.blog-meta,
+.blog-widget-1 {
+    border-color: #555555;
+}
+
+.testimonials blockquote,
+.pricing-box-09.white-style {
+    background-color: #121212 !important;
+    border: 1px solid #555555 !important;
+}
+
+.pricing-box-09.white-style h3 {
+    color: #ffffff;
+}
+
+.pricing-box-09.white-style h4 {
+    color: #ffffff;
+}
+
+.pricing-box-09.white-style ul li {
+    color: #ffffff;
+    border-top-color: #555555
+}
+
+.pricing-box-09.white-style ul li:hover {
+    color: #ffffff;
+}
+
+.pricing-box-09.white-style ul li:last-child {
+    border-bottom-color: #555555
+}
+
+.bottombread {
+    background-color: transparent !important;
+}

@@ -1,0 +1,127 @@
+{% extends 'FrontBundle::layout.html.twig' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block body %}
+    <div role="main" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1 class="page-header">{% trans %}Bienvenido a nuestra Compañia{% endtrans %}
+                        <small>{% trans %}Complete el registro{% endtrans %}</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="{{ path('homepage') }}">Inicio</a><span class="divider">/</span></li>
+                        <li class="active">Registro</li>
+                    </ol>
+                    <h4>{% trans %}Administre su negocio{% endtrans %}</h4>
+
+                    <p>{% trans %}¿ Alguna vez imaginó tener la posibilidad de obtener grandes ingresos por trabajar en una compañía en expansión a nivel internacional? Pues esto es posible gracias a NETVIRALPRO, una importante empresa multinivel que le dará a usted la posibilidad de crear su propio negocio online sin necesidad de invertir grandes sumas y sin correr el riesgo  que le supondría a usted tener un negocio particular. Su única misión en la compañía será  potenciar su grupo de trabajo y su red de clientes para poder llegar a obtener importantes beneficios. Para ello, la empresa le dotará de potentes herramientas de marketing que le permitirán hacer crecer su negocio. Netviralpro se encargará del resto: dar alojamiento y mantenimiento de sus páginas personales, prestar servicio de atención al cliente y  atención al representante y expandir la compañía a nivel internacional.{% endtrans %}
+                    <hr class="tall"/>
+                </div>
+            </div>
+
+            <div class="content">
+                    <div class="span4">
+                        <div class="col-md-8">
+                            <div class="section-title text-left">
+                                <h3>{% trans %}REGISTRO{% endtrans %}</h3>
+                                <hr>
+                            </div><!-- end title -->
+                            <div class="contact_form">
+                                <div id="message"></div>
+                                <form id="contactform" class="row" action="{{ path('management_user_create') }}" name="contactform" method="post">
+                                    <div class="col-md-12">
+                                        <input type="hidden" name="m" id="m" value="2">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="{% trans %}Nombre{% endtrans %}" required>
+                                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="{% trans %}Apellidos{% endtrans %}" required>
+                                        <input type="text" name="username" id="username" class="form-control" placeholder="{% trans %}Usuario{% endtrans %}" required>
+                                        <input type="password" name="pass" id="pass" class="form-control" placeholder="{% trans %}Contraseña{% endtrans %}" required>
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="{% trans %}Correo{% endtrans %}" required>
+                                        <input type="text" list="sexo" name="sex" id="sex" class="form-control" placeholder="{% trans %}Sexo{% endtrans %}" required>
+                                        <datalist id="sexo">
+                                            <option value="Hombre">
+                                            <option value="Mujer">
+                                        </datalist>
+
+                                        <input type="text" list="paises" name="country" id="country" class="form-control" placeholder="País" required>
+                                        <datalist id="paises">
+                                            {% for country in countries %}
+                                                <option value="{{ country.Alpha2Code }}">{{ country.name }}</option>
+                                            {% endfor %}
+                                        </datalist>
+
+                                        <button type="submit" value="SEND" id="submit" class="btn btn-primary">{% trans %}Comprar{% endtrans %}</button>
+                                        <br><br><br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="pricing-box-09 white-style">
+                                <div class="pricing-box-09-head">
+                                    <div class="ribbon-wrapper-pt1">
+                                        <div class="ribbon-pt1">{% trans %}Anual{% endtrans %}</div>
+                                    </div>
+                                    <h3><sup>$</sup>19.95 USD</h3>
+                                </div>
+                                <!-- end pricing-box-09-head -->
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".signin").click(function (e) {
+                e.preventDefault();
+                $("fieldset#signin_menu").toggle();
+                $(".signin").toggleClass("menu-open");
+                if ($('.signin').hasClass('menu-open')) {
+                    $('.signin i.icon-angle-up').removeClass('icon-angle-up').addClass('icon-angle-down');
+                } else {
+                    $('.signin i.icon-angle-down').removeClass('icon-angle-down').addClass('icon-angle-up');
+                }
+            });
+            $("fieldset#signin_menu").mouseup(function () {
+                return false
+            });
+            $(document).mouseup(function (e) {
+                if ($(e.target).parent("a.signin").length == 0) {
+                    $(".signin").removeClass("menu-open");
+                    $("fieldset#signin_menu").hide();
+                    $('.signin i.icon-angle-down').removeClass('icon-angle-down').addClass('icon-angle-up');
+                }
+            });
+        });
+
+        function validateSignUp(parameters){
+            var m = parameters.m;
+            var empty = false;
+            $('#m').val(m);
+            $('#RgisterForm input').each(function(i){
+                if($(this).val() == ''){
+                    empty = true;
+                }
+            });
+            if(!empty){
+                if($('#pass').val() != '' &&  $('#repassword').val() != ''){
+                    if($('#pass').val() != $('#repass').val()){
+                        alert('Las contraseñas proporcionadas no coinciden');
+                    } else {
+                        $('#RgisterForm').submit();
+                    }
+                } else {
+                    alert('Existen campos de contraseña vacios');
+                }
+            } else {
+                alert('Existen campos vacios');
+            }
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends 'FrontBundle::layout.html.twig' %}
+
+{% block title %}NETVIRALPRO{% endblock %}
+
+{% block body %}
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="col-md-8">
+                    <div id="normalportfolio" class="row portfolio four-col-portfolio-wrapper">
+                        <div class="gallery-item item-w1 item-h1 cat1">
+
+                            <h1 class="title"><a href="#">{% trans %}Mind Influence{% endtrans %}</a></h1>
+                            <hr class="titlehr">
+
+                            <small><a href="#">{% trans %}Ponte en la mente del cliente y tenga exito en la venta!{% endtrans %}</a></small>
+
+                            <div class="media-element">
+                                <div>
+                                    <img src="{{ asset('bundles/front/img/4J.jpg') }}" alt=""
+                                         class="img-responsive">
+                                </div>
+                            </div><!-- end media -->
+
+                            <div class="gallery-desc-full big-gallery">
+                                <p>{% trans %}Hay un dicho que dice "Si realmente logras impresionarlos, los clientes se lo contaran unos a otros. La palabra que circula de boca en boca es la mejor herramienta de marketing que hay". Pues bién, gracias a Mind Formula recibirá una formación continua de cómo impresionar y ganarte el respeto de los demás en tus ventas. Este producto le ayudará a conocer más sobre:{% endtrans %} </p>
+                                <li><p>{% trans %}El cliente y los métodos de persuasión en la venta.{% endtrans %}</p></li>
+                                <li><p>{% trans %}La importancia de crear necesidades en las ventas y como conseguirlo.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Distintas técnicas de venta.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Psicología en el proceso de venta.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Los distintas técnicas en Network Marketing.{% endtrans %}</p></li>
+                                <p>{% trans %}Y mucho mas!{% endtrans %}</p>
+                                <br>
+                                <p>{% trans %}Estos documentos tienen base científica, ya que han sido creados por prestigiosos psicólogos que han estudiado el comportamiento del ser humano en el proceso de venta. Mensualmente, se publicarán nuevos artículos para que pueda tener una formación continuada. Además de esto, tras la adquisición de este producto tendrá acceso a las distintas conferencias de psicología de las ventas que darán nuestros especialistas.{% endtrans %}</p>
+
+                                <a href="{{ path('join') }}" class="btn btn-primary">{% trans %}Comprar{% endtrans %}</a>
+                            </div>
+                        </div><!-- item -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="pricing-box-09 white-style">
+                            <div class="pricing-box-09-head">
+                                <div class="ribbon-wrapper-pt1">
+                                    <div class="ribbon-pt1">{% trans %}Anual{% endtrans %}</div>
+                                </div>
+                                <h3><sup>$</sup>{{ precio.cost }} USD</h3>
+                                <h4>{% trans %}Una vez se registre a Mind Influence, tendrá acceso a:{% endtrans %}</h4>
+                            </div>
+                            <!-- end pricing-box-09-head -->
+
+                            <div class="pricing-box-09-body">
+                                <ul>
+                                    <li><p>{% trans %}Archivos que le ayudarán a mejorar sus habilidades en el proceso de venta.{% endtrans %}</p></li>
+                                    <li><p>{% trans %}Acceso a conferencias sobre psicología en la venta realizadas por psicólogos profesionales.{% endtrans %}</p></li>
+                                </ul>
+                            </div>
+                            <!-- end pricing-box-09-body -->
+
+                            <div class="pricing-box-09-foot">
+                                <a href="{{ path('join') }}" class="btn btn-primary btn-block">{% trans %}Comprar{% endtrans %}</a>
+                            </div>
+                            <!-- end pricing-box-09-foot -->
+                        </div>
+                        <!-- end pricing-box-09 -->
+                    </div>
+                </div>
+            </div><!-- end content -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <section class="section messagesection biggermessage colorrizedmessage color10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>{% trans %}¡El poder está en tu mente!{% endtrans %}</h3>
+                    <p class="lead">{% trans %}¡ TOME VENTAJA CON MIND INFLUENCE POR SÓLO{% endtrans %} {{ precio.cost }} {% trans %}USD ANUALES !{% endtrans %}</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="{{ path('join') }}" class="btn btn-primary btn-lg border-radius"><i class="fa fa-check"></i>{% trans %} Registro{% endtrans %}</a>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+{% endblock %}

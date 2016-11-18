@@ -1,0 +1,289 @@
+/******************************************
+    File Name: garden.css
+    Template Name: Convert
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: https://psdconverthtml.com
+    Version: 1.0
+    Support: support@psdconverthtml.com
+******************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300&amp;subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin,latin-ext);
+
+body,
+li,
+p {
+    font-family: "Droid Sans" !important;
+}
+
+.navbar-default .navbar-nav > li > a,
+.tp-caption.RotatingWords-Button,
+.RotatingWords-Button,
+.NotGeneric-Title,
+.tp-caption.NotGeneric-Title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald" !important;
+}
+
+.pricing-box-03-body ul li,
+.pricing-box-03-head,
+.pricing-box-03-head h3,
+.pricing-box-03-head h4,
+.pricing-box-03 .btn,
+.pricing-box-03,
+.NotGeneric-SubTitle,
+.tp-caption.NotGeneric-SubTitle {
+    font-family: 'Kaushan Script', cursive !important;
+}
+
+.header-dark,
+.section.db,
+.copyrights {
+    background-color: #282828 !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-weight: 400 !important;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > li a {
+    color: #ffffff !important;
+}
+
+.section.lb {
+    background-color: #fafafa !important;
+}
+
+.section-title h4 {
+    color: #989898;
+    font-weight: normal !important;
+    letter-spacing: 1px;
+}
+
+.section-title hr {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border-image: none !important;
+    border-style: dotted !important;
+    border-width: 1px;
+    margin: 15px auto !important;
+}
+
+.color2.messagesection h3 {
+    color: #ffffff !important;
+}
+
+.gallery-wrap .magnifier {
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    top: 10px !important;
+}
+
+.service-ver-1 h4 {
+    padding: 10px 0;
+}
+
+.image-box-desc h4,
+.service-ver-1 h4,
+.team-boxes h4 a,
+.team-boxes h4 {
+    font-size: 22px;
+}
+
+.pricing-box-03 {
+    font-family: 'Kaushan Script', cursive !important;
+    padding: 30px 30px 60px;
+    background-color: #333;
+    position: relative;
+    -webkit-box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    border: 20px solid transparent;
+    border-image: url("../../images/skins/images/garden/border.png") 30;
+}
+
+.pricing-box-03.leftbg::before,
+.pricing-box-03.nobg::before {
+    display: none;
+}
+
+.pricing-box-03::before {
+    background: rgba(0, 0, 0, 0) url("../../images/skins/images/garden/right.png") no-repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 374px;
+    left: -84px;
+    position: absolute;
+    top: -65px;
+    width: 402px;
+    z-index: 0;
+}
+
+.pricing-box-03.leftbg::after {
+    background: rgba(0, 0, 0, 0) url("../../images/skins/images/garden/left.png") no-repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 374px;
+    right: -84px;
+    position: absolute;
+    bottom: -65px;
+    width: 402px;
+    z-index: 0;
+}
+
+.pricing-box-03-body ul {
+    padding: 0;
+}
+
+.pricing-box-03-body ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.pricing-box-03-body ul li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-box-03-head {
+    padding: 20px 0 15px;
+    display: block;
+    position: relative;
+}
+
+.pricing-box-03-head h3 {
+    padding: 25px 0 10px;
+    font-size: 34px;
+    margin: 0;
+}
+
+.pricing-box-03-head h3 sup {
+    font-size: 15px;
+}
+
+.pricing-box-03-head h4 {
+    color: #60A543;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-box-03 .btn {
+    padding: 5px 20px;
+    font-size: 13px;
+    margin-top: 5px;
+    background-color: #60A543;
+    border-color: #60A543;
+}
+
+.pricing-box-03.white-style {
+    background-color: #ffffff;
+}
+
+.pricing-box-03.white-style li {
+    color: #555555;
+    border-color: rgba(55, 55, 55, 0.1);
+}
+
+/******************************************
+ 	COLORS
+******************************************/
+
+.service-ver-1 i::after {
+    border-color: #ef8806 rgba(136, 183, 213, 0) rgba(136, 183, 213, 0) !important;
+}
+
+.border-radius .hovericons {
+    background-color: #ef8806 !important;
+}
+
+a:hover,
+a:focus,
+#testimonials-rotate small,
+.image-box-desc .readmore {
+    color: #ef8806 !important;
+}
+
+.magnifier {
+    background-color: rgba(109, 153, 4, 0.7) !important;
+}
+
+.contact-details li i,
+.btn-primary,
+.color2,
+.copyrights .footer-social i:hover {
+    background-color: #6d9904 !important;
+    border-color: #6d9904 !important;
+}
+
+.colormagnifier .magnifier .hovericons i,
+.image-box-1.colormagnifier .magnifier .hovericons,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.active > a:hover,
+.copyrights .list-inline > li:hover a,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a,
+.navbar-default .navbar-nav > li.active > a {
+    color: #6d9904 !important;
+}
+
+.section-title hr {
+    border-color: #6d9904 !important
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #6d9904;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #6d9904;
+}
+
+.service-ver-1 i {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6d9904+0,ef8806+100 */
+    background: #6d9904;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #6d9904 0%, #ef8806 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #6d9904 0%, #ef8806 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #6d9904 0%, #ef8806 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6d9904', endColorstr='#ef8806', GradientType=0);
+    /* IE6-9 */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #5a8600 !important;
+    border-color: #5a8600 !important;
+}
+
+@media (max-width: 998px) {
+    .pricing-box-03::before {
+        display: none;
+    }
+    .pricing-box-03.leftbg::after {
+        display: none;
+    }
+    .team-boxes .image-boxes img {
+        max-width: 100px !important;
+        margin: 20px auto 0;
+    }
+    .image-box-desc {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,396 @@
+{% extends '::base-front-convert.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/front/css/login.css') }}"/>
+{% endblock %}
+
+{% block header %}
+
+    <header class="header header-fullwidth header-fullwidth header-dark" data-spy="affix" data-offset-top="0">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 center-xs">
+                        <ul class="nav navbar-nav">
+                            <li class="megamenu">
+                                <a href="{{ path('homepage', {'_locale' : 'es' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>ESPAÑOL</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="megamenu">
+                                <a href="{{ path('homepage', {'_locale' : 'en' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>INGLES</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'ru' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>RUSO</small>{% endtrans %} <span
+                                            class="fa"></span></a>
+                            </li>
+                            <li class="megamenu">
+                                <a href="{{ path('homepage', {'_locale' : 'cn' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>CHINO</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="megamenu dropdown yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'id' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>INDONESIO</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'in' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>INDIO</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'it' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>ITALIANO</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'fr' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>FRANCES</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'pt' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>PORTUGES</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'jp' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>JAPONES</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'th' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>TAILANDES</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('homepage', {'_locale' : 'kr' }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}<small>KOREANO</small>{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                        </ul>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end topbar -->
+
+        <nav class="navbar navbar-default yamm">
+            <div class="container-full">
+
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="megamenu dropdown yamm-fw hasmenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FACEBOOK<span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content clearfix">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="menu-widget">
+                                                    <ul>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':1, 'nombcat':'FACEBOOK ACCOUNTS'}) }}" id="facebook1">FACEBOOK ACCOUNTS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':2, 'nombcat':'FACEBOOK FOLLOWERS'}) }}">FACEBOOK FOLLOWERS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':3}) }}">FACEBOOK GROUP MEMBERS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':4}) }}">FACEBOOK LIKES</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':5}) }}">FACEBOOK LIKES COMMENT</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':6}) }}">FACEBOOK LIKES PHOTO</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':7}) }}">FACEBOOK SHARES</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':8}) }}">FACEBOOK VOTES</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end menu-widget -->
+                                            </div>
+                                            <!-- end col -->
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end yamm -->
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="megamenu dropdown yamm-half hasmenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TWITTER <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content clearfix">
+                                        <div class="row">
+                                            <div class="col-md-4 border-right">
+                                                <div class="menu-widget">
+                                                    <ul>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':9}) }}">TWITTER FAVOURITES</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':10}) }}">TWITTER FOLLOWERS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':11}) }}">TWITTER RETWEETS</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end menu-widget -->
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end yamm -->
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="megamenu dropdown yamm-half hasmenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INSTAGRAM <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content clearfix">
+                                        <div class="row">
+                                            <div class="col-md-4 border-right">
+                                                <div class="menu-widget">
+                                                    <ul>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':12}) }}">INSTAGRAM FOLLOWERS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':13}) }}">INSTAGRAM LIKES</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':14}) }}">INSTAGRAM COMMENTS</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end menu-widget -->
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end yamm -->
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="megamenu dropdown yamm-half hasmenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">YOUTUBE<span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content clearfix">
+                                        <div class="row">
+                                            <div class="col-md-4 border-right">
+                                                <div class="menu-widget">
+                                                    <ul>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':15}) }}"><i></i>YOUTUBE VIEWS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':16}) }}"><i></i>YOUTUBE LIKES</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':17}) }}"><i></i>YOUTUBE SUBSCRIBERS</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':18}) }}"><i></i>YOUTUBE SHARES</a></li>
+                                                        <li><a href="{{ path('shop',{'username': app.user.username ,'category':19}) }}"><i></i>YOUTUBE DISLIKES</a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- end menu-widget -->
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end yamm -->
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="dropdown has-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PINTEREST <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':20}) }}">PINTEREST FOLLOWERS</a></li>
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':21}) }}">PINTEREST REPINS</a></li>
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':22}) }}">PINTEREST LIKES</a></li>
+                            </ul>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li class="dropdown has-submenu active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GOOGLE <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':23}) }}">GOOGLE+ FOLLOWERS</a></li>
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':24}) }}">GOOGLE+ CIRCLES</a></li>
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':25}) }}">GOOGLE+ SHARES</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown has-submenu">
+                            <a href="{{ path('shop',{'username': app.user.username ,'category':26}) }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRAFFIC WEB<span></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+                        <li class="dropdown has-submenu">
+                            <a href="{{ path('shop',{'username': app.user.username ,'category':27}) }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GSA BACK LINKS<span></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li class="dropdown has-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SOUNDCLOUD <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':28}) }}">SOUNCLOUD PLAYS</a></li>
+                                <li><a href="{{ path('shop',{'username': app.user.username ,'category':29}) }}">SOUNDCLOUD FOLLOWERS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown has-submenu">
+                            <a href="{{ path('shop',{'username': app.user.username ,'category':30}) }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DATABASE <span></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li class="dropdown has-submenu">
+                            <a href="{{ path('shop',{'username': app.user.username ,'category':31}) }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WHATSAPP MARKETING <span></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li class="dropdown has-submenu">
+                            <a href="{{ path('shop',{'username': app.user.username ,'category':32}) }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DESIGN <span></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li><a id="simple-menu" href="#wps-right"><i class="fa fa-shopping-basket"></i> <span class="label label-success hidden-xs">3</span></a></li>
+                    </ul>
+                    <!-- end dropdown -->
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <!-- end nav -->
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+
+    <div id="wrapper">
+        <section class="section page-title-wrapper littlepad page-title-color">
+            <div class="container">
+                <div class="megamenu">
+                    <a href="{{ path('homepage', {"_locale" : app.session.get('_locale') }) }}">
+                        <img alt="Megalifepro" src="{{ asset('bundles/front/img/netviralpro-p.png') }}">
+                    </a>
+                </div>
+
+                <div class="page-title pull-left">
+                    <h3>CATEGORIA: {% block nombcat %} {% endblock %}</h3>
+                </div><!-- end title -->
+                <div class="pull-right hidden-xs">
+                    <div class="bread">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li class="active">Category</li>
+                        </ol>
+                    </div><!-- end bread -->
+                </div><!-- /.pull-right -->
+            </div>
+        </section><!-- end section -->
+    </div>
+    <!-- end wrapper -->
+
+    <div class="sidebar col-md-2 col-sm-12">
+        <div class="widget clearfix">
+            <div class="widget-title">
+                <h4>Buscar en el Sitio</h4>
+            </div><!-- end about -->
+            <div class="newsletter-widget">
+                <form>
+                    <input type="text" class="form-control input-lg" placeholder="What you are looking?" />
+                </form>
+            </div><!-- end newsletter -->
+        </div><!-- end widget -->
+
+        <div class="widget clearfix">
+            <div class="widget-title">
+                <h4>Carrito de Compras</h4>
+            </div><!-- end about -->
+            <div class="right-widget clearfix">
+                <div id="canasto">
+                    <p> <b id='lista'></b></p>
+                </div>
+                <div id="cargando"></div>
+                <div id="ventanaModal">
+                    <div id="finalizacion">
+                        <table width="100%">
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <br />
+                                    <input type="button" id="btnEnviar" value="Enviar" onclick="enviar()" />
+                                    <input type="button" id="btnCancelar" value="Cancelar" onclick="cancelar()" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="cartbutton">
+                    <h4>TOTAL : $140</h4>
+                    <a href="{{ path('shopcart',{'username': app.user.username,'category': categoria}) }}" class="btn btn-primary btn-block">Ver carrito</a>
+                </div>
+
+            </div><!-- end right-widget -->
+        </div><!-- end widget -->
+
+        <div id="wps-right">
+            <button type="button" class="close">&times;</button>
+            <div class="right-widget clearfix">
+                <div class="cart-top">
+                    <p id="lista"><h4>Your Cart (3 items)</h4></p>
+                </div>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td><img src="upload/cart_01.jpg" alt=""></td>
+                        <td>
+                            <strong><a href="shop-single-sidebar.html" title="">Black Hat T-Shirt</a></strong>
+                            <small><a href="shop-category-1.html" title="">Men</a></small>
+                            <strong>$122.12</strong>
+                        </td>
+                        <td><i class="fa fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="upload/cart_02.jpg" alt=""></td>
+                        <td>
+                            <strong><a href="shop-single-sidebar.html" title="">Mavi Jeans Cote</a></strong>
+                            <small><a href="shop-category-1.html" title="">Men</a></small>
+                            <strong>$74.44</strong>
+                        </td>
+                        <td><i class="fa fa-times-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="upload/cart_03.jpg" alt=""></td>
+                        <td>
+                            <strong><a href="shop-single-sidebar.html" title="">Bluzing Edition</a></strong>
+                            <small><a href="shop-category-1.html" title="">Men</a></small>
+                            <strong>$89.12</strong>
+                        </td>
+                        <td><i class="fa fa-times-circle"></i></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="cartbutton">
+                    <h4>TOTAL : $140</h4>
+                    <a href="#" class="btn btn-primary btn-block">View Cart</a>
+                </div>
+            </div><!-- end right-widget -->
+        </div><!-- end pushmenu -->
+
+        <div class="widget clearfix">
+            <div class="widget-title">
+                <h4>Be Social</h4>
+            </div><!-- end about -->
+            <div class="menu-widget">
+                <ul class="social-widget">
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i> Google Plus</a></li>
+                </ul><!-- end ul -->
+            </div><!-- end menu-widget -->
+        </div><!-- end widget -->
+    </div><!-- end col -->
+
+    {% endblock %}
+
+    {% block options %}
+    {% endblock %}
+
+{% block body %}
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/front/js/carrito.js') }}"></script>
+{% endblock %}

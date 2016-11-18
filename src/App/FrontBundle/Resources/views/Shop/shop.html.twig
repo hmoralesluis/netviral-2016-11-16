@@ -1,0 +1,58 @@
+{% extends 'FrontBundle::layout-shop.html.twig' %}
+
+{% block title %}TIENDA NETVIRALPRO{% endblock %}
+
+{% block titulo %} {{  entity }} {% endblock %}
+
+{% block nombcat %} {{  nombcateg }} {% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <hr class="invis">
+
+    <div class="row">
+        {% set contador = 0 %}
+        {% for subcat in subcategory %}
+            <div class="col-md-2">
+                <div class="pitem gallery-item item-w1 item-h1 cat1">
+                    <div class="custom-item">
+                        <div class="media-element">
+                            <div class="entry">
+                                <img id="#my{{ contador }}" src="{{ asset('bundles/admin/shop/' ~ subcat.filename) }}" alt="" class="img-responsive">
+                            </div>
+                        </div><!-- end media -->
+
+                        <div class="gallery-desc-full big-gallery text-center">
+                            <div class="shop-top-title">
+                                <a id="#my{{ contador }}"> <strong>$ {{ subcat.price }}</strong> </a>
+                                <small>TIEMPO DE ENTREGA: {{ subcat.deliverytime }}</small>
+                            </div><!-- end title -->
+
+                            <div class="select-qty clearfix">
+                                <small>Cantidad</small>
+                                <div class="wan-spinner wan-spinner-2">
+                                    <a href="javascript:void(0)" class="minus">-</a>
+                                    <input id="#my{{ contador }}" class="form-control" type="text" value="1">
+                                    <a href="javascript:void(0)" class="plus">+</a>
+                                </div>
+                            </div><!-- end select-size -->
+
+                            <div class="add-cart-button clearfix" onclick="prueba()">
+                                <a title="add to cart" class="btn btn-primary">Adicionar al Carrito</a>
+                            </div><!-- end select-size -->
+
+
+                        </div>
+                    </div><!-- item -->
+                </div><!-- item -->
+            </div>
+            {% set contador = contador + 1 %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
+
+

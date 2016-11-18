@@ -1,0 +1,107 @@
+{% extends 'FrontBundle::layout.html.twig' %}
+
+{% block title %}NETVIRALPRO{% endblock %}
+
+{% block body %}
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="col-md-12">
+                    <div id="normalportfolio" class="row portfolio four-col-portfolio-wrapper">
+                        <div class="gallery-item item-w1 item-h1 cat1">
+
+                            <h1 class="title"><a href="#">{% trans %}PLAN DE COMPENSACIÓN{% endtrans %}</a></h1>
+                            <hr class="titlehr">
+
+                            <small><a href="#">{% trans %}BIENVENIDO A LA GRAN OPORTUNIDAD DE NEGOCIO QUE PRESENTA NETVIRALPRO.COM!{% endtrans %}</a></small>
+
+                            <div class="gallery-desc-full big-gallery">
+                                <p>{% trans %}Para empezar a ganar dinero con Netviralpro, deberá de tener activo al menos el Producto Matrix Hive,  el cual es nuestro producto de registro. Una vez registrado, usted empezará a crear su propia red de trabajo. En la siguiente imagen, se muestra como se distribuye nuestro plan de compensación.{% endtrans %} </p>
+                            </div>
+
+                            <div class="media-element">
+                                <div>
+                                    <img src="{{ asset('bundles/front/img/plan.jpg') }}" alt=""
+                                         class="img-responsive">
+                                </div>
+                            </div><!-- end media -->
+
+                            <h3 class="title"><a href="#">{% trans %}HASTA NIVELES INFINITOS!{% endtrans %}</a></h3>
+
+                            <h4 class="title"><a href="#">{% trans %}Suponiendo que usted es Paul:{% endtrans %}</a></h4>
+
+                            <li><p>{% trans %}Sólo necesitará registrar a un usuario para recuperar la inversión realizada y poder empezar a ganar importantes sumas de dinero!{% endtrans %}</p></li>
+                            <li><p>{% trans %}Los usuarios que se registren a través de usted en el negocio en las posiciones 1-3-5-7-8-9 y a partir de la posición número 10 todas las que no acaben en 0 o 5, recibirán el nombre de ``USUARIOS COMISIONABLES TIPO 1´´.  Usted obtendrá el 100% de beneficio de todas sus ventas.{% endtrans %}</p></li>
+                            <li><p>{% trans %}Los usuarios que se registren a través de usted en el negocio en las posiciones 2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente, serán comisionables para el proveedor que le corresponda (no para usted) . Estos recibirán el nombre de ``USUARIOS NO COMISIONABLES TIPO  1´´.{% endtrans %}</p></li>
+                            <li><p>{% trans %}Obtendrá el 100% de beneficio de todos los usuarios que se registren en el negocio a través de sus Usuarios Comisionables Tipo 1 en sus posiciones 2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente, convirtiéndose ellos  desde ese momento en nuevos usuarios comisionables en tu red. Sería como si estos usuarios se hubiesen registrado al negocio directamente a través  suyo. Este proceso, se repetirá hasta niveles infinitos. Estos usuarios recibirán el nombre de ``USUARIOS COMISIONABLES TIPO  2´´.{% endtrans %}</p></li>
+                            <li><p>{% trans %}Los demás usuarios que estén dentro de su red a partir de su segundo nivel de generación y que no le reportan beneficio a usted, recibirán el nombre de USUARIOS NO COMISIONABLES 2.{% endtrans %}</p></li>
+
+                            <h4 class="title"><a href="#">{% trans %}Mediante la siguiente tabla, podrá entender mejor nuestro plan de compensación:{% endtrans %}</a></h4>
+
+                            <!-- BEGIN BORDERED TABLE PORTLET-->
+
+                                <div class="portlet-body">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>{% trans %}Tipo de Usuario{% endtrans %}</th>
+                                            <th>{% trans %}Nivel de Generación{% endtrans %}</th>
+                                            <th class="hidden-480">{% trans %}Posiciones{% endtrans %}</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>{% trans %}Usuario Comisionable Tipo  1{% endtrans %}</td>
+                                            <td>{% trans %}Registrado directamente a través suyo (Primer nivel de generación).{% endtrans %}</td>
+                                            <td class="hidden-480">{% trans %}1-3-5-7-8-9 y a partir de la posición número 10 todas las que NO acaben en 0 o 5{% endtrans %}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{% trans %}Usuario No Comisionable Tipo 1{% endtrans %}</td>
+                                            <td>{% trans %}Registrado directamente a través de mi (Primer nivel de generación).{% endtrans %}</td>
+                                            <td class="hidden-480">{% trans %}2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente.{% endtrans %}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{% trans %}Usuario Comisionable Tipo 2{% endtrans %}</td>
+                                            <td>{% trans %}A partir del 2º nivel de generación hasta el infinito. Estos usuarios le reportarán gran cantidad de dinero.{% endtrans %}</td>
+                                            <td class="hidden-480">{% trans %}De la red creada por sus usuarios comisionables tipo 1, comisionará  por los registros que estos tengan en sus posiciones 2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente. Desde este momento, estos usuarios pasarán a ser Usuarios Comisionables Tipo 2, obteniendo el 100% de beneficio del dinero que se genere en las posiciones correspondientes hasta niveles infinitos de profundidad.{% endtrans %}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{% trans %}Usuario No comisionable Tipo 2{% endtrans %}</td>
+                                            <td>{% trans %}A partir del 2º nivel de generación hasta el infinito.{% endtrans %}</td>
+                                            <td class="hidden-480">{% trans %}Las demás posiciones de su red que no le reportan beneficio. {% endtrans %}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            <!-- END BORDERED TABLE PORTLET-->
+
+                            <li>
+                                <p>{% trans %}De la red que usted cree, comisionará:{% endtrans %}</p>
+                                <p>{% trans %}- El 100 del valor de los productos que haya comprado.{% endtrans %}</p>
+                                <p>{% trans %}- El 25 del valor de los productos que no haya comprado.{% endtrans %}</p>
+                            </li>
+                            <li><p>{% trans %}Este proceso se repetirá hasta niveles infinitos, por lo que creando un buen grupo de trabajo podrá ganar importantes sumas de dinero de personas que ni siquiera conoce.</p>{% endtrans %}</li>
+
+                        </div><!-- item -->
+                    </div>
+                </div>
+            </div><!-- end content -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <section class="section messagesection biggermessage colorrizedmessage color10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>{% trans %}¡COMPRE AHORA ESTE PRODUCTO !{% endtrans %}</h3>
+                    <p class="lead">{% trans %}Y GANE EL 100% DE BENEFICIO EN LAS SIGUIENTES VENTAS{% endtrans %}</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#" class="btn btn-primary btn-lg border-radius"><i class="fa fa-check"></i>{% trans %} Comprar{% endtrans %}</a>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+{% endblock %}

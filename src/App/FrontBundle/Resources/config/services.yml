@@ -1,0 +1,12 @@
+parameters:
+    authentication_handler.class: App\FrontBundle\Component\Security\Http\Authentication\AuthenticationHandler
+    logout_handler.class: App\FrontBundle\Component\Security\Http\Authentication\LogoutHandler
+
+services:
+    authentication_handler:
+        class: %authentication_handler.class%
+        arguments:  ['@router']
+        
+    logout_handler:
+        class: %logout_handler.class%
+        arguments:  ['@router']

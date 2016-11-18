@@ -1,0 +1,208 @@
+{% extends 'AdminBundle::layout.html.twig' %}
+
+{% block title %}Transacciones{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('bundles/admin/plugins/bootstrap-datepicker/css/datepicker.css') }}"
+          xmlns="http://www.w3.org/1999/html"/>
+    <link rel="stylesheet" href="{{ asset('bundles/admin/plugins/data-tables/DT_bootstrap.css') }}"/>
+{% endblock %}
+
+{% block content %}
+    <div class="row-fluid">
+        <div class="tabbable tabbable-custom tabbable-full-width">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab_1_1" data-toggle="tab">Últimas 24 h</a></li>
+                <li><a href="#tab_1_2" data-toggle="tab">Semanal</a></li>
+                <li><a href="#tab_1_3" data-toggle="tab">Mensual</a></li>
+                <li><a href="#tab_1_4" data-toggle="tab">Trimestral</a></li>
+                <li><a href="#tab_1_5" data-toggle="tab">Anual</a></li>
+                <li><a href="#tab_1_6" data-toggle="tab">Por Período</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab_1_1" class="tab-pane active">
+                    <div class="row-fluid">
+                        <div class="tabbable tabbable-custom tabbable-custom-profile">
+                            <table class="table table-striped table-advance table-hover" id="daily_transactions">
+                                <thead>
+                                <tr>
+                                    <th><i class="icon-calendar"></i> Fecha</th>
+                                    <th><i class="icon-user"></i> Seudónimo</th>
+                                    <th><i class="icon-group"></i> Generación (Profundidad)</th>
+                                    <th><i class="icon-money"></i> Dinero</th>
+                                    <th><i class="icon-sitemap"></i> Categoría</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for transaction in daily_transactions %}
+                                    <tr class="odd gradeX">
+                                        <td>{{ transaction.date | date("Y-n-j") }}</td>
+                                        <td>{{ transaction.nickname }}</td>
+                                        <td>{{ transaction.generation }}</td>
+                                        <td>{{ transaction.money }}</td>
+                                        <td>{{ transaction.transactionType.name }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_1_2" class="tab-pane">
+                    <div class="row-fluid">
+                        <div class="tabbable tabbable-custom tabbable-custom-profile">
+                            <table class="table table-striped table-advance table-hover" id="weekly_transactions">
+                                <thead>
+                                <tr>
+                                    <th><i class="icon-calendar"></i> Fecha</th>
+                                    <th><i class="icon-user"></i> Seudónimo</th>
+                                    <th><i class="icon-group"></i> Generación (Profundidad)</th>
+                                    <th><i class="icon-money"></i> Dinero</th>
+                                    <th><i class="icon-sitemap"></i> Categoría</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for transaction in weekly_transactions %}
+                                    <tr class="odd gradeX">
+                                        <td>{{ transaction.date | date("Y-n-j") }}</td>
+                                        <td>{{ transaction.nickname }}</td>
+                                        <td>{{ transaction.generation }}</td>
+                                        <td>{{ transaction.money }}</td>
+                                        <td>{{ transaction.transactionType.name }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_1_3" class="tab-pane">
+                    <div class="row-fluid">
+                        <div class="tabbable tabbable-custom tabbable-custom-profile">
+                            <table class="table table-striped table-advance table-hover" id="monthly_transactions">
+                                <thead>
+                                <tr>
+                                    <th><i class="icon-calendar"></i> Fecha</th>
+                                    <th><i class="icon-user"></i> Seudónimo</th>
+                                    <th><i class="icon-group"></i> Generación (Profundidad)</th>
+                                    <th><i class="icon-money"></i> Dinero</th>
+                                    <th><i class="icon-sitemap"></i> Categoría</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for transaction in monthly_transactions %}
+                                    <tr class="odd gradeX">
+                                        <td>{{ transaction.date | date("Y-n-j") }}</td>
+                                        <td>{{ transaction.nickname }}</td>
+                                        <td>{{ transaction.generation }}</td>
+                                        <td>{{ transaction.money }}</td>
+                                        <td>{{ transaction.transactionType.name }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_1_4" class="tab-pane">
+                    <div class="row-fluid">
+                        <div class="tabbable tabbable-custom tabbable-custom-profile">
+                            <table class="table table-striped table-advance table-hover" id="quarterly_transactions">
+                                <thead>
+                                <tr>
+                                    <th><i class="icon-calendar"></i> Fecha</th>
+                                    <th><i class="icon-user"></i> Seudónimo</th>
+                                    <th><i class="icon-group"></i> Generación (Profundidad)</th>
+                                    <th><i class="icon-money"></i> Dinero</th>
+                                    <th><i class="icon-sitemap"></i> Categoría</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for transaction in quarterly_transactions %}
+                                    <tr class="odd gradeX">
+                                        <td>{{ transaction.date | date("Y-n-j") }}</td>
+                                        <td>{{ transaction.nickname }}</td>
+                                        <td>{{ transaction.generation }}</td>
+                                        <td>{{ transaction.money }}</td>
+                                        <td>{{ transaction.transactionType.name }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_1_5" class="tab-pane">
+                    <div class="row-fluid">
+                        <div class="tabbable tabbable-custom tabbable-custom-profile">
+                            <table class="table table-striped table-advance table-hover" id="yearly_transactions">
+                                <thead>
+                                <tr>
+                                    <th><i class="icon-calendar"></i> Fecha</th>
+                                    <th><i class="icon-user"></i> Seudónimo</th>
+                                    <th><i class="icon-group"></i> Generación (Profundidad)</th>
+                                    <th><i class="icon-money"></i> Dinero</th>
+                                    <th><i class="icon-sitemap"></i> Categoría</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for transaction in yearly_transactions %}
+                                    <tr class="odd gradeX">
+                                        <td>{{ transaction.date | date("Y-n-j") }}</td>
+                                        <td>{{ transaction.nickname }}</td>
+                                        <td>{{ transaction.generation }}</td>
+                                        <td>{{ transaction.money }}</td>
+                                        <td>{{ transaction.transactionType.name }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_1_6" class="tab-pane">
+                    <div class="row-fluid">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/data-tables/jquery.dataTables.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/data-tables/DT_bootstrap.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
+    <script>
+        $('#daily_transactions, #weekly_transactions, #monthly_transactions, #quarterly_transactions, #yearly_transactions, #range_transactions').dataTable({
+            "aLengthMenu": [
+                [5, 15, 20, -1],
+                [5, 15, 20, "Todos"] // change per page values here
+            ],
+            // set the initial value
+            "iDisplayLength": 5,
+            "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+            "sPaginationType": "bootstrap",
+            "oLanguage": {
+                "sLengthMenu": "_MENU_  por página",
+                "oPaginate": {
+                    "sPrevious": "Anterior",
+                    "sNext": "Siguiente"
+                }
+            },
+            "aoColumnDefs": [{
+                'bSortable': true,
+                'aTargets': [0]
+            }
+            ]
+        });
+        if (jQuery().datepicker) {
+            $('.date-picker').datepicker();
+        }
+    </script>
+{% endblock %}

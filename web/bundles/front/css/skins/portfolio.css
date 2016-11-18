@@ -1,0 +1,308 @@
+/******************************************
+    File Name: construction.css
+    Template Name: Convert
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: https://psdconverthtml.com
+    Version: 1.0
+    Support: support@psdconverthtml.com
+******************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100&amp;subset=latin,latin-ext);
+
+body,
+li,
+p {
+    font-family: "Roboto" !important;
+}
+.btn-default,
+.btn-primary,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat" !important;
+}
+
+.custom_fact_item h6 {
+    font-size: 15px;
+}
+
+.header {
+    border-bottom: 2px solid #f7f8fa;
+}
+.light-copyrights,
+.section.lb {
+    background-color: #f7f8fa;
+}
+
+.section.db {
+    background-color: #111111;
+}
+
+.single-portfolio-wrapper .widget-title h4, .footer .widget .widget-title h4 {
+    border:0;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.copyrights .footer-social i,
+.btn {
+    border-radius: 0 !important;
+}
+.navbar-right {
+    display: block !important
+}
+.navbar-full ul {
+    margin-top: 18px;
+    margin-right: 0 !important;
+}
+.navbar-full li {
+    margin-right: 0 !important;
+    list-style: none;
+    margin-left: 0;
+}
+.navbar-full .fa {
+    font-size: 16px !important
+}
+
+.magnifier {
+    top:10px !important;
+    left: 10px !important;
+    right:10px !important;
+    bottom:10px !important;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9999;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9)
+}
+
+.overlay .overlay-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    overflow: hidden;
+    border: none;
+    background: url(../../images/cross.png) center center no-repeat;
+    text-indent: 200%;
+    color: transparent;
+    outline: 0;
+    z-index: 100
+}
+
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.overlay ul {
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative
+}
+
+.overlay ul li {
+    display: block;
+    padding: 10px;
+    letter-spacing: 15px;
+    margin: 15% 0 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.overlay ul li a {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    display: block;
+    line-height: 38px;
+    text-decoration: none;
+    color: #fff!important;
+    -webkit-transition: color .2s;
+    transition: color .2s
+}
+
+.overlay-door {
+    visibility: hidden;
+    width: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: width .5s .3s, visibility 0s .8s;
+    transition: width .5s .3s, visibility 0s .8s
+}
+
+.overlay-door.open {
+    visibility: visible;
+    width: 100%;
+    -webkit-transition: width .5s;
+    transition: width .5s
+}
+
+.overlay-door nav {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
+}
+
+.overlay-door .overlay-close,
+.overlay-door nav {
+    opacity: 0;
+    -webkit-transition: opacity .3s .5s;
+    transition: opacity .3s .5s
+}
+
+.custom-styles img,
+.magnifier {
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out
+}
+
+.overlay-door.open .overlay-close,
+.overlay-door.open nav {
+    opacity: 1;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s
+}
+
+.overlay-door.close .overlay-close,
+.overlay-door.close nav {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+
+/******************************************
+	COLORS
+******************************************/
+
+.pager li > a:hover, .pager li > span:hover,
+.contact-details li i,
+.skills .progress .progress-bar,
+.section-small-title hr, .section-title hr,
+.social-version-1 .fa,
+.pagination > li > a, .pagination > li > span,
+.page-title-color,
+.copyrights .footer-social i:hover,
+.copyrights .footer-social i:focus,
+.magnifier,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default.focus:active,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default,
+.btn-primary {
+    background-color: #8ccdc9 !important;
+    border-color: #8ccdc9 !important;
+}
+
+.contact-details li i:hover,
+.social-version-1 .fa:hover,
+.pagination > li > a:hover, 
+.pagination > li > span:hover,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #84c5c1 !important;
+    border-color: #84c5c1 !important;
+}
+
+
+a:hover,
+a:focus,
+.custom_fact_item .fa,
+.skills .progress-bar span,
+.image-box-desc .readmore,
+.overlay ul li:hover a,
+.overlay ul li.active a,
+.hovericons,
+.element,
+.portfolio-filter .btn-default:focus,
+.portfolio-filter .btn-default.focus,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default.focus:active,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:focus,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.active > a:hover,
+.copyrights .list-inline > li:hover a,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a,
+.navbar-default .navbar-nav > li.active > a {
+    color: #8ccdc9 !important;
+}
+
+.skills .progress-bar span,
+.portfolio-filter .btn-default:focus,
+.portfolio-filter .btn-default.focus,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default.focus:active,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:focus,
+.portfolio-filter .btn-default {
+    background-color: #f7f8fa !important;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #8ccdc9;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #8ccdc9;
+}
+
+.btn-default {
+    background-color: #121212 !important;
+    border-color: #121212 !important;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #333333 !important;
+    border-color: #3333333 !important;
+}
+
+.hovericons {
+    background-color: #ffffff !important;
+}

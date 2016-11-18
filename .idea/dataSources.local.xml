@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - netviralpro@localhost" uuid="743d3f0c-417d-4255-9c5e-3dfe2befc588">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>netviralpro.*</schema-pattern>
+      <default-schemas>netviralpro.*</default-schemas>
+    </data-source>
+  </component>
+</project>

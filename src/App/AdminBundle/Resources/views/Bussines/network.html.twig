@@ -1,0 +1,254 @@
+{% extends 'AdminBundle::layout.html.twig' %}
+
+{% block title %}Red de Negocios{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('bundles/admin/css/pages/profile.css') }}" rel="stylesheet" type="text/css"
+          xmlns="http://www.w3.org/1999/html"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('bundles/admin/plugins/select2/select2_metro.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/admin/plugins/data-tables/DT_bootstrap.css') }}"/>
+{% endblock %}
+
+{% block content %}
+    <div class="row-fluid profile">
+        <ul class="unstyled profile-nav span3">
+            <li>
+                {% if file_exists(web_path ~ 'bundles/admin/usuarios/' ~ app.user.username ~ '.' ~ app.user.PhotoExtension | default('.jpg')) %}
+                    <img src="{{ asset('bundles/admin/usuarios/' ~ app.user.username ~ '.' ~ app.user.PhotoExtension | default('.jpg')) }}"
+                         style="width: 278px; height: 250px;">
+                {% else %}
+                    {% if app.user.sex == 'Hombre' %}
+                        <img alt="" style="width: 251px; height: 206px;"
+                             src="{{ asset('bundles/admin/img/hombre.jpg') }}"/>
+                    {% else %}
+                        <img alt="" style="width: 251px; height: 206px;"
+                             src="{{ asset('bundles/admin/img/mujer.jpg') }}"/>
+                    {% endif %}
+                {% endif %}
+            </li>
+            <li><a href="#tab_1_1">Primera Generación<span>{{ firstGeneration | length }}</span></a></li>
+            <li><a href="#tab_1_2">Toda la Red<span>{{ network | length }}</span></a></li>
+            <li><a href="#">Imprimir Red de Negocios</a></li>
+        </ul>
+        <div class="span9">
+            <div class="row-fluid">
+                <div class="span8 profile-info">
+                    <h1>{{ app.user.name ~ ' ' ~ app.user.lastName }}</h1>
+
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt laoreet dolore magna aliquam tincidunt erat volutpat laoreet dolore magna
+                        aliquam tincidunt erat volutpat.</p>
+
+                    <p>
+                        <a href="{{ app.request.getSchemeAndHttpHost() ~ app.request.baseurl ~ '/' ~ app.user.username }}">{{ app.request.getSchemeAndHttpHost() ~ app.request.baseurl ~ '/' ~ app.user.username }}</a>
+                    </p>
+                    <ul class="unstyled inline">
+                        <li><i class="icon-calendar"></i> {{ app.user.birthday | date('d F Y') }}</li>
+                        <li><i class="icon-group"></i> Usuario con {{ app.user.role.name }}</li>
+                    </ul>
+                </div>
+                <div class="span4">
+                    <div class="portlet sale-summary">
+                        <div class="portlet-title">
+                            <div class="caption">Resumen de Ventas</div>
+                            <div class="tools">
+                                <a class="reload"
+                                   href="javascript:Codes.updateSales('{{ app.user.id }}', '{{ path('management_get_sales') }}');"></a>
+                            </div>
+                        </div>
+                        <ul class="unstyled">
+                            <li>
+                                <span class="sale-info">Ventas del Día <i class="icon-img-up"></i></span>
+                                <span id="daily-sale" class="sale-num">...</span>
+                            </li>
+                            <li>
+                                <span class="sale-info">Ventas de la Semana <i class="icon-img-down"></i></span>
+                                <span id="weekly-sale" class="sale-num">...</span>
+                            </li>
+                            <li>
+                                <span class="sale-info">Ganancias</span>
+                                <span id="earning" class="sale-num">...</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="tabbable tabbable-custom tabbable-full-width">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab_1_1" data-toggle="tab">Red de Usuarios</a></li>
+                        <li><a href="#tab_1_2" data-toggle="tab">Red de Negocio</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab_1_1" class="tab-pane active">
+                            <div class="row-fluid">
+                                <div class="tabbable tabbable-custom tabbable-custom-profile">
+                                    <table class="table table-striped table-advance table-hover" id="network">
+                                        <thead>
+                                        <tr>
+                                            <th><i class="icon-picture"></i> Foto</th>
+                                            <th><i class="icon-user"></i> Usuario</th>
+                                            <th class="hidden-480"><i class="icon-group"></i> Membresía</th>
+                                            <th class="hidden-480"><i class="icon-sitemap"></i> Generación</th>
+                                            <th class="hidden-480"><i class="icon-pushpin"></i> Posición</th>
+                                            <th align="center"></th>
+                                            <th align="center"></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for user in network %}
+                                            {% set first = false %}
+                                            {% if user in firstGeneration %}
+                                                {% set first = true %}
+                                            {% endif %}
+                                            <tr class="odd gradeX">
+                                                <td class="highlight" style="text-align: center">
+                                                    {% if first %}
+                                                        <div class="success"></div> {% else %}
+                                                        <div class="important"></div> {% endif %}
+                                                    {% if file_exists(web_path ~ 'bundles/admin/usuarios/' ~ user.username ~ '.' ~ user.PhotoExtension | default('.jpg')) %}
+                                                        <img src="{{ asset('bundles/admin/usuarios/' ~ user.username ~ '.' ~ user.PhotoExtension | default('.jpg')) }}"
+                                                             height="29" width="29">
+                                                    {% else %}
+                                                        {% if user.sex == 'Hombre' %}
+                                                            <img alt=""
+                                                                 src="{{ asset('bundles/admin/img/hombre.jpg') }}"
+                                                                 height="29"
+                                                                 width="29"/>
+                                                        {% else %}
+                                                            <img alt="" src="{{ asset('bundles/admin/img/mujer.jpg') }}"
+                                                                 height="29"
+                                                                 width="29"/>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                </td>
+                                                <td>{{ user.username }}</td>
+                                                <td class="hidden-phone">{{ user.role.name }}</td>
+                                                <td class="hidden-phone">{{ user.generation }}</td>
+                                                <td class="hidden-phone">{{ user.positionInGeneration }}</td>
+                                                {% if first %}
+                                                    <td style="text-align: center"><a class="btn mini red-stripe"
+                                                                                      href="{{ path('management_user_show', {'id': user.id}) }}">más
+                                                            información</a>
+                                                    </td>
+                                                    <td style="text-align: center"><a class="btn mini red-stripe"
+                                                                                      href="{{ path('management_user_message', {'id': user.id}) }}">
+                                                            Email</a>
+                                                    </td>
+                                                {% else %}
+                                                    <td></td>
+                                                    <td></td>
+                                                {% endif %}
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab_1_2" class="tab-pane">
+                            <div class="row-fluid">
+                                <div class="tabbable tabbable-custom tabbable-custom-profile">
+                                    <table class="table table-striped table-advance table-hover" id="network_bussines">
+                                        <thead>
+                                        <tr>
+                                            <th><i class="icon-picture"></i> Foto</th>
+                                            <th><i class="icon-user"></i> Usuario</th>
+                                            <th class="hidden-480"><i class="icon-group"></i> Beneficio</th>
+                                            <th class="hidden-480"><i class="icon-sitemap"></i> Generación</th>
+                                            <th class="hidden-480"><i class="icon-pushpin"></i> Posición</th>
+                                            <th align="center"></th>
+                                            <th align="center"></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for user in network_bussines %}
+                                            {% set first = false %}
+                                            {% if user in firstGeneration %}
+                                                {% set first = true %}
+                                            {% endif %}
+                                            <tr class="odd gradeX">
+                                                <td class="highlight" style="text-align: center">
+                                                    {% if first %}
+                                                        <div class="success"></div> {% else %}
+                                                        <div class="important"></div> {% endif %}
+                                                    {% if file_exists(web_path ~ 'bundles/admin/usuarios/' ~ user.username ~ '.' ~ user.PhotoExtension | default('.jpg')) %}
+                                                        <img src="{{ asset('bundles/admin/usuarios/' ~ user.username ~ '.' ~ user.PhotoExtension | default('.jpg')) }}"
+                                                             height="29" width="29">
+                                                    {% else %}
+                                                        {% if user.sex == 'Hombre' %}
+                                                            <img alt=""
+                                                                 src="{{ asset('bundles/admin/img/hombre.jpg') }}"
+                                                                 height="29"
+                                                                 width="29"/>
+                                                        {% else %}
+                                                            <img alt="" src="{{ asset('bundles/admin/img/mujer.jpg') }}"
+                                                                 height="29"
+                                                                 width="29"/>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                </td>
+                                                <td>{{ user.username }}</td>
+                                                <td class="hidden-phone">{% if user.indirectBenefitTable is not null %} Indirecto {% else %} Directo {% endif %}</td>
+                                                <td class="hidden-phone">{{ user.generation }}</td>
+                                                <td class="hidden-phone">{{ user.positionInGeneration }}</td>
+                                                {% if first %}
+                                                    <td style="text-align: center"><a class="btn mini red-stripe"
+                                                                                      href="{{ path('management_user_show', {'id': user.id}) }}">más
+                                                            información</a>
+                                                    </td>
+                                                    <td style="text-align: center"><a class="btn mini red-stripe"
+                                                                                      href="{{ path('management_user_message', {'id': user.id}) }}">
+                                                            Email</a>
+                                                    </td>
+                                                {% else %}
+                                                    <td></td>
+                                                    <td></td>
+                                                {% endif %}
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('bundles/admin/plugins/select2/select2.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/data-tables/jquery.dataTables.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/data-tables/DT_bootstrap.js') }}"></script>
+    <script>
+        $('#network, #network_bussines').dataTable({
+            "aLengthMenu": [
+                [5, 15, 20, -1],
+                [5, 15, 20, "Todos"] // change per page values here
+            ],
+            // set the initial value
+            "iDisplayLength": 5,
+            "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+            "sPaginationType": "bootstrap",
+            "oLanguage": {
+                "sLengthMenu": "_MENU_  por página",
+                "oPaginate": {
+                    "sPrevious": "Anterior",
+                    "sNext": "Siguiente"
+                }
+            },
+            "aoColumnDefs": [{
+                'bSortable': true,
+                'aTargets': [0]
+            }
+            ]
+        });
+    </script>
+{% endblock %}
+

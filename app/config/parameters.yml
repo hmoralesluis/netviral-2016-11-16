@@ -1,0 +1,1 @@
+{ parameters: { database_host: 127.0.0.1, database_port: null, database_name: netviralpro, database_user: root, database_password: '', mailer_transport: smtp, mailer_host: 127.0.0.1, mailer_user: null, mailer_password: null, secret: 3b8d37ce53396450b134109171e827c0d, database_driver: pdo_mysql, database_path: null, web_path: %kernel.root_dir%/../web/ } }

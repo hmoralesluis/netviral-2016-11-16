@@ -1,0 +1,1274 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="es" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>BIENVENIDO A NETVIRALPRO.COM</source>
+                <target>Netviralpro.com에 오신 것을 환영합니다</target>
+            </trans-unit>
+			<trans-unit id="2">
+                <source>Gane su primera comisión rápidamente.</source>
+                <target>첫번째 커미션을 빠르게 적립하십시오!</target>
+            </trans-unit>
+			<trans-unit id="3">
+                <source>¡Este es tu momento, aprovéchalo!</source>
+                <target>이것은 큰 기회입니다. 최대한 활용하십시오!</target>
+            </trans-unit>
+			<trans-unit id="4">
+                <source>Sobre Nosotros</source>
+                <target>회사 소개</target>
+            </trans-unit>
+			<trans-unit id="5">
+                <source>Netviralpro.com, pertenece al sector de venta de servicios y negocios online y se desarrolla a nivel internacional. Esto permitirá al usuario desarrollar su propio negocio en cualquier parte del mundo. La empresa, fundada por importantes empresarios internacionales, pretende fortalecer todos los vínculos existentes entre los miembros de nuestra comunidad, las empresas y los usuarios convencionales para que pueda existir un importante vínculo retroactivo entre todos. NETVIRALPRO trabaja bajo un sistema de recompensas multinivel, donde se premia tanto el trabajo individual como el grupal y donde todos los usuarios pueden obtener grandes beneficios, tanto por su trabajo como por el de su grupo. Presenta un sistema retributivo flexible y transparente, lo que supondrá al usuario una mayor estabilidad y confianza para saber que su negocio sigue creciendo de una forma estable y sin ningún tipo de riesgo.</source>
+                <target>Netviralpro.com는 온라인 판매 및 서비스 부문에 속하며 본 회사는 국제적으로 발전되고 있습니다. 본 개념은 사용자가 전 세계적으로 어디에서나 자신의 온라인 사업을 시작할 수 있도록 합니다. 글로벌 기업 리더가 설립한 저희 회사는 필수적 소급 기업 네트워크를 생성하기 위해서 지역 사회, 기업 및 기존 사용자의 모든 구성원 사이에 기존 관련을 강화하는데 목적을 두고 있습니다.
+
+                        Netviralpro는 모든 사용자가 큰 성공을 성취할 수 있도록 개인 및 그룹 작업 모두 보상하는 멀티 레벨 보상 시스템을 사용하여 작업합니다. 위험 상태에 놓이는 것 없이 자신의 비즈니스를 지속적으로 발전시킬 필요한 안정성과 자신감을 사용자에게 제공하는 유연하고 투명한 보수 시스템을 갖추고 있습니다.
+                </target>
+            </trans-unit>
+			<trans-unit id="6">
+                <source>Según expertos analistas en pocos años se convertirá en una de las empresas de mayor crecimiento a nivel mundial, gracias a su novedosa visión de la industria multinivel. ¿Ha imaginado alguna vez una oportunidad de negocio que le permita especializarse en el área o áreas de trabajo que usted mismo decida? Pues bien, con NETVIRALPRO podrá conseguirlo y obtener grandes beneficios trabajando en algo que realmente le guste. Además le dará la oportunidad de tener un sueldo de acuerdo a sus expectativas y esfuerzo. De este modo, gracias a la oportunidad de negocio que se ofrece desde NETVIRALPRO y el potencial de crecimiento que se augura por parte de la compañía, hace que esté enfrente de usted una de las oportunidades más brillantes de la historia. ¿Acepta este reto? En NETVIRALPRO podrá trabajar por su cuenta, pero nunca estará sólo, ya que tras usted habrá una importante red de trabajo. NETVIRALPRO es sinónimo de ÉXITO.</source>
+                <target>전문가의 분석에 따르면, 몇 년 동안 저희는 다단계 마케팅 사업의 혁신적인 비전 덕택에 전 세계적으로 가장 빠르게 성장하는 온라인 사업 중 하나가 될 것입니다. 열정을 가진 분야에 사업을 시작할 기회를 가진다고 상상해보십시오. Netviralpro를 사용하여, 이를 정확히 이용할 수 있으며; 좋아하는 일을 하면서 큰 이익을 가질 수 있습니다. 또한 기대와 노력에 일치하는 급여를 벌 기회를 제공합니다.
+
+                        Netviralpro와 회사의 우수한 성장 잠재력이 제공되는 훌륭한 사업 기회는 역사상 가장 흥미로운 비즈니스 기회 중 하나로 최선두에 있을 것입니다. 도전하시겠습니까?
+
+                        Netviralpro에서 여러분은 직접 작업할 옵션을 가지게 됩니다. 하지만, 빠르게 성장하는 중요한 기업 네트워크의 일환이기 때문에 절대 혼자서 작업하지 않을 것입니다.
+
+                        Netviralpro는 '성공'의 동의어입니다!
+                </target>
+            </trans-unit>
+			<trans-unit id="7">
+                <source></source>
+                <target></target>
+            </trans-unit>
+			<trans-unit id="8">
+                <source>Nuestros Productos</source>
+                <target>본사의 제품</target>
+            </trans-unit>
+			<trans-unit id="9">
+                <source>Empiece su negocio online ahora mismo!</source>
+                <target>지금 나만의 온라인 사업을 시작하세요!</target>
+            </trans-unit>
+			<trans-unit id="10">
+                <source>Mejore sus conocimientos de marketing con los mejores especialistas.</source>
+                <target>최고 전문가의 도움으로 마케팅 지식을 향상시키십시오.</target>
+            </trans-unit>
+			<trans-unit id="11">
+                <source>Tenga acceso a los mejores softwares de maketing del mercado!</source>
+                <target>시장에서 최고의 마케팅 소프트웨어에 액세스하세요!</target>
+            </trans-unit>
+			<trans-unit id="12">
+                <source>Pongase en la mente del cliente y tenga exito en la venta!</source>
+                <target>최고의 판매 성공을 얻기 위해서 고객의 입장을 이해하세요!</target>
+            </trans-unit>
+			<trans-unit id="13">
+                <source>Beneficiese de tener su propia tienda Online!</source>
+                <target>자신만의 온라인 상점을 갖는 혜택을 확인해보세요!</target>
+            </trans-unit>
+			<trans-unit id="14">
+                <source>Ver nuestros productos</source>
+                <target>본사의 제품</target>
+            </trans-unit>
+			<trans-unit id="15">
+                <source>OPORTUNIDAD DE NEGOCIOS</source>
+                <target>사업 기회</target>
+            </trans-unit>
+			<trans-unit id="16">
+                <source>Bienvenido a</source>
+                <target>에 오신 것을 환영합니다</target>
+            </trans-unit>
+			<trans-unit id="17">
+                <source>¿ Alguna vez imaginó tener la posibilidad de obtener grandes ingresos por trabajar en una compañía en expansión a nivel internacional? Pues esto es posible gracias a NETVIRALPRO, una importante empresa multinivel que le dará a usted la posibilidad de crear su propio negocio online sin necesidad de invertir grandes sumas y sin correr el riesgo  que le supondría a usted tener un negocio particular. Su única misión en la compañía será  potenciar su grupo de trabajo y su red de clientes para poder llegar a obtener importantes beneficios. Para ello, la empresa le dotará de potentes herramientas de marketing que le permitirán hacer crecer su negocio. Netviralpro se encargará del resto: dar alojamiento y mantenimiento de sus páginas personales, prestar servicio de atención al cliente y  atención al representante y expandir la compañía a nivel internacional.</source>
+                <target>빠르게 성장하는 국제 회사에 일하면서 큰 수익을 벌고자 하시나요? 지금이 바로 기회입니다. Netviralpro는 거액의 돈을 투자하여 자신의 사업을 시작하는데 큰 재정적 위험을 운영하지 않고 나만의 온라인 비즈니스를 시작할 기회를 제공하는 중대한 다단계 마케팅 회사입니다. 저희 회사의 유일한 목표는 사용자가 상당한 수익을 벌 수 있도록 비즈니스 그룹 및 네트워크를 강화시키는 것입니다. 이와 같이 하여, 사용자가 자신만의 온라인 사업을 성장시키는 강력한 마케팅 도구를 제공합니다. 나머지 일은 Netviralpro에게 맡겨주십시오. 유지 보수, 사용자 고객 서비스 및 배려 그리고 국제 수준에서의 회사 홍보를 포함한 개인 웹페이지를 제공합니다.</target>
+            </trans-unit>
+			<trans-unit id="18">
+                <source>Trabajar en equipo divide el trabajo y multiplica los resultados. ¡Este es tu momento, aprovéchalo!</source>
+                <target>팀으로 일하고 작업량을 나누며 결과를 증가시키십시오! 이번이 기회입니다. 최대한 활용하십시오!</target>
+            </trans-unit>
+			<trans-unit id="19">
+                <source></source>
+                <target></target>
+            </trans-unit>
+			<trans-unit id="20">
+                <source>Cree su propia red de trabajo.</source>
+                <target> 나만의 비즈니스 네트워크를 만드세요</target>
+            </trans-unit>
+			<trans-unit id="21">
+                <source>Obtenga importantes ingresos.</source>
+                <target> 거액의 수익을 벌어보십시오</target>
+            </trans-unit>
+			<trans-unit id="22">
+                <source>Aprender más</source>
+                <target>더 알아보기</target>
+            </trans-unit>
+			<trans-unit id="23">
+                <source>Ver Planes de Compensación</source>
+                <target>보상 계획 보기</target>
+            </trans-unit>
+			<trans-unit id="24">
+                <source></source>
+                <target></target>
+            </trans-unit>
+			<trans-unit id="25">
+                <source>Testimonios</source>
+                <target> 추천서</target>
+            </trans-unit>
+			<trans-unit id="26">
+                <source>Actualmente somos más de 1000 usuarios y seguimos creciendo!.</source>
+                <target>저희는 1,000명 이상의 사용자가 있으며, 빠르게 늘어나고 있습니다! 여기에 저희 </target>
+            </trans-unit>
+			<trans-unit id="27">
+                <source>Estas son algunas de las opiniones de nuestros clientes...</source>
+                <target>고객으로부터의 일부 평가가 있습니다....</target>
+            </trans-unit>
+			<trans-unit id="28">
+                <source>Ver más testimonios</source>
+                <target>추천글 더 보기</target>
+            </trans-unit>
+			<trans-unit id="29">
+                <source></source>
+                <target></target>
+            </trans-unit>
+			<trans-unit id="30">
+                <source>PORQUÉ NETVIRALPRO?</source>
+                <target>왜 Netviralpro로 작업하나요?</target>
+            </trans-unit>
+			<trans-unit id="31">
+                <source>NETVIRALPRO ofrece al usuario una oportunidad única para trabajar por cuenta propia pero siempre apoyada por una importante red de trabajo que forma nuestra comunidad. Como usuario dentro de la comunidad NETVIRALPRO tendrá la posibilidad de tener un horario flexible y disfrutar de su tiempo libre mientras obtiene elevados beneficios por el trabajo de su red de contactos. En NETVIRALPRO le damos la oportunidad de aprovechar al máximo sus capacidades. ¿Ha soñado alguna vez estar ganando dinero mientras está de viaje, va de compras, está cenando con su familia o sale de fiesta con sus amigos? ¡NETVIRALPRO es su oportunidad!</source>
+                <target>Netviralpro는 우리 사회의 귀중한 사업 네트워크로 지속적으로 지원되는 동시에 직접 작업할 특별한 기회를 사용자에게 제공합니다.
+
+                        Netviralpro 네트워크 내에 사용자로서, 기업 네트워크에서 큰 이익을 가지는 동시에 실제로 자유 시간을 가지며 유연한 근무 시간을 즐길 수 있습니다.
+
+                        Netviralpro는 자신의 능력을 최대화할 수 있는 기회를 제공합니다.
+
+                        여행, 쇼핑, 가족과의 식사 또는 친구와 파티 참석을 하는 동시에 온라인으로 수익을 갖는 꿈을 가져보셨나요? Netviralpro가 바로 당신의 기회가 됩니다!
+                </target>
+            </trans-unit>
+			<trans-unit id="32">
+                <source>Trabajo en equipo</source>
+                <target>팀워크</target>
+            </trans-unit>
+			<trans-unit id="33">
+                <source>La forma en que se concibe el negocio. Cada uno trabaja individualmente pero además se beneficia del trabajo de la red que ha creado.</source>
+                <target>이는 사업이 시작되는 방법입니다. 각 사람이 개별적으로 일을 하지만 비즈니스 네트워크 내에서 다른 사람의 작업에서 혜택을 받게 될 것입니다.</target>
+            </trans-unit>
+			<trans-unit id="34">
+                <source>Beneficio por esfuerzo</source>
+                <target>노력에 대한 보상</target>
+            </trans-unit>
+			<trans-unit id="35">
+                <source>Cada usuario recibe beneficio por su esfuerzo personal y  por el esfuerzo del grupo de trabajo que él mismo ha creado.</source>
+                <target>각 사용자는 비즈니스 네트워크 내에 다른 사람들과의 작업뿐만 아니라 개인 작업에 혜택을 받습니다.</target>
+            </trans-unit>
+			<trans-unit id="36">
+                <source>Transparencia</source>
+                <target>투명성</target>
+            </trans-unit>
+			<trans-unit id="37">
+                <source>El modo en que la empresa se muestra hacia todos sus usuarios, las empresas y los clientes potenciales.</source>
+                <target>회사가 사용자, 비즈니스 및 잠재 고객에게 제공되는 방식에는 전체적인 투명성이 있습니다.</target>
+            </trans-unit>
+			<trans-unit id="38">
+                <source>Sostenibilidad</source>
+                <target>지속 가능성</target>
+            </trans-unit>
+			<trans-unit id="39">
+                <source>La forma en que la empresa plantea la idea de negocio.</source>
+                <target>회사는 지속 가능한 비즈니스 전략을 형성합니다.</target>
+            </trans-unit>
+			<trans-unit id="40">
+                <source>Eficacia</source>
+                <target>효율성</target>
+            </trans-unit>
+			<trans-unit id="41">
+                <source>Entendida como la posibilidad que le da al usuario para tener su propio negocio y conseguir un resultado brillante.</source>
+                <target>인상적인 결과를 달성하기 위해서 자신의 온라인 비즈니스를 생성할 사용자에게 가능성을 이해시킵니다.</target>
+            </trans-unit>
+			<trans-unit id="42">
+                <source>Rendimiento óptimo</source>
+                <target>최적의 성능</target>
+            </trans-unit>
+			<trans-unit id="43">
+                <source>La posibilidad que la empresa da al usuario para que pueda conseguir beneficios de acuerdo a su esfuerzo y el de su grupo de trabajo.</source>
+                <target>회사는 개인의 노력 및 비즈니스 네트워크의 노력에 따라 수익을 벌도록 사용자에게 제공하는 기회입니다</target>
+            </trans-unit>
+			<trans-unit id="44">
+                <source>Empieza Ahora!</source>
+                <target>지금 시작하기</target>
+            </trans-unit>
+			<trans-unit id="45">
+                <source>Productos</source>
+                <target>본사의 제품</target>
+            </trans-unit>
+			<trans-unit id="46">
+                <source>Oportunidad</source>
+                <target>기회</target>
+            </trans-unit>
+			<trans-unit id="47">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>SOBRE NOSOTROS</source>
+                <target>회사 소개</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>PRODUCTOS</source>
+                <target>본사의 제품</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>OPORTUNIDAD</source>
+                <target>기회</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>TESTIMONIOS</source>
+                <target>추천서</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>PORQUE NETVIRALPRO?</source>
+                <target>왜 Netviralpro로 작업하나요?</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>CONTACTA</source>
+                <target>문의하기</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>ENTRAR</source>
+                <target>로그인</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>Empieza tu negocio online ahora mismo!</source>
+                <target>지금 나만의 온라인 사업을 시작하세요!지금 나만의 온라인 사업을 시작하세요!</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>Mejora tus conocimientos de marketing con los mejores especialistas.</source>
+                <target>최고 전문가의 도움으로 마케팅 지식을 향상시키십시오.</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>Ten acceso a los mejores softwares de maketing del mercado!</source>
+                <target>시장에서 최고의 마케팅 소프트웨어에 액세스하세요!</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>Ponte en la mente del cliente y tenga exito en la venta!</source>
+                <target>최고의 판매 성공을 얻기 위해서 고객의 입장을 이해하세요!</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>Tenga su propia tienda Online!</source>
+                <target>자신만의 온라인 상점을 갖는 혜택을 확인해보세요!</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>BIENVENIDO A LA GRAN OPORTUNIDAD DE NEGOCIO QUE PRESENTA NETVIRALPRO.COM!</source>
+                <target>  흥미진진한 새로운 사업 기회인 Netviralpro.com에 오신 것을 환영합니다!</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>Para empezar a ganar dinero con Netviralpro, deberá de tener activo al menos el Producto Matrix Hive,  el cual es nuestro producto de registro. Una vez registrado, usted empezará a crear su propia red de trabajo. En la siguiente imagen, se muestra como se distribuye nuestro plan de compensación.</source>
+                <target>Netviralpro로 수익을 벌려면, Hive Matrix 제품 (저희의 등록 제품)을 우선 활성화해야합니다. 등록이 되면, 나만의 비즈니스 네트워크를 생성해야합니다. 다음 이미지는 보상 계획을 할당하는 방법을 나타냅니다.</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>Nuestro Sistema funciona así:</source>
+                <target>저희 시스템은 다음과 같이 작동합니다:</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>HASTA NIVELES INFINITOS!</source>
+                <target>무한 레벨까지</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>Suponiendo que usted es Paul:</source>
+                <target>  귀하가 '폴'이라고 가정해보겠습니다:</target>
+            </trans-unit>
+            <trans-unit id="65">
+                <source>Sólo necesitará registrar a un usuario para recuperar la inversión realizada y poder empezar a ganar importantes sumas de dinero!</source>
+                <target>귀하는 초기 투자를 감당하고 거액의 이익을 벌기 위해 한 사용자를 등록해야만 합니다!</target>
+            </trans-unit>
+            <trans-unit id="66">
+                <source>Los usuarios que se registren a través de usted en el negocio en las posiciones 1-3-5-7-8-9 y a partir de la posición número 10 todas las que no acaben en 0 o 5, recibirán el nombre de ``USUARIOS COMISIONABLES TIPO 1´´.  Usted obtendrá el 100% de beneficio de todas sus ventas.</source>
+                <target>이들이 0 또는 5로 끝나지 않는 경우, 1-3-5-7-8-9 및 앞으로 10 위치의 비즈니스에서 귀하를 통해 등록한 사용자는, "유형 1 커미션이 발생하는 사용자"로 판단됩니다. 모든 판매에서 100% 이익을 얻게 될 것입나다.</target>
+            </trans-unit>
+            <trans-unit id="67">
+                <source>Los usuarios que se registren a través de usted en el negocio en las posiciones 2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente, serán comisionables para el proveedor que le corresponda (no para usted) . Estos recibirán el nombre de ``USUARIOS NO COMISIONABLES TIPO  1´´.</source>
+                <target>비즈니스에서 귀하를 통해 등록한 사용자의 위치 2-4-6-10-15-20-25-30-35 및 5의 연속 숫자 종료는 일치하는 제공 업체(귀하가 아닌)에 커미션이 될 것입니다. 이는 "유형 1 커미션이 부과되지 않은 사용자"로 알려져 있습니다.</target>
+            </trans-unit>
+            <trans-unit id="68">
+                <source>Obtendrá el 100% de beneficio de todos los usuarios que se registren en el negocio a través de sus Usuarios Comisionables Tipo 1 en sus posiciones 2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente, convirtiéndose ellos  desde ese momento en nuevos usuarios comisionables en tu red. Sería como si estos usuarios se hubiesen registrado al negocio directamente a través  suyo. Este proceso, se repetirá hasta niveles infinitos. Estos usuarios recibirán el nombre de ``USUARIOS COMISIONABLES TIPO  2´´.</source>
+                <target>위치 2-4-6-10-15-20-25-30-35 및 전체 연속 번호 종료 5에ㅅ 유형 1 커미션이 되는 사용자를 통해 비즈니스로 등록하는 모든 사용자로부터 100% 커미션을 받게 됩니다. 이는 귀하의 네트워크에서 이들이 앞으로 이러한 순간에 새로운 커미션이 발생하는 사용자로 전환된다는 것을 의미합니다. 마치 사용자가 귀하로부터 비즈니스에 바로 등록된 것과도 같습니다. 이러한 과정은 무한대로 반복되며, 이러한 사용자는 "유형 2 커미션이 발생하는 사용자"로 알려져 있습니다.</target>
+            </trans-unit>
+            <trans-unit id="69">
+                <source>Los demás usuarios que estén dentro de su red a partir de su segundo nivel de generación y que no le reportan beneficio a usted, recibirán el nombre de `` USUARIOS NO COMISIONABLES 2´´.</source>
+                <target>커미션을 받지 않는 두 번째 레벨 실적에서 네트워크 내에 다른 사용자는 "유형 2 커미션이 발생하지 않는 사용자"로 알려져 있습니다</target>
+            </trans-unit>
+            <trans-unit id="70">
+                <source>Mediante la siguiente tabla, podrá entender mejor nuestro plan de compensación:</source>
+                <target>다음 표는 더 나은 보상 계획을 이해시키는 데 도움이 될 것입니다:</target>
+            </trans-unit>
+            <trans-unit id="71">
+                <source>De la red que usted cree, comisionará:</source>
+                <target>생성한 네트워크는 커미션을 적립할 것입니다:</target>
+            </trans-unit>
+            <trans-unit id="72">
+                <source>- El 100 del valor de los productos que haya comprado.</source>
+                <target>- 구입한 제품의 값 100%</target>
+            </trans-unit>
+            <trans-unit id="73">
+                <source>Este proceso se repetirá hasta niveles infinitos, por lo que creando un buen grupo de trabajo podrá ganar importantes sumas de dinero de personas que ni siquiera conoce.</source>
+                <target>본 과정은 무한대로 반복합니다. 따라서, 좋은 작업 그룹을 생성하는 것은 심지어 모르는 사람들로부터 거금을 적립하실 수 있습니다.</target>
+            </trans-unit>
+            <trans-unit id="74">
+                <source>- El 25 del valor de los productos que no haya comprado.</source>
+                <target>- 구입되지 않은 제품의 값 25%.</target>
+            </trans-unit>
+            <trans-unit id="75">
+                <source>Tipo de Usuario</source>
+                <target>사용자 유형</target>
+            </trans-unit>
+            <trans-unit id="76">
+                <source>Nivel de Generación</source>
+                <target>소득 수준</target>
+            </trans-unit>
+            <trans-unit id="77">
+                <source>Posiciones</source>
+                <target>위치</target>
+            </trans-unit>
+            <trans-unit id="78">
+                <source>Ganancias</source>
+                <target>수익</target>
+            </trans-unit>
+            <trans-unit id="79">
+                <source>Resumen de Ventas</source>
+                <target>판매 요약</target>
+            </trans-unit>
+            <trans-unit id="80">
+                <source>VENTAS DEL DIA</source>
+                <target>하루 판매</target>
+            </trans-unit>
+            <trans-unit id="81">
+                <source>VENTAS DE LA SEMANA</source>
+                <target>금주 판매</target>
+            </trans-unit>
+            <trans-unit id="82">
+                <source>Usuario con privilegios de Administración</source>
+                <target>관리자 권한을 가진 사용자</target>
+            </trans-unit>
+            <trans-unit id="83">
+                <source>Nuevos Usuarios</source>
+                <target>새로운 사용자</target>
+            </trans-unit>
+            <trans-unit id="84">
+                <source>Nuevos Contenidos</source>
+                <target>새로운 콘텐츠</target>
+            </trans-unit>
+            <trans-unit id="85">
+                <source>Ventas Realizadas</source>
+                <target>완료한 판매</target>
+            </trans-unit>
+            <trans-unit id="86">
+                <source>Configuraciones</source>
+                <target>구성</target>
+            </trans-unit>
+            <trans-unit id="87">
+                <source>Gestión de Modulos</source>
+                <target>모듈 관리</target>
+            </trans-unit>
+            <trans-unit id="88">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="89">
+                <source>Zona Personal</source>
+                <target>개인 공간</target>
+            </trans-unit>
+            <trans-unit id="90">
+                <source>INICIO</source>
+                <target>시작</target>
+            </trans-unit>
+            <trans-unit id="91">
+                <source>Correo</source>
+                <target>이메일</target>
+            </trans-unit>
+            <trans-unit id="92">
+                <source>Negocios</source>
+                <target>비즈니스</target>
+            </trans-unit>
+            <trans-unit id="93">
+                <source>Oportunidad de Negocios</source>
+                <target>비즈니스 기회</target>
+            </trans-unit>
+            <trans-unit id="94">
+                <source>Red de Negocios</source>
+                <target>비즈니스 네트워크</target>
+            </trans-unit>
+            <trans-unit id="95">
+                <source>Expandir su Negocio</source>
+                <target>기업 확장하기</target>
+            </trans-unit>
+            <trans-unit id="96">
+                <source>Compartir en Redes Sociales</source>
+                <target>소셜 네트워크로 공유하기</target>
+            </trans-unit>
+            <trans-unit id="97">
+                <source>Banco Personal</source>
+                <target>개인 은행</target>
+            </trans-unit>
+            <trans-unit id="98">
+                <source>Transacciones</source>
+                <target>거래</target>
+            </trans-unit>
+            <trans-unit id="99">
+                <source>Retirar Fondos</source>
+                <target>인출 자금</target>
+            </trans-unit>
+            <trans-unit id="100">
+                <source>Listado de Tipos de Productos</source>
+                <target>제품 유형 목록</target>
+            </trans-unit>
+            <trans-unit id="101">
+                <source>Listado de Tipos de Transacciones</source>
+                <target>거래 유형 목록</target>
+            </trans-unit>
+            <trans-unit id="102">
+                <source>Listado de Tipos de Notificaciones</source>
+                <target>알림 유형 목록</target>
+            </trans-unit>
+            <trans-unit id="103">
+                <source>Listado de Planes</source>
+                <target>계획 목록</target>
+            </trans-unit>
+            <trans-unit id="104">
+                <source>Descripción</source>
+                <target>설명</target>
+            </trans-unit>
+            <trans-unit id="105">
+                <source>Por página</source>
+                <target>페이지 당</target>
+            </trans-unit>
+            <trans-unit id="106">
+                <source>Nombre</source>
+                <target>이름</target>
+            </trans-unit>
+            <trans-unit id="107">
+                <source>Activo</source>
+                <target>유효함</target>
+            </trans-unit>
+            <trans-unit id="108">
+                <source>Mostrar</source>
+                <target>나타내기</target>
+            </trans-unit>
+            <trans-unit id="109">
+                <source>Editar</source>
+                <target>편집</target>
+            </trans-unit>
+            <trans-unit id="110">
+                <source>Eliminar</source>
+                <target>삭제</target>
+            </trans-unit>
+            <trans-unit id="111">
+                <source>Buscar</source>
+                <target>검색</target>
+            </trans-unit>
+            <trans-unit id="112">
+                <source>Anterior</source>
+                <target>뒤로</target>
+            </trans-unit>
+            <trans-unit id="113">
+                <source>Siguiente</source>
+                <target>앞으로</target>
+            </trans-unit>
+            <trans-unit id="114">
+                <source>Icono</source>
+                <target>아이콘</target>
+            </trans-unit>
+            <trans-unit id="115">
+                <source>Color</source>
+                <target>색상</target>
+            </trans-unit>
+            <trans-unit id="116">
+                <source>Posición</source>
+                <target>위치</target>
+            </trans-unit>
+            <trans-unit id="117">
+                <source>Código Numérico</source>
+                <target>숫자 코드</target>
+            </trans-unit>
+            <trans-unit id="118">
+                <source>Alpha2Code</source>
+                <target>알파2코드</target>
+            </trans-unit>
+            <trans-unit id="119">
+                <source>Alpha3Code</source>
+                <target>알파3코드</target>
+            </trans-unit>
+            <trans-unit id="120">
+                <source>Porciento</source>
+                <target>퍼센트</target>
+            </trans-unit>
+            <trans-unit id="121">
+                <source>Seleccione el módulo a modificar</source>
+                <target>수정할 모듈 선택하기</target>
+            </trans-unit>
+            <trans-unit id="122">
+                <source>Nombre del módulo</source>
+                <target>모듈명</target>
+            </trans-unit>
+            <trans-unit id="123">
+                <source>Precio de Venta</source>
+                <target>판매가</target>
+            </trans-unit>
+            <trans-unit id="124">
+                <source>Breve Descripción</source>
+                <target>단순 설명</target>
+            </trans-unit>
+            <trans-unit id="125">
+                <source>Amplia Descripción</source>
+                <target>상세 설명</target>
+            </trans-unit>
+            <trans-unit id="126">
+                <source>Guardar</source>
+                <target>저장</target>
+            </trans-unit>
+            <trans-unit id="127">
+                <source>Cancelar</source>
+                <target>취소</target>
+            </trans-unit>
+            <trans-unit id="128">
+                <source>Perfil</source>
+                <target>프로필</target>
+            </trans-unit>
+            <trans-unit id="129">
+                <source>Cuenta Personal</source>
+                <target>개인 계정</target>
+            </trans-unit>
+            <trans-unit id="130">
+                <source>Usuario</source>
+                <target>사용자</target>
+            </trans-unit>
+            <trans-unit id="131">
+                <source>Apellidos</source>
+                <target>성씨</target>
+            </trans-unit>
+            <trans-unit id="132">
+                <source>Sexo</source>
+                <target>성별</target>
+            </trans-unit>
+            <trans-unit id="133">
+                <source>Cumpleaños</source>
+                <target>생일</target>
+            </trans-unit>
+            <trans-unit id="134">
+                <source>País</source>
+                <target>국가</target>
+            </trans-unit>
+            <trans-unit id="135">
+                <source>Ciudad</source>
+                <target>도시</target>
+            </trans-unit>
+            <trans-unit id="136">
+                <source>Dirección</source>
+                <target>주소</target>
+            </trans-unit>
+            <trans-unit id="137">
+                <source>Correo Electrónico</source>
+                <target>이메일</target>
+            </trans-unit>
+            <trans-unit id="138">
+                <source>REGISTRO</source>
+                <target>등록</target>
+            </trans-unit>
+            <trans-unit id="139">
+                <source>Skype</source>
+                <target>Skype</target>
+            </trans-unit>
+            <trans-unit id="140">
+                <source>Whatsapp</source>
+                <target>Whatsapp</target>
+            </trans-unit>
+            <trans-unit id="141">
+                <source>Facebook</source>
+                <target>Facebook</target>
+            </trans-unit>
+            <trans-unit id="142">
+                <source>Twitter</source>
+                <target>Twitter</target>
+            </trans-unit>
+            <trans-unit id="143">
+                <source>Google</source>
+                <target>Google</target>
+            </trans-unit>
+            <trans-unit id="144">
+                <source>Página Personal</source>
+                <target>개인 페이지</target>
+            </trans-unit>
+            <trans-unit id="145">
+                <source>Número del Móvil</source>
+                <target>휴대 전화 번호</target>
+            </trans-unit>
+            <trans-unit id="146">
+                <source>Sobre mi</source>
+                <target>내 정보</target>
+            </trans-unit>
+            <trans-unit id="147">
+                <source>Información Personal</source>
+                <target>개인 정보</target>
+            </trans-unit>
+            <trans-unit id="148">
+                <source>Cambiar Avatar</source>
+                <target>아바타 변경</target>
+            </trans-unit>
+            <trans-unit id="149">
+                <source>Cambiar Contraseña</source>
+                <target>패스워드 변경</target>
+            </trans-unit>
+            <trans-unit id="150">
+                <source>Configuración de Notificaciones</source>
+                <target>알림 설정</target>
+            </trans-unit>
+            <trans-unit id="151">
+                <source>Nuevo Mensaje</source>
+                <target>새로운 메시지</target>
+            </trans-unit>
+            <trans-unit id="152">
+                <source>Enviados</source>
+                <target>전송</target>
+            </trans-unit>
+            <trans-unit id="153">
+                <source>Recibidos</source>
+                <target>수신</target>
+            </trans-unit>
+            <trans-unit id="154">
+                <source>De</source>
+                <target>발송인</target>
+            </trans-unit>
+            <trans-unit id="155">
+                <source>Asunto</source>
+                <target>제목</target>
+            </trans-unit>
+            <trans-unit id="156">
+                <source>Fecha</source>
+                <target>날짜</target>
+            </trans-unit>
+            <trans-unit id="157">
+                <source>Primera Generación</source>
+                <target>1세대</target>
+            </trans-unit>
+            <trans-unit id="158">
+                <source>Toda la Red</source>
+                <target>전체 네트워크</target>
+            </trans-unit>
+            <trans-unit id="159">
+                <source>Imprimir Red de Negocios</source>
+                <target>비즈니스 네트워크 인쇄</target>
+            </trans-unit>
+            <trans-unit id="160">
+                <source>Red de Usuarios</source>
+                <target>사용자 네트워크</target>
+            </trans-unit>
+            <trans-unit id="161">
+                <source>Red de Negocios</source>
+                <target>비즈니스 네트워크</target>
+            </trans-unit>
+            <trans-unit id="162">
+                <source>Foto</source>
+                <target>사진</target>
+            </trans-unit>
+            <trans-unit id="163">
+                <source>Membresia</source>
+                <target>회워</target>
+            </trans-unit>
+            <trans-unit id="164">
+                <source>Generación</source>
+                <target>세대</target>
+            </trans-unit>
+            <trans-unit id="165">
+                <source>Posición</source>
+                <target>위치</target>
+            </trans-unit>
+            <trans-unit id="166">
+                <source>Más información</source>
+                <target>추가 정보</target>
+            </trans-unit>
+            <trans-unit id="167">
+                <source>Últimas 24 horas</source>
+                <target>최근 24시간</target>
+            </trans-unit>
+            <trans-unit id="168">
+                <source>Semanal</source>
+                <target>주간</target>
+            </trans-unit>
+            <trans-unit id="169">
+                <source>Mensual</source>
+                <target>월간</target>
+            </trans-unit>
+            <trans-unit id="170">
+                <source>Trimestral</source>
+                <target>분기별</target>
+            </trans-unit>
+            <trans-unit id="171">
+                <source>Anual</source>
+                <target>연간</target>
+            </trans-unit>
+            <trans-unit id="172">
+                <source>Por período</source>
+                <target>기간별</target>
+            </trans-unit>
+            <trans-unit id="173">
+                <source>Dinero</source>
+                <target>금전</target>
+            </trans-unit>
+            <trans-unit id="174">
+                <source>Categoría</source>
+                <target>카테고리</target>
+            </trans-unit>
+            <trans-unit id="175">
+                <source>No hay Datos disponibles</source>
+                <target>자료 없음</target>
+            </trans-unit>
+            <trans-unit id="176">
+                <source>Audios</source>
+                <target>오디오</target>
+            </trans-unit>
+            <trans-unit id="177">
+                <source>Ebook</source>
+                <target>전자책</target>
+            </trans-unit>
+            <trans-unit id="178">
+                <source>Adicionar Fichero de Audio</source>
+                <target>오디오 파일 추가</target>
+            </trans-unit>
+            <trans-unit id="179">
+                <source>Adicionar Ebook</source>
+                <target>전자책 추가</target>
+            </trans-unit>
+            <trans-unit id="180">
+                <source>No hay Fichero Seleccionado</source>
+                <target>선택된 파일 없음</target>
+            </trans-unit>
+            <trans-unit id="181">
+                <source>Adicionar</source>
+                <target>추가하기</target>
+            </trans-unit>
+            <trans-unit id="182">
+                <source>Volver al Listado</source>
+                <target>목록으로 돌아가기</target>
+            </trans-unit>
+            <trans-unit id="183">
+                <source>Adicionar Software</source>
+                <target>소프트웨어 추가하기</target>
+            </trans-unit>
+            <trans-unit id="184">
+                <source>Plataforma</source>
+                <target>플랫폼</target>
+            </trans-unit>
+            <trans-unit id="185">
+                <source>Código de Activación</source>
+                <target>활성화 코드</target>
+            </trans-unit>
+            <trans-unit id="186">
+                <source>Seleccionar</source>
+                <target>선택하기</target>
+            </trans-unit>
+            <trans-unit id="187">
+                <source>Complete el registro</source>
+                <target>등록 완료</target>
+            </trans-unit>
+            <trans-unit id="188">
+                <source>Administre su negocio</source>
+                <target>비즈니스 관리</target>
+            </trans-unit>
+            <trans-unit id="189">
+                <source>Comprar</source>
+                <target>구매하기</target>
+            </trans-unit>
+            <trans-unit id="190">
+                <source>Recuérdame</source>
+                <target>알림하기</target>
+            </trans-unit>
+            <trans-unit id="191">
+                <source>Software</source>
+                <target>소프트웨어.</target>
+            </trans-unit>
+            <trans-unit id="192">
+                <source>Idioma</source>
+                <target>언어</target>
+            </trans-unit>
+            <trans-unit id="193">
+                <source>Descripción</source>
+                <target>설명</target>
+            </trans-unit>
+            <trans-unit id="194">
+                <source>Sistema operativo</source>
+                <target>운영 체제</target>
+            </trans-unit>
+            <trans-unit id="195">
+                <source>Categoría</source>
+                <target>카테고리</target>
+            </trans-unit>
+            <trans-unit id="196">
+                <source>A continuación le aparecerán los softwares disponibles por la compra de este producto</source>
+                <target>소프트웨어는 곧 해당 제품을 구매하여 사용할 수 있습니다</target>
+            </trans-unit>
+            <trans-unit id="197">
+                <source>La empresa tiene derechos de uso de todos los softwares mostrados en la plataforma</source>
+                <target>본사는 해당 플랫폼에 표시된 모든 소프트웨어를 사용할 권리를 가집니다.</target>
+            </trans-unit>
+            <trans-unit id="198">
+                <source>Queda expresamente prohibida la reventa de los productos fuera del portal</source>
+                <target>웹 사이트 외부의 제품 재판매는 명시적으로 금지됩니다.</target>
+            </trans-unit>
+            <trans-unit id="199">
+                <source>Los softwares incluyen todas las actualizaciones disponibles</source>
+                <target>소프트웨어에는 사용 가능한 모든 업데이트가 포함됩니다.</target>
+            </trans-unit>
+            <trans-unit id="200">
+                <source>En caso de abuso o infracción, contacte con nosotros</source>
+                <target>남용 또는 위반이 있는 경우 연락주시길 바랍니다</target>
+            </trans-unit>
+            <trans-unit id="201">
+                <source>Notificación</source>
+                <target>알림</target>
+            </trans-unit>
+            <trans-unit id="202">
+                <source>Se ha presentado un problema con el software y no hay actualizaciones disponibles. Aconsejamos que desinstale el software de su ordenador</source>
+                <target>소프트웨어에 문제가 있어 업데이트를 사용할 수 없습니다. 귀하의 컴퓨터에 소프트웨어 제거를 권장드립니다.</target>
+            </trans-unit>
+            <trans-unit id="203">
+                <source>Estas son las tarjetas de negocio. Para poder editar su propia tarjeta de negocio necesitará</source>
+                <target>해당하는 것은 비즈니스 카드입니다. 자신의 명함을 편집하려면 다음이 필요합니다:</target>
+            </trans-unit>
+            <trans-unit id="204">
+                <source>Paso 1: Descargar los archivos adjuntos (Archivos PSD)</source>
+                <target>1단계: 첨부 파일을 다운로드합니다 (PSD 파일)</target>
+            </trans-unit>
+            <trans-unit id="205">
+                <source>Paso 2: Tener instalado Adobe Photoshop o Ilustrator en su PC</source>
+                <target>2단계: PC에 Adobe Photoshop(어도비 포토샵) 또는 Illustrator(일러스트레이터)를 설치합니다.</target>
+            </trans-unit>
+            <trans-unit id="206">
+                <source>Paso 3: Editarlas con sus datos</source>
+                <target>3단계: 데이터를 편집합니다.</target>
+            </trans-unit>
+            <trans-unit id="207">
+                <source>Seguidamente se mostrarán los archivos adjuntos del producto que ha adquirido. Pinche encima de los archivos adjuntados para poderlos descargar. Recibirá notificaciones cuando se añadan nuevos archivos</source>
+                <target>구매한 제품의 첨부 파일은 바로 표시됩니다. 다운로드할 첨부 파일을 클릭합니다. 새로운 파일이 추가될 때 알림을 받게 됩니다.</target>
+            </trans-unit>
+            <trans-unit id="208">
+                <source>Gracias por adquirir el producto!</source>
+                <target>제품을 구매해주셔서 감사합니다.</target>
+            </trans-unit>
+            <trans-unit id="209">
+                <source>A partir de ahora podrá beneficiarse de las ventajas de obtener este producto!</source>
+                <target>해당 제품에 있는 장점의 혜택을 누릴 수 있습니다!</target>
+            </trans-unit>
+            <trans-unit id="210">
+                <source>Enhorabuena, ya tienes activado el producto!</source>
+                <target>축하합니다, 제품이 활성화되었습니다!</target>
+            </trans-unit>
+            <trans-unit id="211">
+                <source>Desde este momento comisionará con el 100% del valor de sus ventas!</source>
+                <target>지금부터, 판매값의 100% 커미션을 받게됩니다!</target>
+            </trans-unit>
+            <trans-unit id="212">
+                <source>Porcentaje de beneficio por venta realizada:</source>
+                <target>판매 당 수익 퍼센트</target>
+            </trans-unit>
+            <trans-unit id="213">
+                <source>Porcentaje de beneficio por venta realizada de los usuarios de tu red:</source>
+                <target>네트워크에서 사용자가 성공한 판매 당 수익 퍼센트</target>
+            </trans-unit>
+            <trans-unit id="214">
+                <source>Beneficio por venta realizada:</source>
+                <target>성공한 판매 당 수익</target>
+            </trans-unit>
+            <trans-unit id="215">
+                <source>Beneficio por venta realizada por usuario de tu red: </source>
+                <target>네트워크에서 사용자에 의한 판매 당 수익</target>
+            </trans-unit>
+            <trans-unit id="216">
+                <source>Ruso</source>
+                <target>러시아어</target>
+            </trans-unit>
+            <trans-unit id="217">
+                <source>Frances</source>
+                <target>프랑스어</target>
+            </trans-unit>
+            <trans-unit id="218">
+                <source>Italiano</source>
+                <target>이탈리아어</target>
+            </trans-unit>
+            <trans-unit id="219">
+                <source>Koreano</source>
+                <target>한국어</target>
+            </trans-unit>
+            <trans-unit id="220">
+                <source>Chino</source>
+                <target>중국어</target>
+            </trans-unit>
+            <trans-unit id="221">
+                <source>Indonesio</source>
+                <target>인도네시아어</target>
+            </trans-unit>
+            <trans-unit id="222">
+                <source>Indio</source>
+                <target>힌디어</target>
+            </trans-unit>
+            <trans-unit id="223">
+                <source>Portugués</source>
+                <target>포르투갈어</target>
+            </trans-unit>
+            <trans-unit id="224">
+                <source>Japonés</source>
+                <target>일본어</target>
+            </trans-unit>
+            <trans-unit id="225">
+                <source>Tailandes</source>
+                <target>태국어</target>
+            </trans-unit>
+            <trans-unit id="226">
+                <source>Compras Recientes</source>
+                <target>최근 구매</target>
+            </trans-unit>
+            <trans-unit id="227">
+                <source>Buscar en el Sitio</source>
+                <target>사이트 검색</target>
+            </trans-unit>
+            <trans-unit id="228">
+                <source>Precio</source>
+                <target>가격</target>
+            </trans-unit>
+            <trans-unit id="229">
+                <source>Tiempo de entrega</source>
+                <target>배송 시간</target>
+            </trans-unit>
+            <trans-unit id="230">
+                <source>Be social</source>
+                <target>소셜 되기</target>
+            </trans-unit>
+            <trans-unit id="231">
+                <source>Añadir al carrito</source>
+                <target>쇼핑 카트에 담기</target>
+            </trans-unit>
+            <trans-unit id="232">
+                <source>Carro de compras</source>
+                <target>장바구니</target>
+            </trans-unit>
+            <trans-unit id="233">
+                <source>Ver carrito</source>
+                <target>장바구니 보기</target>
+            </trans-unit>
+            <trans-unit id="234">
+                <source>Artículos</source>
+                <target>품목</target>
+            </trans-unit>
+            <trans-unit id="235">
+                <source>Revisar el pedido</source>
+                <target>주문 확인하기</target>
+            </trans-unit>
+            <trans-unit id="236">
+                <source>Cantidad</source>
+                <target>수량</target>
+            </trans-unit>
+            <trans-unit id="237">
+                <source>Subtotal</source>
+                <target>소계</target>
+            </trans-unit>
+            <trans-unit id="238">
+                <source>total de la orden</source>
+                <target>총 가격</target>
+            </trans-unit>
+            <trans-unit id="239">
+                <source>continuar comprando</source>
+                <target>쇼핑 계속하기</target>
+            </trans-unit>
+            <trans-unit id="240">
+                <source>Pagar</source>
+                <target>결제하기</target>
+            </trans-unit>
+            <trans-unit id="241">
+                <source>Pinche aquí para descargar</source>
+                <target>다운로드하려면 여기를 클릭하십시오</target>
+            </trans-unit>
+            <trans-unit id="242">
+                <source>Categoría</source>
+                <target>카테고리</target>
+            </trans-unit>
+            <trans-unit id="243">
+                <source>Puede que expiremos contratos con los distribuidores de algunos de estos softwares y dejen de funcionar. En caso de dejar de funcionar, lo substituiremos por otros que puedan ayudarle a mejorar su rendimiento online</source>
+                <target>해당 소프트웨어에 관한 일부 제품 유통 업체와의 계약은 작동 중지의 원인이 되어 만료될 수 있습니다. 이러한 경우, 온라인 성능을 개선하는데 도움이 되는 다른 제품으로 대체됩니다.</target>
+            </trans-unit>
+            <trans-unit id="244">
+                <source>En caso de tener problemas con las actualizaciones de los softwares, desinstale el software de su PC, descargue la última versión e instálela</source>
+                <target>만일 소프트웨어를 업데이트하는데 문제가 발생한 경우, PC에 설치한 소프트웨어를 제거하고 최신 버전으로 다운로드하여 설치해주시기 바랍니다.</target>
+            </trans-unit>
+            <trans-unit id="245">
+                <source>Software actualizado, descargue la última versión</source>
+                <target>소프트웨어를 업데이트하려면 최신 버전을 다운로드 해주십시오.</target>
+            </trans-unit>
+            <trans-unit id="246">
+                <source>Contenido</source>
+                <target>콘텐츠</target>
+            </trans-unit>
+            <trans-unit id="247">
+                <source>Documento</source>
+                <target>문서</target>
+            </trans-unit>
+            <trans-unit id="248">
+                <source>Video</source>
+                <target>비디오</target>
+            </trans-unit>
+            <trans-unit id="249">
+                <source>Conferencia</source>
+                <target>회의</target>
+            </trans-unit>
+            <trans-unit id="250">
+                <source>Contraseña</source>
+                <target>패스워드</target>
+            </trans-unit>
+            <trans-unit id="251">
+                <source>Chatear</source>
+                <target>채팅</target>
+            </trans-unit>
+            <trans-unit id="252">
+                <source>Chatear con todos los usuarios de la red</source>
+                <target>플랫폼에 모든 사용자와 채팅</target>
+            </trans-unit>
+            <trans-unit id="253">
+                <source>Enviar mensaje</source>
+                <target>메시지 보내기</target>
+            </trans-unit>
+            <trans-unit id="254">
+                <source>Enviar mensaje a todos los usuarios de la red</source>
+                <target>자신의 네트워크에서 사용자에게 메시지를 보내기.</target>
+            </trans-unit>
+            <trans-unit id="255">
+                <source>Crear un evento</source>
+                <target>이벤트 만들기</target>
+            </trans-unit>
+            <trans-unit id="256">
+                <source>Tipo de evento</source>
+                <target>이벤트 유형</target>
+            </trans-unit>
+            <trans-unit id="257">
+                <source>Compañia</source>
+                <target>회사</target>
+            </trans-unit>
+            <trans-unit id="258">
+                <source>Seleccionar metodo de descarga</source>
+                <target>다운로드 방법 선택하기</target>
+            </trans-unit>
+            <trans-unit id="259">
+                <source>Trataremos de enviar el 100% del dinero a través del metodo seleccionado</source>
+                <target>선택 방법을 통해 금액의 100%로 보내드리고자 합니다.</target>
+            </trans-unit>
+            <trans-unit id="260">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="261">
+                <source>Ingles</source>
+                <target>Ingles</target>
+            </trans-unit>
+            <trans-unit id="262">
+                <source>Español</source>
+                <target>Español</target>
+            </trans-unit>
+            <trans-unit id="263">
+                <source>Usuario Comisionable Tipo  1</source>
+                <target>커미션 사용자 유형 1</target>
+            </trans-unit>
+            <trans-unit id="264">
+                <source>Usuario No Comisionable Tipo 1</source>
+                <target>비-커미션 사용자 유형 1</target>
+            </trans-unit>
+            <trans-unit id="265">
+                <source>Usuario Comisionable Tipo 2</source>
+                <target>커미션 사용자 유형 2</target>
+            </trans-unit>
+            <trans-unit id="266">
+                <source>Usuario No comisionable Tipo 2</source>
+                <target>비-커미션 사용자 유형 2</target>
+            </trans-unit>
+            <trans-unit id="267">
+                <source>Registrado directamente a través suyo (Primer nivel de generación).</source>
+                <target>귀하를 통한 직접 등록 (첫번째 레벨 실적).</target>
+            </trans-unit>
+            <trans-unit id="268">
+                <source>Registrado directamente a través de mi (Primer nivel de generación).</source>
+                <target>나를 통한 직접 등록 (첫 번째 레벨 실적).</target>
+            </trans-unit>
+            <trans-unit id="269">
+                <source>A partir del 2º nivel de generación hasta el infinito. Estos usuarios le reportarán gran cantidad de dinero.</source>
+                <target>두번째 레벨에서 무한 실적까지. 이러한 사용자는 거액의 돈을 받을 것입니다.</target>
+            </trans-unit>
+            <trans-unit id="270">
+                <source>A partir del 2º nivel de generación hasta el infinito.</source>
+                <target>두번째 레벨 실적에서 무한 실적까지.</target>
+            </trans-unit>
+            <trans-unit id="271">
+                <source>1-3-5-7-8-9 y a partir de la posición número 10 todas las que NO acaben en 0 o 5</source>
+                <target>1-3-5-7-8-9 및 위치 번호 10은 0 또는 5로 끝나지 않습니다.</target>
+            </trans-unit>
+            <trans-unit id="272">
+                <source>2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente.</source>
+                <target>2-4-6-10-15-20-25-30-35 및 5 또는 0의 연속 번호 종료.</target>
+            </trans-unit>
+            <trans-unit id="273">
+                <source>De la red creada por sus usuarios comisionables tipo 1, comisionará  por los registros que estos tengan en sus posiciones 2-4-6-10-15-20-25-30-35 y de cinco en cinco sucesivamente. Desde este momento, estos usuarios pasarán a ser Usuarios Comisionables Tipo 2, obteniendo el 100% de beneficio del dinero que se genere en las posiciones correspondientes hasta niveles infinitos de profundidad.</source>
+                <target>커미션 발생 사용자 유형 1로 생성된 네트워크는 위치 2-4-6-10-15-20-25-30-35 및 5 또는 0에 연속 번호 종료로 등록된 커미션이 적립될 것입니다. 앞으로 이러한 순간에 이러한 사용자들은 유형 2 커미션 사용자가 되며 무한대까지 일치하는 위치에서 생성되는 돈에 100% 커미션을 받게 될 것입니다.</target>
+            </trans-unit>
+            <trans-unit id="274">
+                <source>Las demás posiciones de su red que no le reportan beneficio.</source>
+                <target>커미션을 보고 하지 않는 귀하의 네트워크의 다른 위치.</target>
+            </trans-unit>
+            <trans-unit id="275">
+                <source>Una vez adquiera Hive Matrix, tendrá  acceso a:</source>
+                <target>Hive Matrix를 활성화하면 다음과 같이 활용하게 됩니다:</target>
+            </trans-unit>
+            <trans-unit id="276">
+                <source>Descargar nuestro fichero de páginas de aterrizaje de distintos nichos y otros productos que podrá editar o revender usted.</source>
+                <target>직접 편집하거나 재판매할 수 있는 제품뿐만 아니라 방문 페이지 및 기타 다른 틈새 시장의 본사 카탈로그.</target>
+            </trans-unit>
+            <trans-unit id="277">
+                <source>A través de nuestro fichero Business Card, podrá crear su propia tarjeta de negocio con la que dará un mayor sentido de profesionalidad a sus clientes.</source>
+                <target>여러분의 전문성으로 고객을 놀라게 할 자신만의 명함을 생성하는 저희의 명함 아카이브</target>
+            </trans-unit>
+            <trans-unit id="278">
+                <source>Tener su propio calendario y agenda personal para organizar sus tareas y reuniones.</source>
+                <target>상품 및 회의를 구성하기 위한 자신만의 캘린더 및 개인 다이어리</target>
+            </trans-unit>
+            <trans-unit id="279">
+                <source>Comunicarse con todos los usuarios que usted  ha registrado al sistema a través de mensajería privada.</source>
+                <target>비공개 메시지를 통한 시스템으로 등록되는 모든 사용자와의 커뮤니케이션</target>
+            </trans-unit>
+            <trans-unit id="280">
+                <source>Tener su propia página personal donde podrá promocionar su propio negocio online.</source>
+                <target>온라인 비즈니스를 홍보할 수 있는 자신만의 개인 페이지.</target>
+            </trans-unit>
+            <trans-unit id="281">
+                <source>Tendrá acceso al banco de imágenes de la empresa que le ayudará a promocionar su propio negocio Netviralpro.</source>
+                <target>자신만의 Netviralpro 비즈니스를 홍보하는데 도움이 되는 회사 고유의 이미지 뱅크</target>
+            </trans-unit>
+            <trans-unit id="282">
+                <source>¡Y lo más importante de todo!</source>
+                <target>무엇보다 중요한 것은</target>
+            </trans-unit>
+            <trans-unit id="283">
+                <source>Tras la activación de Hive Matrix podrá empezar a generar importantes sumas de dinero online. ¿A que está esperando?</source>
+                <target>Hive Matrix를 활성화하는 것은 온라인을 통해 큰 수익을 버는 첫 번째 단계가 도비니다.
+                        무엇을 기다리고 계신가요?
+                </target>
+            </trans-unit>
+            <trans-unit id="284">
+                <source>Hive Matrix ha sido diseñado para personas que quieran empezar a generar dinero a través de su propio negocio online. Es el producto de registro  en nuestra empresa. Cualquier usuario que quiera empezar a generar beneficio económico, tendrá que tener activado este producto. Para adquirir nuevos productos, será necesario tener activado su Hive Matrix. Una vez activo, empezará  a obtener beneficios económicos de su red de trabajo.</source>
+                <target>Hive Matrix는 나만의 온라인 비즈니스를 통해 수익을 벌고자 하는 사람들을 위해 만들어졌습니다. 이는 회사의 등록 제품으로서 온라인으로 수익을 벌고자 하신다면 해당 제품을 활성화하셔야 합니다. 새로운 제품을 얻기 위해서 Hive Matrix를 활성화하는 것이 필요합니다. 일단 활성화가 되면, 비즈니스 네트워크에서 실제로 수익을 벌기 시작하게 됩니다.</target>
+            </trans-unit>
+           <trans-unit id="285">
+                <source>Thunder Marketing es una colección de archivos mediante los cuales adquirirá conocimientos de marketing online llevando su negocio al máximo nivel. Estos documentos han sido creados por personas que han conseguido tener éxito en sus negocios online. Mensualmente, se publicarán nuevos documentos para que pueda tener una formación continuada. Además de esto, tras la adquisición de este producto tendrá acceso a las distintas conferencias de marketing que darán nuestros especialistas.</source>
+                <target>Thunder marketing은 귀하의 온라인 사업을 가장 높은 수준으로 업그레이드하여 온라인 마케팅 지식을 만들 수 있는 문서들의 컬렉션입니다! 이러한 문서는 온라인 사업에서 큰 성공을 갖는 사람들에 의해 작성되었으며 새로운 월간 문서가 지속적인 훈련을 보장하기 위해 발표됩니다. 또한, 이러한 제품은 나만의 전문가로부터 조언을 특징으로 하는 다양한 마케팅 회의의 활용을 제공합니다.  </target>
+            </trans-unit>
+           <trans-unit id="286">
+                <source>Una vez te registres a Thunder Marketing, tendrá acceso a:</source>
+                <target>Thunder Marketing에 가입하시면 다음과 같이 액세스할 수 있습니다</target>
+            </trans-unit>
+           <trans-unit id="287">
+                <source>Archivos que le ayudarán a mejorar sus conocimientos de marketing y negocios online.</source>
+                <target>마케팅 및 온라인 비즈니스 지식을 향상시키는데 도움이 되는 정보</target>
+            </trans-unit>
+           <trans-unit id="288">
+                <source>Acceso a las distintas conferencias que darán nuestros especialistas en marketing  para que pueda tener éxito en su negocio online.</source>
+                <target>귀하의 온라인 비즈니스 성공을 돕는 나만의 마케팅 전문가를 갖추는 다양한 회의 활용.</target>
+            </trans-unit>
+           <trans-unit id="289">
+                <source></source>
+                <target></target>
+            </trans-unit>
+           <trans-unit id="290">
+                <source>Mediante el registro a Win Formula, tendrá acceso a los mejores softwares de marketing online del mercado, los cuales le ayudarán a llevar su negocio online a límites inimaginables. Según algunos de nuestros clientes más importantes, la adquisición de Win Formula le ayudará a multiplicar por 10 el crecimiento de su propio negocio online. ¿Quien dijo que no era posible?</source>
+                <target>Win Formula 등록은 온라인 비즈니스를 상상할 수 없는 한계점으로 성장시키도록 이용 가능하게 만드는 최고의 마케팅 소프트웨어 액세스를 제공할 것입니다.
+                        크게 성공하신 고객분들은 Win Formula가 온라인 비즈니스 성장을 열배로 확대시키는데 도움이 되었음을 동의합니다.
+                        하늘은 Win Formula의 한계에 있습니다!
+                </target>
+            </trans-unit>
+           <trans-unit id="291">
+                <source>Hay un dicho que dice "Si realmente logras impresionarlos, los clientes se lo contaran unos a otros. La palabra que circula de boca en boca es la mejor herramienta de marketing que hay". Pues bién, gracias a Mind Formula recibirá una formación continua de cómo impresionar y ganarte el respeto de los demás en tus ventas. Este producto le ayudará a conocer más sobre:</source>
+                <target>좋은 인상을 만들어내고자 한다면, 여러분의 고객은 점점 더 많은 사람들에게 제품을 추천해줄 것입니다. 입으로 전해지는 소문이 최고의 마케팅 도구입니다.
+                        Mind Formula 덕분에 판매 고객에게 인상을 남기고 인정을 받는 방법에 대해 지속적인 교육을 받게 될 것입니다. 본 제품은 다음과 같이 모든 것을 여러분께 알려드릴 것입니다:
+                </target>
+            </trans-unit>
+           <trans-unit id="292">
+                <source>El cliente y los métodos de persuasión en la venta.</source>
+                <target>고객 및 판매 설득의 다양한 방법.</target>
+            </trans-unit>
+           <trans-unit id="293">
+                <source>La importancia de crear necesidades en las ventas y como conseguirlo.</source>
+                <target>판매에 있어서 수요 창출의 중요성 및 이를 성취하는 방법.</target>
+            </trans-unit>
+           <trans-unit id="294">
+                <source>Distintas técnicas de venta.</source>
+                <target>다양한 판매 기술.</target>
+            </trans-unit>
+           <trans-unit id="295">
+                <source>Psicología en el proceso de venta. </source>
+                <target>판매  과정의 심리학</target>
+            </trans-unit>
+           <trans-unit id="296">
+                <source>Los distintas técnicas en Network Marketing.</source>
+                <target>다양한 네트워크 마케팅 판매 기술.</target>
+            </trans-unit>
+           <trans-unit id="297">
+                <source>Y mucho mas!</source>
+                <target>그 이상을 제공합니다!</target>
+            </trans-unit>
+           <trans-unit id="298">
+                <source>Estos documentos tienen base científica, ya que han sido creados por prestigiosos psicólogos que han estudiado el comportamiento del ser humano en el proceso de venta. Mensualmente, se publicarán nuevos artículos para que pueda tener una formación continuada. Además de esto, tras la adquisición de este producto tendrá acceso a las distintas conferencias de psicología de las ventas que darán nuestros especialistas.</source>
+                <target>해당 문서들은 과학을 기반으로 하며 판매 과정에 인간 행동을 연구한 선두적 심리학자에 의해 만들어졌습니다. 새로운 월간 기사는 여러분에게 지속적인 트레이닝을 제공하기 위해 출판됩니다. 또한, 본 제품을 익힌 후, 나만의 전문가로부터 다양한 판매 심리학 협의를 이용하시게 됩니다.</target>
+            </trans-unit>
+           <trans-unit id="299">
+                <source>Una vez se registre a Mind Influence, tendrá acceso a:</source>
+                <target> 마인드 영향에 등록하면 다음을 이용하시게 됩니다:</target>
+            </trans-unit>
+           <trans-unit id="300">
+                <source>Archivos que le ayudarán a mejorar sus habilidades en el proceso de venta.</source>
+                <target>판매 프로세스 기술을 개선시키는데 도움이 되는 문서.</target>
+            </trans-unit>
+           <trans-unit id="301">
+                <source>Acceso a conferencias sobre psicología en la venta realizadas por psicólogos profesionales.</source>
+                <target>전문 심리학자에 의한 판매 심리학에 관한 회의.</target>
+            </trans-unit>
+           <trans-unit id="302">
+                <source>¡El poder está en tu mente!</source>
+                <target>마음의 힘을 발휘하세요.</target>
+            </trans-unit>
+           <trans-unit id="303">
+                <source>¡ TOME VENTAJA CON MIND INFLUENCE POR SÓLO 99,95 USD ANUALES !</source>
+                <target>매년 단 $99.95에 놀라운 제품을 활용하세요</target>
+            </trans-unit>
+           <trans-unit id="304">
+                <source>Desde Netviralpro.com , le damos la oportunidad de promocionar los servicios y productos que se venden a través de nuestra plataforma online . Con Global Shopping Team le proporcionaremos  una tienda única y personalizada, que podrá compartir, potenciar y con la que obtendrá amplios márgenes de beneficio. Adquiriendo este producto, no sólo ganará dinero de sus ventas, sino también de las ventas de las tiendas de los usuarios que estén en su red de negocio. Los productos que se venden en esta tienda están relacionados con:</source>
+                <target>Netviralpro.com은 온라인 플랫폼을 통해 판매할 제품 및 서비스를 홍보할 수 있는 기회를 제공합니다. 저희 Global Shopping Team은 또한 막대한 이윤 폭을 달성하기 위해서 소셜 네트워크를 통해 공유할 수 있는 고유의 개인화된 온라인 스토어를 제공합니다. 이 제품을 인수하여, 자신의 판매에서 수익을 버는 것만이 아니라 자신의 네트워크에 있는 사람들의 판매에서 수입을 벌게 됩니다.
+                        이 스토어에서 판매되는 해당 제품은 다음과 관련이 있습니다:
+                </target>
+            </trans-unit>
+           <trans-unit id="305">
+                <source>Marketing online.</source>
+                <target>마케팅 온라인.</target>
+            </trans-unit>
+           <trans-unit id="306">
+                <source>Redes sociales.</source>
+                <target>소셜 네트워크.</target>
+            </trans-unit>
+           <trans-unit id="307">
+                <source>Diseño.</source>
+                <target>디자인</target>
+            </trans-unit>
+           <trans-unit id="308">
+                <source>Traducciones e interpretaciones.</source>
+                <target>번역 및 해석.</target>
+            </trans-unit>
+           <trans-unit id="309">
+                <source>Servicios online.</source>
+                <target>온라인 서비스</target>
+            </trans-unit>
+           <trans-unit id="310">
+                <source>¡TENGA SU PROPIA TIENDA ONLINE POR SÓLO 69,95 USD ANUALES!</source>
+                <target>매년 단 $69.95에 나만의 온라인 스토어를 소유하세요!</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

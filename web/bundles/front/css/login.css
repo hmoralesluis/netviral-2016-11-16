@@ -1,0 +1,74 @@
+#signin_menu {
+	display:none;
+	background-color:#FFF;
+	position:absolute;
+	width:210px;
+	z-index:100;
+	text-align:left;
+	padding: 12px 12px 0 12px;
+	top: 63px;
+	right: 0;
+	margin-top:5px;
+	margin-right: 0px;
+	*margin-right: -1px;
+	color:#789;
+	font-size:11px;
+	border: 1px solid #E5E5E5;
+	border-radius: 4px 0 4px 4px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul.nav-main li.active a{
+	color: #08C;
+	background-color: #121214 !important;
+}
+
+
+#signin_menu input[type=text], #signin_menu input[type=password] {
+	display:block;
+	border:1px solid #E5E5E5;
+	border-radius:4px;
+	font-size:13px;
+	margin:0 0 10px 0;
+	padding:5px;
+	width:203px;
+}
+#signin_menu p {
+	margin:0;
+}
+
+#signin_menu p.forgot-username a{
+	text-decoration: underline;
+	color: #0099E6;
+	background-color: transparent !important;
+}
+
+#signin_menu p.forgot a{
+	text-decoration: underline;
+	color: #0099E6;
+	background-color: transparent !important;
+}
+
+#signin_menu label {
+	display: inline !important;
+	font-weight:normal;
+	font-size: 11px;
+}
+
+#signin_menu p.forgot, #signin_menu p.complete {
+	clear:both;
+}
+
+#signin_menu p.forgot {
+	margin-top: 10px;
+}
+
+#signin_menu p.complete {
+	margin-top: 5px;
+}
+
+#signin_menu .remember a{
+	color: #FFF;
+	background-color: #04C !important;
+	text-transform: none !important;
+}

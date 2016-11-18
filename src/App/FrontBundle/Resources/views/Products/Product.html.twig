@@ -1,0 +1,68 @@
+{% extends 'FrontBundle::layout.html.twig' %}
+
+{% block title %}NETVIRALPRO{% endblock %}
+
+{% block body %}
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="col-md-8">
+                    <div id="normalportfolio" class="row portfolio four-col-portfolio-wrapper">
+                        <div class="gallery-item item-w1 item-h1 cat1">
+                            <div class="media-element">
+                                <div>
+                                    <img src="{{ asset('bundles/front/images/demo.jpg') }}" alt=""
+                                         class="img-responsive">
+                                </div>
+                            </div><!-- end media -->
+
+                            <div class="gallery-desc-full big-gallery">
+                                <small><a href="#">{{ product.description }}</a></small>
+                                <div class="gallery-title">
+                                    <h2 class="tab-title"><a href="#">{{ product.name }}</a></h2>
+                                    <hr class="titlehr">
+                                </div>
+                                <p>{{ product.longDescription }}</p>
+                                <a href="#" class="btn btn-primary">Ordenalo Ahora</a>
+                            </div>
+                        </div><!-- item -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="pricing-box-09 white-style">
+                            <div class="pricing-box-09-head">
+                                <div class="ribbon-wrapper-pt1">
+                                    <div class="ribbon-pt1">Ahora!</div>
+                                </div>
+                                <h3><sup>$</sup>{{ product.cost }}</h3>
+                                <h4>{{ product.name }}</h4>
+                            </div>
+                            <!-- end pricing-box-09-head -->
+
+                            <div class="pricing-box-09-body">
+                                <ul>
+                                    <li>HTML5 & CSS Video Course</li>
+                                    <li>English Learning Course</li>
+                                    <li>SEO Strategy Course</li>
+                                    <li>Business & Internal Course</li>
+                                    <li>90 Days Money Back</li>
+                                    <li>Email Support</li>
+                                    <li><i class="fa fa-close"></i></li>
+                                    <li><i class="fa fa-close"></i></li>
+                                </ul>
+                            </div>
+                            <!-- end pricing-box-09-body -->
+
+                            <div class="pricing-box-09-foot">
+                                <a href="#" class="btn btn-primary btn-block">Ordenalo Ahora</a>
+                            </div>
+                            <!-- end pricing-box-09-foot -->
+                        </div>
+                        <!-- end pricing-box-09 -->
+                    </div>
+                </div>
+            </div><!-- end content -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+{% endblock %}

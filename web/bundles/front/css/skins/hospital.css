@@ -1,0 +1,343 @@
+/******************************************
+    File Name: hospital.css
+    Template Name: Convert
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: https://psdconverthtml.com
+    Version: 1.0
+    Support: support@psdconverthtml.com
+******************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,500,400italic,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext);
+body {
+    background-color: #111;
+}
+
+.NotGeneric-SubTitle,
+.tp-caption.NotGeneric-SubTitle,
+.NotGeneric-Title,
+.tp-caption.NotGeneric-Title,
+body,
+li,
+p,
+.btn-default,
+.btn-primary,
+.navbar-nav > li > a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", Helvetica, Roboto, Arial, sans-serif !important;
+}
+
+
+.loader-container img {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.header-logo-center,
+.navbar-header {
+    padding: 0;
+}
+
+.tab-pane {
+    background-color: #ffffff;
+    padding:30px;
+}
+.tab-pane img {
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-collapse {
+        border-radius: 5px;
+        margin-bottom: -30px;
+    }
+    .navbar-header {
+        padding: 30px 0 !important;
+    }
+    .navbar-nav > li {
+        border-right: 1px dashed rgba(255, 255, 255, 0.3);
+        padding: 5px;
+    }
+    .navbar-nav > li:first-child {
+        border-left: 1px dashed rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section.page-banner {
+        background-attachment: scroll !important;
+        background-clip: border-box !important;
+        background-color: #f9f9f9;
+        background-image: none !important;
+        background-origin: padding-box !important;
+        background-position: 0 0 !important;
+        background-repeat: repeat !important;
+        background-size: auto auto !important;
+    }
+    .header {
+        padding: 20px 0;
+    }
+    .navbar-brand > img {
+        display: block;
+        max-width: 200px;
+    }
+    .navbar-brand {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.navbar-nav > li > a {
+    font-size: 14px;
+    color: #ffffff !important;
+}
+
+.magnifier .magni-desc h4,
+.navbar-nav > li > a,
+.service-ver-2 h4,
+.section-title h3,
+.image-box-desc h4 {
+    font-weight: 600;
+}
+
+.serviceBox6 .service-icon {
+    background-color: transparent !important;
+}
+
+.section-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar .widget,
+.section.lb {
+    background-color: #f5f5f5;
+}
+
+.page-banner {
+    background-attachment: scroll !important;
+    background-position: left bottom !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    display: block;
+    min-height: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.single-wrapper.page-banner {
+    min-height: 210px;
+}
+
+.service-ver-2 {
+    min-height: 250px;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.serviceBox6 .service-icon {
+    margin-top: -5px;
+}
+
+.messagesection h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+#testimonials-rotate .pull-right .fa,
+#testimonials-rotate {
+    border-color: #ffffff !important;
+}
+
+.section.db {
+	background-color: #282828;
+}
+.copyrights {
+	background-color: #222222;
+}
+
+.footer .form-control {
+    background-color: #2f2f2f;
+}
+.content-widget .widget-title h4, .sidebar .widget .widget-title h4,
+.single-portfolio-wrapper .widget-title h4, .footer .widget .widget-title h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.blog-box-desc h4 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+
+/******************************************
+	COLORS
+******************************************/
+
+.topbar {
+    background-color: #222222;
+}
+.navbar-collapse {
+    background-color: #33abb0;
+}
+
+
+#testimonials-rotate .pull-right .fa,
+#testimonials-rotate small,
+.service-ver-2 p,
+.service-ver-2 i,
+.service-ver-2 h4,
+.messagesection h3,
+.messagesection h3 a,
+.service-ver-2.db i,
+.topbar a:hover,
+.topbar a,
+.topbar i,
+.topbar p,
+.topbar li,
+.navbar-nav .has-submenu .dropdown-menu li:hover a,
+.dropdown-menu > li:hover a,
+.dropdown-menu > li:focus a,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.active > a:hover,
+.copyrights .list-inline > li:hover a,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a,
+.navbar-default .navbar-nav > li.active > a {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar-nav .has-submenu .dropdown-menu {
+    background-color: #ffffff !important;
+    border-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.dropdown-menu > li:hover,
+.dropdown-menu > li:focus {
+    background-color: #33abb0 !important;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #33abb0;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #33abb0;
+}
+
+.carousel-control.left,
+.carousel-control.right,
+.magnifier {
+    background-color: rgba(51, 171, 176, 0.8) !important;
+}
+
+
+.team-boxes.withsmall small,
+.blog-meta .fa,
+a:hover,
+a:focus,
+.portfolio-filter .btn-default:focus,
+.portfolio-filter .btn-default.focus,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default:active.focus,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.image-box-desc .readmore {
+    color: #33abb0 !important;
+}
+
+blockquote,
+.single-portfolio-wrapper .widget-title h4,
+.footer .widget .widget-title h4 {
+    border-color: #33abb0 !important;
+}
+
+.contact-details li i,
+.tags a,
+.pagination > li > a, .pagination > li > span,
+.owl-theme .owl-nav [class*="owl-"],
+.color2,
+.btn-primary {
+    background-color: #33abb0 !important;
+    border-color: #33abb0 !important;
+}
+
+
+.hovericons {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #33abb0 !important;
+}
+
+.customtab .nav-pills > li:hover > a,
+.customtab .nav-pills > li:focus > a,
+.customtab .nav-pills > li.active > a,
+.ribbon-pt1,
+.pricing-box-09.white-style ul li:hover,
+.contact-details li i:hover,
+.tags a:hover,
+.pagination > li > a:hover, .pagination > li > span:hover,
+.owl-theme .owl-nav [class*="owl-"]:hover,
+.copyrights .footer-social i:hover,
+.section-small-title hr,
+.section-title hr,
+.topbar .social-version-1 .fa,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #ffffff !important;
+    background-color: #2ba3a3 !important;
+    border-color: #2ba3a3 !important;
+}
+
+.ribbon-pt1::before, .ribbon-pt1::after {
+    border-top-color: #2ba3a3 !important;
+}
+
+.section.withbg {
+    background: url(../../images/skins/images/hospital/bg.jpg) repeat-y center center #ffffff;
+}
+
+.color1a {
+    background-color: #33abb0 !important;
+}
+
+.color2a {
+    background-color: #2eb5bb;
+}
+
+.color3a {
+    background-color: #37bec4;
+}
+
+.color4a {
+    background-color: #42c9cf;
+}
+
+.color10.hovicon.effect-1::after {
+    box-shadow: 0 0 0 2px transparent !important
+}

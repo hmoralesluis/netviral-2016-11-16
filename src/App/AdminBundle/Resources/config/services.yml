@@ -1,0 +1,16 @@
+parameters:
+    app.twig_extension.class: App\AdminBundle\Twig\Extension\TwigExtension
+
+services:
+    app.twig_extension:
+            class: %app.twig_extension.class%
+            tags:
+                - { name: twig.extension }
+
+    app.adminbundle.listener.notification:
+            class: App\AdminBundle\Listener\NotificationListener
+            arguments: ['@router', '@service_container']
+            tags:
+                - { name: doctrine.event_listener, event: postUpdate, method: postUpdate }
+                - { name: doctrine.event_listener, event: postPersist, method: postPersist }
+                - { name: doctrine.event_listener, event: preRemove, method: preRemove }

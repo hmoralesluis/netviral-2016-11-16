@@ -1,0 +1,41 @@
+.sale-summary .portlet-title {
+    margin-bottom: 0;
+    border-bottom: 1px solid #EEE;
+}
+.sale-summary ul {
+    margin-top: 0;
+}
+.sale-summary li:first-child {
+    border-top: medium none;
+}
+.sale-summary li {
+    padding: 10px 0px;
+    overflow: hidden;
+    border-top: 1px solid #EEE;
+}
+.sale-summary li .sale-info {
+    float: left;
+    color: #646464;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.sale-summary li .sale-num {
+    float: right;
+    color: #169EF4;
+    font-size: 20px;
+    font-weight: 300;
+}
+.sale-summary li i.icon-img-down {
+    background: url("../img/icon-img-down.png") no-repeat scroll 0% 0% transparent !important;
+}
+.sale-summary li i.icon-img-up {
+    background: url("../img/icon-img-up.png") no-repeat scroll 0% 0% transparent !important;
+}
+.sale-summary li span i {
+    top: 1px;
+    width: 13px;
+    height: 14px;
+    margin-left: 3px;
+    position: relative;
+    display: inline-block;
+}

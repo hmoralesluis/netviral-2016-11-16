@@ -1,0 +1,116 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>*** Salvador Benítez ***</title>
+    <link href="stylesheets/common.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/Centro.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/Carrito.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" language="javascript" src="js/scriptaculous.js"></script>
+    <script type="text/javascript" language="javascript" src="js/AjaxLib.js"></script>
+    <script type="text/javascript" language="javascript" src="js/Carrito.js"></script>
+
+</head>
+<body>
+<form id="Form1" runat="server">
+    <!-- encabezado -->
+    <div id="header">
+        <div class="container">
+            <hr />
+
+
+            <hr />
+
+            <hr />
+        </div>
+    </div>
+    <!-- contenido principal -->
+    <div id="main" class="container">
+
+
+        <div id="center">
+            <h3 class="leftbox">Bienvenido al sitio de Salvadorcito.</h3>
+
+            <ul class="EstiloBorde">
+                <li><img class="detalleFoto" onload="drag('001,20,Producto1')" id="001,20,Producto1"src="IMAGENES/PERFORADORA.jpg" height="150" width="150" />
+                    <br/>
+                    <div class="nombreProducto">Producto1</div>
+                    <div>Precio:$20</div>
+                    <div class="agregarProducto" onclick="agregar('001','20','Producto1')">
+                        Agregar al Carrito</div>
+                </li>
+
+                <li><img class="detalleFoto" onload="drag('002,50,Producto2')" id="002,50,Producto2"src="IMAGENES/producto1.jpg" height="150" width="150"/>
+                    <br/>
+                    <div class="nombreProducto">Producto2</div>
+                    <div>Precio:$50</div>
+                    <div class="agregarProducto" onclick="agregar('002','50','Producto2')">
+                        Agregar al Carrito</div>
+                </li>
+
+                <li><img class="detalleFoto" onload="drag('003,80,Producto3')" id="003,80,Producto3"src="IMAGENES/producto2.jpg" height="150" width="150" />
+                    <br/>
+                    <div class="nombreProducto">Producto3</div>
+                    <div>Precio:$80</div>
+                    <div class="agregarProducto" onclick="agregar('003','80','Producto3')">
+                        Agregar al Carrito</div>
+                </li>
+
+                <li><img class="detalleFoto" onload="drag('004,150,Producto4')" id="004,150,Producto4"src="IMAGENES/producto3.jpg" height="150" width="150"/>
+                    <br/>
+                    <div class="nombreProducto">Producto4</div>
+                    <div>Precio:$150</div>
+                    <div class="agregarProducto" onclick="agregar('004','150','Producto4')">
+                        Agregar al Carrito</div>
+                </li>
+
+                <li><img class="detalleFoto" onload="drag('005,60,Producto5')" id="005,60,Producto5"src="IMAGENES/mirado.jpg" height="150" width="150"/>
+                    <br/>
+                    <div class="nombreProducto">Producto5</div>
+                    <div>Precio:$60</div>
+                    <div class="agregarProducto" onclick="agregar('005','60','Producto5')">
+                        Agregar al Carrito</div>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <!-- carrito -->
+        <div id="rightcolumn">
+            <h3 class="leftbox">Carrito de Compras</h3>
+            <div id="canasto">
+
+                <div id="listaCanasto">
+                </div>
+            </div>
+            <div id="cargando">Pueden poner un cartel al estilo google por ejemplo====Procesando Pedido, Por favor espere...</div>
+            <div id="ventanaModal">
+                <div id="finalizacion">
+                    Está a punto de enviar su pedido. Si desea realizar una observacion al
+                    encargado de papelería anótela a continuacion.<br /><br />
+                    <%--<div id="listadoprod"></div>--%>
+                    <table width="100%">
+                        <tr>
+                            <td>Observaciones</td>
+                            <td><input type="text" id="txtNombre" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br />
+                                <input type="button" id="btnEnviar" value="Enviar" onclick="enviar()" />
+                                <input type="button" id="btnCancelar" value="Cancelar" onclick="cancelar()" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+</body>
+</html>
+

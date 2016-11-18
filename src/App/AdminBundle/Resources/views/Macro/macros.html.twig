@@ -1,0 +1,23 @@
+﻿{% macro recursiveList(objects, parent) %}
+    {% set _hit = false %}
+    {% for _item in objects %}
+        {% set _value = (null != _item.AsociatedOption and null != _item.AsociatedOption.id) ? _item.AsociatedOption.id : null %}
+        {% if (parent == _value) %}
+            {% if not _hit %}
+                <ul class="sub-menu">
+                {% set _hit = true %}
+            {% endif %}
+            <li class="treeview">
+                <a id="{{ _item.id }}" href="{% if _item.path %}{{ path(_item.path) }}{% else %}#{% endif %}">
+                    <i class="{{ _item.icon }}"></i>
+                    <span class="title">{{ _item.name }}</span>
+                    {% if _item.options | length > 0 %}<span class="arrow"></span>{% endif %}
+                </a>
+                {{ _self.recursiveList(_item.options, _item.id) }}
+            </li>
+        {% endif %}
+    {% endfor %}
+    {% if _hit %}
+        </ul>
+    {% endif %}
+{% endmacro %}

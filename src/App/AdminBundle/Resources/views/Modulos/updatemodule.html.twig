@@ -1,0 +1,121 @@
+{% extends 'AdminBundle::layout.html.twig' %}
+
+{% block title %}Actualización de Modulos{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('bundles/admin/css/pages/profile.css') }}" rel="stylesheet" type="text/css"
+          xmlns="http://www.w3.org/1999/html"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ asset('bundles/admin/plugins/select2/select2_metro.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/admin/plugins/data-tables/DT_bootstrap.css') }}"/>
+{% endblock %}
+
+{% block content %}
+
+    <div class="control-group">
+        <label class="control-label">Seleccione el Modulo a modificar</label>
+        <div class="controls">
+            <select class="span6 m-wrap" data-placeholder="Choose a Category" tabindex="1">
+                {% for module in modules %}
+                    <option value="{{ module.name }}">{{ module.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row-fluid">
+        <div class="span12">
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+            <div class="portlet box blue">
+                <div class="portlet-title">
+                    <div class="caption"><i class="icon-reorder"></i>Datos del Modulo</div>
+                </div>
+                <div class="portlet-body form">
+                    <!-- BEGIN FORM-->
+                    <form action="#" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">Nombre del Modulo</label>
+                            <div class="controls">
+                                <input type="text" class="span6 m-wrap" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" />
+
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Precio de Venta</label>
+                            <div class="controls">
+                                <div class="input-prepend input-append">
+                                    <span class="add-on">$</span><input class="m-wrap " type="text" /><span class="add-on">.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Checkbox</label>
+                            <div class="controls">
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" /> Checkbox 1
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" value="" /> Checkbox 2
+                                </label>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Breve Descripción</label>
+                            <div class="controls">
+                                <textarea class="span6 m-wrap" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">Amplia Descripción</label>
+                            <div class="controls">
+                                <textarea class="span6 m-wrap" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn blue">Guardar</button>
+                            <button type="button" class="btn">Cancel</button>
+                        </div>
+                    </form>
+                    <!-- END FORM-->
+                </div>
+            </div>
+            <!-- END SAMPLE FORM PORTLET-->
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('bundles/admin/plugins/select2/select2.min.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/data-tables/jquery.dataTables.js') }}"></script>
+    <script type="text/javascript"
+            src="{{ asset('bundles/admin/plugins/data-tables/DT_bootstrap.js') }}"></script>
+    <script>
+        $('#network, #network_bussines').dataTable({
+            "aLengthMenu": [
+                [5, 15, 20, -1],
+                [5, 15, 20, "Todos"] // change per page values here
+            ],
+            // set the initial value
+            "iDisplayLength": 5,
+            "sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+            "sPaginationType": "bootstrap",
+            "oLanguage": {
+                "sLengthMenu": "_MENU_  por página",
+                "oPaginate": {
+                    "sPrevious": "Anterior",
+                    "sNext": "Siguiente"
+                }
+            },
+            "aoColumnDefs": [{
+                'bSortable': true,
+                'aTargets': [0]
+            }
+            ]
+        });
+    </script>
+{% endblock %}
+

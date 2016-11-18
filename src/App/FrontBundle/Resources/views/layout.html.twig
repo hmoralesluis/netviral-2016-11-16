@@ -1,0 +1,398 @@
+{% extends '::base-front-convert.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/front/css/login.css') }}" xmlns="http://www.w3.org/1999/html"/>
+{% endblock %}
+
+{% block header %}
+
+    <header class="header header-fullwidth header-fullwidth header-dark" data-spy="affix" data-offset-top="0">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="center-xs">
+                        <a href="{{ path('homepage', {'_locale' : 'es' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Español{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'en' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Ingles{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'ru' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Ruso{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'cn' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Chino{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'id' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Indonesio{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'in' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Indio{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'it' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Italiano{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'fr' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Frances{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'pt' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Portugués{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'jp' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Japonés{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'th' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Tailandes{% endtrans %} <span class="fa"></span></a>
+                        <a href="{{ path('homepage', {'_locale' : 'kr' }) }}" class="dropdown-toggle"
+                           aria-haspopup="true" aria-expanded="false">{% trans %}Koreano{% endtrans %} <span class="fa"></span></a>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </div><!-- end topbar -->
+
+        <nav class="navbar navbar-default yamm">
+            <div class="container-full">
+
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="megamenu">
+                            <a href="{{ path('homepage', {"_locale" : app.session.get('_locale') }) }}">
+                                <img alt="Megalifepro" src="{{ asset('bundles/front/img/netviralpro-p.png') }}">
+                            </a>
+                        </li>
+
+                        <li class="megamenu">
+                            <a href="{{ path('homepage') }}" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}INICIO{% endtrans %} <span class="fa"></span></a>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="megamenu">
+                            <a href="#nosotros" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}SOBRE NOSOTROS{% endtrans %} <span class="fa"></span></a>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="dropdown has-submenu yamm-half hasmenu">
+                            <a href="#porque" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}PORQUE NETVIRALPRO?{% endtrans %} <span
+                                        class="fa"></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li class="megamenu">
+                            <a href="#productos" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}PRODUCTOS{% endtrans %} <span class="fa"></span></a>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="megamenu dropdown yamm-half hasmenu">
+                            <a href="#oportunidad" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}OPORTUNIDAD{% endtrans %} <span class="fa"></span></a>
+                        </li>
+                        <!-- end mega menu -->
+
+                        <li class="dropdown has-submenu yamm-half hasmenu">
+                            <a href="#testimonios" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}TESTIMONIOS{% endtrans %} <span class="fa"></span></a>
+                        </li>
+                        <!-- end dropdown-menu -->
+
+                        <li class="dropdown has-submenu yamm-half hasmenu">
+                            <a href="#contacta" class="dropdown-toggle" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}CONTACTA{% endtrans %} <span class="fa"></span></a>
+                        </li>
+
+                        <!--
+                        <li class="megamenu dropdown yamm-half hasmenu">
+                            {% set flag = 'bundles/admin/img/flags/' ~ app.session.get("_locale") ~ '.png' %}
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><img src="{{ asset(flag) }}"
+                                                                               alt=""> {{ app.session.get('_locale') | upper }}
+                                <span class="fa fa-angle-down"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="flag">
+                                        <div class="row">
+                                            <div class="col-md-4 border-right">
+                                                <div class="menu">
+                                                    <ul>
+                                                       {% for locale in app.session.get('locales') %}
+                                                            <li><a href="{{ path('homepage', {'_locale' : locale }) }}"><img
+                                                                            src="{{ asset('bundles/admin/img/flags/' ~ locale ~ '.png') }}"
+                                                                            alt=""> {{ locale | upper }} {% if locale == app.session.get('_locale') | upper %} (current){% endif %}</a></li>
+                                                        {% endfor %}
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        -->
+
+                        {% set referring_affiliate = app.session.get('affiliate') %}
+                        {% if referring_affiliate %}
+                            <li class="yamm-half">
+                                <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Referido:
+                                    {{ referring_affiliate }} <span class="fa"></span></a>
+                                <ul class="dropdown-menu">
+                                </ul>
+                            </li>
+                        {% endif %}
+
+                        <li class="dropdown has-submenu yamm-half hasmenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">{% trans %}ENTRAR{% endtrans %}<span class="fa fa-angle-down"></span></a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="flag">
+                                        <div class="row">
+                                            <form method="post" id="signin" action="{{ path('check_path') }}">
+                                                <p>
+                                                    <input id="username" name="_username"
+                                                           value="{{ app.session.get('lastUsername') | default('') }}"
+                                                           title="username"
+                                                           placeholder="{% trans %}Usuario{% endtrans %}" tabindex="4" type="text">
+                                                </p>
+                                                <p>
+                                                    <input id="password" name="_password" value="" title="password"
+                                                           tabindex="5"
+                                                           placeholder="{% trans %}Contraseña{% endtrans %}" type="password">
+                                                </p>
+
+                                                <p class="remember">
+                                                    <a class="btn btn-flat btn-mini btn-primary"
+                                                       href="javascript:$('#signin').submit()">{% trans %}ENTRAR{% endtrans %}</a>
+                                                    <input type="checkbox" id="remember" name="_remember_me" value="1" tabindex="7">
+                                                    <label for="remember">{% trans %}Recuérdame{% endtrans %}</label>
+                                                </p>
+
+                                                <p class="forgot"><a href="#" id="resend_password_link">{% trans %}Olvidaste tu clave?{% endtrans %}?</a></p>
+                                            </form>
+
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                    <!-- end yamm -->
+                                </li>
+                            </ul>
+
+                            <fieldset id="signin_menu">
+                                <form method="post" id="signin" action="{{ path('check_path') }}">
+                                    <p>
+                                        <input id="username" name="_username"
+                                               value="{{ app.session.get('lastUsername') | default('') }}"
+                                               title="username"
+                                               placeholder="Username" tabindex="4" type="text">
+                                    </p>
+                                    <p>
+                                        <input id="password" name="_password" value="" title="password"
+                                               tabindex="5"
+                                               placeholder="Password" type="password">
+                                    </p>
+
+                                    <p class="remember">
+                                        <a class="btn btn-flat btn-mini btn-primary"
+                                           href="javascript:$('#signin').submit()">Sign in</a>
+                                        <input id="remember" name="remember_me" value="1" tabindex="7"
+                                               type="checkbox">
+                                        <label for="remember">Remember me</label>
+                                    </p>
+
+                                    <p class="forgot"><a href="#" id="resend_password_link">Forgot your credentials?</a></p>
+                                </form>
+                            </fieldset>
+                        </li>
+
+                        {% if referring_affiliate %}
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('affiliate_join',{'username' : referring_affiliate }) }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}REGISTRO{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                        {% endif %}
+                        {% if referring_affiliate == null %}
+                            <li class="dropdown has-submenu yamm-half hasmenu">
+                                <a href="{{ path('join') }}" class="dropdown-toggle" role="button"
+                                   aria-haspopup="true" aria-expanded="false">{% trans %}REGISTRO{% endtrans %} <span class="fa"></span></a>
+                            </li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <!-- end nav -->
+        <!-- end container -->
+    </header>
+    <!-- end header -->
+
+    {% block options %}
+
+    {% endblock %}
+{% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block footer %}
+    <footer class="footer section db">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h4>About Company</h4>
+                        </div><!-- end widget-title -->
+                        <div class="about-widget">
+                            <p>Hi there, welcome to the &copy;Convert Web Solutions INC. We are small group who design
+                                beautiful website templates, creative mobile applications, graphics and more.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div><!-- end about-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-md-2 col-sm-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h4>Site Info</h4>
+                        </div><!-- end about -->
+                        <div class="menu-widget">
+                            <ul class="check">
+                                <li><a href="#">Welcome</a></li>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Our Mission</a></li>
+                                <li><a href="#">Blog & News</a></li>
+                                <li><a href="#">Press Releases</a></li>
+                            </ul><!-- end ul -->
+                        </div><!-- end menu-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-md-2 col-sm-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h4>Partner</h4>
+                        </div><!-- end about -->
+                        <div class="menu-widget">
+                            <ul class="check">
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Reseller Program</a></li>
+                                <li><a href="#">Developer Portal</a></li>
+                                <li><a href="#">Support Center</a></li>
+                                <li><a href="#">Customer Portal</a></li>
+                                <li><a href="#">Became a Client</a></li>
+                            </ul><!-- end ul -->
+                        </div><!-- end menu-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-md-2 col-sm-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h4>Be Social</h4>
+                        </div><!-- end about -->
+                        <div class="menu-widget">
+                            <ul class="social-widget">
+                                <li><a href="http://www.facebook.com/sharer.php?u=http://45.55.207.146:8080/">><i
+                                                class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="https://twitter.com/share?url=http://45.55.207.146:8080/"><i
+                                                class="fa fa-twitter"></i> Twitter</a></li>
+                                <li>
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://45.55.207.146:8080/"><i
+                                                class="fa fa-linkedin"></i> Linkedin</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://plus.google.com/share?url=http://45.55.207.146:8080/="><i
+                                                class="fa fa-google-plus"></i> Google Plus</a></li>
+                            </ul><!-- end ul -->
+                        </div><!-- end menu-widget -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+
+                <div class="col-md-3 col-sm-12 lastwidget">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h4>Email Newsletter</h4>
+                        </div><!-- end about -->
+                        <div class="newsletter-widget">
+                            <form>
+                                <input type="text" class="form-control input-lg" placeholder="Your name"/>
+                                <input type="email" class="form-control input-lg" placeholder="Email"/>
+                                <button class="btn btn-primary">Subscribe</button>
+                            </form>
+                        </div><!-- end newsletter -->
+                    </div><!-- end widget -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+    <footer class="copyrights">
+        <div class="container">
+            <div class="row-center">
+                <div class="logo">
+                    <li class="megamenu">
+                        <a href="{{ path('homepage') }}">
+                            <img alt="Megalifepro" src="{{ asset('bundles/front/img/netviralpro-m.png') }}">
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="copylinks">
+                        <ul class="list-inline">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Terms of Usage</a></li>
+                            <li><a href="#">Trademark</a></li>
+                            <li><a href="#">License</a></li>
+                        </ul><!-- end ul -->
+                        <p>Desarrollado por Equipo ProNET &copy; 2016, Cuba. ssppronet@gmail.com </p>
+                    </div><!-- end links -->
+                </div><!-- end col -->
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-social text-right">
+                        <a href="http://www.facebook.com/sharer.php?u=http://45.55.207.146:8080/"><i
+                                    class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/share?url=http://45.55.207.146:8080/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://plus.google.com/share?url=http://45.55.207.146:8080/"><i
+                                    class="fa fa-google-plus"></i></a>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://45.55.207.146:8080/"><i
+                                    class="fa fa-linkedin"></i></a>
+                        <a class="dmtop" href="#"><i class="fa fa-arrow-up"></i></a>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end copyrights -->
+
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".signin").click(function (e) {
+                e.preventDefault();
+                $("fieldset#signin_menu").toggle();
+                $(".signin").toggleClass("menu-open");
+                if ($('.signin').hasClass('menu-open')) {
+                    $('.signin i.icon-angle-up').removeClass('icon-angle-up').addClass('icon-angle-down');
+                } else {
+                    $('.signin i.icon-angle-down').removeClass('icon-angle-down').addClass('icon-angle-up');
+                }
+            });
+
+            $("fieldset#signin_menu").mouseup(function () {
+                return false
+            });
+            $(document).mouseup(function (e) {
+                if ($(e.target).parent("a.signin").length == 0) {
+                    $(".signin").removeClass("menu-open");
+                    $("fieldset#signin_menu").hide();
+                    $('.signin i.icon-angle-down').removeClass('icon-angle-down').addClass('icon-angle-up');
+                }
+            });
+
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,558 @@
+/******************************************
+    File Name: construction.css
+    Template Name: Convert
+    Created By: PSD Convert HTML Team
+    Envato Profile: http://themeforest.net/user/psdconverthtml
+    Website: https://psdconverthtml.com
+    Version: 1.0
+    Support: support@psdconverthtml.com
+******************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300&amp;subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100&amp;subset=latin,latin-ext);
+body,
+li,
+p {
+    font-family: "Roboto" !important;
+}
+
+.tp-caption.RotatingWords-Button,
+.RotatingWords-Button,
+.tp-caption.Agency-Title,
+.Agency-Title,
+.navbar-default .navbar-nav > li > a,
+.tp-caption.RotatingWords-Button,
+.RotatingWords-Button,
+.NotGeneric-Title,
+.tp-caption.NotGeneric-Title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Condensed" !important;
+}
+
+.footer .form-control,
+.copyrights {
+    background-color: #111111;
+}
+
+.serviceBox3,
+.section.lb {
+    background-color: #f8f8f8;
+}
+
+.darktopbar {
+    padding: 14px 0 !important;
+    background-color: #000000 !important;
+}
+
+.section.db {
+    background-color: #000000;
+}
+
+.navbar-nav > li > a {
+    color: #000000 !important;
+}
+
+.darktopbar i {
+    background-color: #f9c800 !important;
+    color: #ffffff !important;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.navbar-nav > li > a {
+    font-size: 16px;
+}
+
+.tp-caption.Agency-Title,
+.Agency-Title {
+    text-transform: uppercase;
+    letter-spacing: -1px !important;
+}
+
+.single-portfolio-wrapper .widget-title h4,
+.footer .widget .widget-title h4,
+.magnifier .team-desc h4 a,
+.tab-title a,
+.serviceBox3 .service-content h3,
+.image-box-desc h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.serviceBox3 .service-icon a {
+    border-bottom: 1px solid #d5d7d9;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    overflow: visible;
+    position: relative;
+}
+
+.serviceBox3 .service-icon a > span {
+    width: auto;
+    height: auto;
+    background-color: transparent !important;
+    border-radius: 0;
+    display: block;
+    text-align: center;
+    transform: none;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: 3;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.serviceBox3 .service-content h3 {
+    padding-top: 20px;
+}
+
+.serviceBox3 {
+    padding: 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.magnifier .team-desc {
+    padding: 20px;
+    top: 12%;
+    position: absolute;
+}
+
+.pricing-box-04 {
+    position: relative;
+    display: block;
+    background-color: #212121;
+    top: 0;
+    padding: 30px;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.animation-examples.one {
+    color: #69D2E7;
+    outline: 4px dashed #333333;
+    box-shadow: 0 0 0 4px #2196F3;
+    animation: 1s animateBorderOne ease infinite;
+}
+
+@keyframes animateBorderOne {
+    to {
+        outline-color: #2196F3;
+        box-shadow: 0 0 0 4px #333333;
+    }
+}
+
+.pricing-box-04 ul {
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-box-04 ul li {
+    color: #ffffff;
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.pricing-box-04 ul li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+.pricing-box-04 ul li .fa {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.pricing-box-04-head i {
+    color: #ffffff;
+}
+
+.pricing-box-04 h3 {
+    font-size: 46px !important;
+    color: #ffffff;
+    padding: 0 0 10px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.pricing-box-04 h4 {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+.pricing-box-04 sup {
+    font-size: 18px !important;
+    top: -20px !important;
+    margin-right: 0px;
+}
+
+.pricing-box-04-head {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.pricing-box-04-foot {
+    padding-top: 30px;
+}
+
+.pricing-box-04 h4 {
+    padding: 15px 0;
+}
+
+.pricing-box-04 .btn {
+    padding: 15px;
+    border-radius: 0;
+    border-color: #2196F3;
+    background-color: #2196F3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none !important;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.pricing-box-04 ul li:hover,
+.pricing-box-04 .btn:focus,
+.pricing-box-04 .btn.focus,
+.pricing-box-04 .btn:hover,
+.pricing-box-04 .btn:active,
+.pricing-box-04 .btn.active,
+.pricing-box-04 .btn:active:hover,
+.pricing-box-04 .btn.active:hover,
+.open > .dropdown-toggle.pricing-box-04 .btn:hover,
+.pricing-box-04:active:focus,
+.pricing-box-04.active:focus,
+.open > .dropdown-toggle.pricing-box-04 .btn:focus,
+.pricing-box-04:active.focus,
+.pricing-box-04.active.focus,
+.open > .dropdown-toggle.pricing-box-04 .btn.focus {
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+.ribbon-wrapper-pt1 {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -6px;
+}
+
+.ribbon-pt1 {
+    color: #fff;
+    z-index: 111;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -8px;
+    top: 15px;
+    width: 120px;
+    background-color: #286090;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ribbon-pt1:before,
+.ribbon-pt1:after {
+    content: "";
+    border-top: 3px solid #286090;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position: absolute;
+    bottom: -3px;
+}
+
+.ribbon-pt1:before {
+    left: 0;
+}
+
+.ribbon-pt1:after {
+    right: 0;
+}
+
+.pricing-box-04.white-style {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.pricing-box-04.white-style h3 {
+    color: #121212;
+}
+
+.pricing-box-04.white-style h4 {
+    color: #555555;
+}
+
+.pricing-box-04.white-style ul li {
+    color: #555555;
+    border-top-color: #cccccc
+}
+
+.pricing-box-04.white-style ul li:hover {
+    color: #ffffff;
+}
+
+.pricing-box-04.white-style ul li:last-child {
+    border-bottom-color: #cccccc
+}
+
+.pricing-box-04.white-style .fa-4x,
+.pricing-box-04.white-style ul li i {
+    color: #2196F3;
+}
+
+.pricing-box-04.white-style ul li:hover i {
+    color: #ffffff;
+}
+
+.animation-two {
+    color: #69D2E7;
+    outline: 4px dashed #ffffff;
+    box-shadow: 0 0 0 4px #ffffff;
+    animation: 1s animateBorderTwo ease infinite;
+}
+
+@keyframes animateBorderTwo {
+    to {
+        outline-color: #2196F3;
+        box-shadow: 0 0 0 4px #ffffff;
+    }
+}
+
+.appoform-wrapper .btn:hover,
+.appoform-wrapper .btn:focus,
+.appoform-wrapper .btn,
+.appoform-wrapper .form-control {
+    margin-bottom: 20px;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    height: 50px;
+    color: #787878 !important;
+    border-color: #ededed !important;
+}
+
+.appoform-wrapper .form-control::-moz-placeholder {
+    color: #787878 !important;
+    opacity: 1;
+}
+
+.appoform-wrapper .form-control:-ms-input-placeholder {
+    color: #787878 !important;
+}
+
+.appoform-wrapper .form-control::-webkit-input-placeholder {
+    color: #787878 !important;
+}
+
+.appoform-wrapper textarea {
+    height: 120px !important;
+}
+
+.appoform-wrapper .btn-default {
+    color: #ffffff !important;
+}
+
+.appoform-wrapper .open > .dropdown-toggle.btn-primary,
+.appoform-wrapper .btn-primary:active:hover,
+.appoform-wrapper .btn-primary.active:hover,
+.appoform-wrapper .open > .dropdown-toggle.btn-primary:hover,
+.appoform-wrapper .btn-primary:active:focus,
+.appoform-wrapper .btn-primary.active:focus,
+.appoform-wrapper .open > .dropdown-toggle.btn-primary:focus,
+.appoform-wrapper .btn-primary:active.focus,
+.appoform-wrapper .btn-primary.active.focus,
+.appoform-wrapper .open > .dropdown-toggle.btn-primary.focus,
+.appoform-wrapper .btn-primary:active,
+.appoform-wrapper .btn-primary.active,
+.appoform-wrapper .open > .dropdown-toggle.btn-primary,
+.appoform-wrapper .btn-primary.disabled:hover,
+.appoform-wrapper .btn-primary[disabled]:hover,
+.appoform-wrapper fieldset[disabled] .btn-primary:hover,
+.appoform-wrapper .btn-primary.disabled:focus,
+.appoform-wrapper .btn-primary[disabled]:focus,
+.appoform-wrapper fieldset[disabled] .btn-primary:focus,
+.appoform-wrapper .btn-primary.disabled.focus,
+.appoform-wrapper .btn-primary[disabled].focus,
+.appoform-wrapper .color10 .serviceBox5:hover,
+.appoform-wrapper fieldset[disabled] .btn-primary.focus,
+.appoform-wrapper .btn-primary .badge {
+    color: #787878 !important;
+}
+
+
+/******************************************
+	COLORS
+******************************************/
+
+.topbar .social-version-1 .fa,
+.darktopbar i {
+    opacity: 1;
+    background-color: #f9c800 !important;
+}
+
+.appoform-wrapper .btn-default,
+.copyrights .footer-social i:hover,
+.pricing-box-04 ul li:hover,
+.pricing-box-04 .btn:focus,
+.pricing-box-04 .btn.focus,
+.pricing-box-04 .btn:hover,
+.pricing-box-04 .btn:active,
+.pricing-box-04 .btn.active,
+.pricing-box-04 .btn:active:hover,
+.pricing-box-04 .btn.active:hover,
+.open > .dropdown-toggle.pricing-box-04 .btn:hover,
+.pricing-box-04:active:focus,
+.pricing-box-04.active:focus,
+.open > .dropdown-toggle.pricing-box-04 .btn:focus,
+.pricing-box-04:active.focus,
+.pricing-box-04.active.focus,
+.open > .dropdown-toggle.pricing-box-04 .btn.focus,
+.hovericons,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default.focus:active,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default,
+.color2,
+.section-small-title hr,
+.section-title hr,
+.btn-primary {
+    background-color: #f9c800 !important;
+    border-color: #f9c800 !important;
+}
+
+@keyframes animateBorderTwo {
+    to {
+        outline-color: #f9c800;
+        box-shadow: 0 0 0 4px #ffffff;
+    }
+}
+
+.serviceBox3:hover .service-icon a {
+    border-color: #f9c800 !important;
+}
+
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #dcb100 !important;
+    border-color: #dcb100 !important;
+}
+
+.single-portfolio-wrapper .widget-title h4,
+.footer .widget .widget-title h4,
+.section.db {
+    border-color: #dcb100 !important;
+}
+
+.ribbon-pt1:before,
+.ribbon-pt1:after {
+    border-top-color: #dcb100 !important;
+}
+
+a:hover,
+a:focus,
+#testimonials-rotate small,
+.pricing-box-04.white-style .fa-4x,
+.pricing-box-04.white-style ul li i,
+.magnifier .team-desc h4 a,
+.icon_holder .fa,
+.image-box-1 .readmore,
+.colormagnifier .magnifier .hovericons i,
+.image-box-1.colormagnifier .magnifier .hovericons,
+.navbar-default .navbar-nav > li.active > a:focus,
+.navbar-default .navbar-nav > li.active > a:hover,
+.copyrights .list-inline > li:hover a,
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a,
+.navbar-default .navbar-nav > li.active > a {
+    color: #f9c800 !important;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #f9c800;
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #f9c800;
+}
+
+.btn-default {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background-color: #222222 !important;
+    border-color: #222222 !important;
+}
+
+.color9 .magnifier,
+.magnifier {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.titlehr,
+.serviceBox3 .service-icon a {
+    border-color: #000000 !important;
+}
+
+.portfolio-filter .btn-default:focus,
+.portfolio-filter .btn-default.focus,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default:active:hover,
+.portfolio-filter .btn-default.active:hover,
+.portfolio-filter .btn-default:active:focus,
+.portfolio-filter .btn-default.active:focus,
+.portfolio-filter .btn-default.focus:active,
+.portfolio-filter .btn-default.active.focus,
+.portfolio-filter .btn-default:active,
+.portfolio-filter .btn-default.active,
+.portfolio-filter .btn-default,
+.portfolio-filter .btn-default:hover,
+.portfolio-filter .btn-default:focus {
+    color: #ffffff !important;
+}

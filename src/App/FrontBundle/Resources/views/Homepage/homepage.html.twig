@@ -1,0 +1,643 @@
+{% extends 'FrontBundle::layout.html.twig' %}
+
+{% block title %}{% trans %}NETVIRALPRO{% endtrans %}{% endblock %}
+
+{% block body %}
+
+    {% for flashMessage in app.session.flashbag.get('notice') %}
+            <div class="container">
+                <div class="row">
+                        <div class="alert alert-success" role="alert"><i class="fa fa-check-circle-o"></i> {{ flashMessage }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+                </div><!-- end row -->
+            </div><!-- end container -->
+    {% endfor %}
+
+    <br><br><br><br>
+    <div class="banr-head">
+        <div role="main" class="main">
+            <div id="content" class="content full">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="nivo-slider">
+                            <div class="slider-wrapper theme-default">
+                                <div id="nivoSlider" class="nivoSlider">
+                                    <img src="{{ asset('bundles/front/img/1.jpg') }}"
+                                         data-thumb="{{ asset('bundles/front/img/1.jpg') }}" alt="" title="#htmlcaption1"/>
+                                    <img src="{{ asset('bundles/front/img/2.jpg') }}"
+                                         data-thumb="{{ asset('bundles/front/img/2.jpg') }}" alt="" title="#htmlcaption2"/>
+                                    <img src="{{ asset('bundles/front/img/3.jpg') }}"
+                                         data-thumb="{{ asset('bundles/front/img/3.jpg') }}" alt="" title="#htmlcaption3"/>
+                                    <img src="{{ asset('bundles/front/img/4.jpg') }}"
+                                         data-thumb="{{ asset('bundles/front/img/4.jpg') }}" alt="" title="#htmlcaption4"/>
+                                </div>
+                                <div id="htmlcaption1" style="display:none">
+                                    <div class="nivo-caption1" >{% trans %}BIENVENIDO A NETVIRALPRO.COM{% endtrans %} </div>
+                                </div>
+                                <div id="htmlcaption2" style="display:none">
+                                    <div class="nivo-caption2" >{% trans %}Gane su primera comisión rápidamente.{% endtrans %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="content-widget">
+                            <div class="section-title text-left">
+                                <h3>{% trans %}REGISTRATE POR SOLO {% endtrans %} {{ moduleregistro.cost }} USD {% trans %}Y COMIENZA A GANAR DINERO{% endtrans %}</h3>
+                                <hr>
+                            </div><!-- end title -->
+
+                            <div class="contact_form">
+                                <form id="smallcontactform" class="row" action="{{ path('management_user_create') }}" name="contactform" method="post">
+                                    <div class="col-md-12">
+                                        <input type="hidden" name="m" id="m" value="2">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="{% trans %}Nombre{% endtrans %}">
+                                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="{% trans %}Apellidos{% endtrans %}">
+                                        <input type="text" name="username" id="username" class="form-control" placeholder="{% trans %}Usuario{% endtrans %}">
+                                        <input type="password" name="pass" id="pass" class="form-control" placeholder="{% trans %}Contraseña{% endtrans %}">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="{% trans %}Correo{% endtrans %}">
+                                        <input type="text" list="sexo" name="sex" id="sex" class="form-control" placeholder="{% trans %}Sexo{% endtrans %}" required>
+                                        <datalist id="sexo">
+                                            <option value="Hombre">
+                                            <option value="Mujer">
+                                        </datalist>
+
+                                        <input type="text" list="paises" name="country" id="country" class="form-control" placeholder="{% trans %}País{% endtrans %}" required>
+                                        <datalist id="paises">
+                                            {% for country in countries %}
+                                                <option value="{{ country.Alpha2Code }}">{{ country.name }}</option>
+                                            {% endfor %}
+                                        </datalist>
+
+                                        <button type="submit" value="SEND" id="submit1" class="btn btn-primary">{% trans %}REGISTRO{% endtrans %}</button>
+                                        <br><br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section messagesection custommessage color8">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3><a name="nosotros">{% trans %}SOBRE NOSOTROS{% endtrans %}</a></h3>
+            </div>
+        </div><!-- end row -->
+    </section><!-- end section -->
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    {% trans %}Netviralpro.com, pertenece al sector de venta de servicios y negocios online y se desarrolla a nivel internacional. Esto permitirá al usuario desarrollar su propio negocio en cualquier parte del mundo. La empresa, fundada por importantes empresarios internacionales, pretende fortalecer todos los vínculos existentes entre los miembros de nuestra comunidad, las empresas y los usuarios convencionales para que pueda existir un importante vínculo retroactivo entre todos. NETVIRALPRO trabaja bajo un sistema de recompensas multinivel, donde se premia tanto el trabajo individual como el grupal y donde todos los usuarios pueden obtener grandes beneficios, tanto por su trabajo como por el de su grupo. Presenta un sistema retributivo flexible y transparente, lo que supondrá al usuario una mayor estabilidad y confianza para saber que su negocio sigue creciendo de una forma estable y sin ningún tipo de riesgo.{% endtrans %}
+                </p>
+            </div><!-- end col -->
+
+            <div class="col-md-6">
+                <p>
+                    {% trans %}Según expertos analistas en pocos años se convertirá en una de las empresas de mayor crecimiento a nivel mundial, gracias a su novedosa visión de la industria multinivel. ¿Ha imaginado alguna vez una oportunidad de negocio que le permita especializarse en el área o áreas de trabajo que usted mismo decida? Pues bien, con NETVIRALPRO podrá conseguirlo y obtener grandes beneficios trabajando en algo que realmente le guste. Además le dará la oportunidad de tener un sueldo de acuerdo a sus expectativas y esfuerzo. De este modo, gracias a la oportunidad de negocio que se ofrece desde NETVIRALPRO y el potencial de crecimiento que se augura por parte de la compañía, hace que esté enfrente de usted una de las oportunidades más brillantes de la historia. ¿Acepta este reto? En NETVIRALPRO podrá trabajar por su cuenta, pero nunca estará sólo, ya que tras usted habrá una importante red de trabajo. NETVIRALPRO es sinónimo de ÉXITO.{% endtrans %}
+                </p>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end row -->
+
+    <div class="container">
+        <div class="row social-count">
+            <div class="col-md-3">
+                <a href="#">
+                    <div class="panel panel-default twitter">
+                        <div class="panel-body">
+                            <small class="social-title">Twitter</small>
+                            <span class="stat-count">3312</span>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <div class="panel panel-default google-plus">
+                        <div class="panel-body">
+                            <small class="social-title">Google+</small>
+                            <span class="stat-count">5553</span>
+                            <i class="fa fa-google-plus"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <div class="panel panel-default facebook-like">
+                        <div class="panel-body">
+                            <small class="social-title">Facebook Like</small>
+                            <span class="stat-count">1122</span>
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="#">
+                    <div class="panel panel-default linkedin">
+                        <div class="panel-body">
+                            <small class="social-title">Connected Visitor</small>
+                            <span class="stat-count">345</span>
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <br><br>
+
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <a href="{{ path('join') }}" class="btn btn-default">{% trans %}Empieza Ahora!{% endtrans %}</a>
+            </div>
+
+            <br><br><br>
+        </div>
+    </div>
+
+    <section class="section messagesection custommessage color6">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1><a name="porque">{% trans %}PORQUÉ NETVIRALPRO?{% endtrans %}</a></h1>
+            </div>
+        </div><!-- end row -->
+    </section><!-- end section -->
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>{% trans %}NETVIRALPRO ofrece al usuario una oportunidad única para trabajar por cuenta propia pero siempre apoyada por una importante red de trabajo que forma nuestra comunidad. Como usuario dentro de la comunidad NETVIRALPRO tendrá la posibilidad de tener un horario flexible y disfrutar de su tiempo libre mientras obtiene elevados beneficios por el trabajo de su red de contactos. En NETVIRALPRO le damos la oportunidad de aprovechar al máximo sus capacidades. ¿Ha soñado alguna vez estar ganando dinero mientras está de viaje, va de compras, está cenando con su familia o sale de fiesta con sus amigos? ¡NETVIRALPRO es su oportunidad!{% endtrans %}</p>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end row -->
+
+    <div class="container">
+        <div class="row service-list">
+            <div class="col-md-4 col-sm-6" style="min-height: 190px;">
+                <div class="serviceBox6">
+                    <div class="service-icon withborder color1 hovicon effect-1 sub-a">
+                        <i class="fa fa-american-sign-language-interpreting"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>{% trans %}Trabajo en equipo{% endtrans %}</h3>
+
+                        <p>{% trans %}La forma en que se concibe el negocio. Cada uno trabaja individualmente pero además se beneficia del trabajo de la red que ha creado.{% endtrans %}
+                        </p>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-6" style="min-height: 190px;">
+                <div class="serviceBox6">
+                    <div class="service-icon withborder color2 hovicon effect-1 sub-a">
+                        <i class="fa fa-anchor"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>{% trans %}Beneficio por esfuerzo{% endtrans %}</h3>
+
+                        <p>{% trans %}Cada usuario recibe beneficio por su esfuerzo personal y  por el esfuerzo del grupo de trabajo que él mismo ha creado.{% endtrans %}
+                        </p>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-6" style="min-height: 190px;">
+                <div class="serviceBox6">
+                    <div class="service-icon withborder color3 hovicon effect-1 sub-a">
+                        <i class="fa fa-bicycle"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>{% trans %}Transparencia{% endtrans %}</h3>
+
+                        <p>{% trans %}El modo en que la empresa se muestra hacia todos sus usuarios, las empresas y los clientes potenciales.{% endtrans %}
+                        </p>
+                    </div>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end col -->
+        <div class="row service-list">
+            <div class="col-md-4 col-sm-6" style="min-height: 190px;">
+                <div class="serviceBox6">
+                    <div class="service-icon withborder color4 hovicon effect-1 sub-a">
+                        <i class="fa fa-magic"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>{% trans %}Sostenibilidad{% endtrans %}</h3>
+
+                        <p>{% trans %}La forma en que la empresa plantea la idea de negocio.{% endtrans %}
+                        </p>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-6" style="min-height: 190px;">
+                <div class="serviceBox6">
+                    <div class="service-icon withborder color5 hovicon effect-1 sub-a">
+                        <i class="fa fa-object-group"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>{% trans %}Eficacia{% endtrans %}</h3>
+
+                        <p>{% trans %}Entendida como la posibilidad que le da al usuario para tener su propio negocio y conseguir un resultado brillante.{% endtrans %}
+                        </p>
+                    </div>
+                </div>
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-6" style="min-height: 190px;">
+                <div class="serviceBox6">
+                    <div class="service-icon withborder color6 hovicon effect-1 sub-a">
+                        <i class="fa fa-wifi"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>{% trans %}Rendimiento óptimo{% endtrans %}</h3>
+
+                        <p>{% trans %}La posibilidad que la empresa da al usuario para que pueda conseguir beneficios de acuerdo a su esfuerzo y el de su grupo de trabajo.{% endtrans %}
+                        </p>
+                    </div>
+                </div>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <a href="{{ path('join') }}" class="btn btn-primary btn-block btn-lg">{% trans %}Empieza Ahora!{% endtrans %}</a>
+            <!-- <a href="#" class="btn btn-default">Empieza Ahora!</a>-->
+        </div>
+    </div>
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <a href="{{ path('homepage') }}">
+                            <img alt="Megalifepro" src="{{ asset('bundles/front/img/netviralpro-negro-ms.png') }}">
+                        </a>
+
+                        <div class="row">
+                            <h4></h4>
+                        </div>
+                        <h4>How We Are Working Like a Professionally</h4>
+
+                        <h1><a name="productos">{% trans %}Nuestros Productos{% endtrans %}</a></h1>
+                        <hr>
+                    </div><!-- end title -->
+                </div>
+            </div>
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <section class="section lb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- tabs left -->
+                    <div class="tabbable customtab">
+                        <ul class="nav nav-pills nav-stacked col-md-3">
+                            <li class="active">
+                                <a href="#a" data-toggle="tab">
+                                    <h3>{% trans %}Hive Matrix{% endtrans %}</h3>
+                                    <p>{% trans %}Empieza tu negocio online ahora mismo!{% endtrans %}</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#b" data-toggle="tab">
+                                    <h3>{% trans %}Thunder Marketing{% endtrans %}</h3>
+                                    <p>{% trans %}Mejora tus conocimientos de marketing con los mejores especialistas.{% endtrans %}</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#c" data-toggle="tab">
+                                    <h3>{% trans %}Win Formula{% endtrans %}</h3>
+                                    <p>{% trans %}Ten acceso a los mejores softwares de maketing del mercado!{% endtrans %}</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#d" data-toggle="tab">
+                                    <h3>{% trans %}Mind Influence{% endtrans %}</h3>
+                                    <p>{% trans %}Ponte en la mente del cliente y tenga exito en la venta!{% endtrans %}</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#e" data-toggle="tab">
+                                    <h3>{% trans %}Global Shopping Team{% endtrans %}</h3>
+                                    <p>{% trans %}Tenga su propia tienda Online!{% endtrans %}</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content col-md-9">
+                            <div class="tab-pane fade in active" id="a">
+                                <div class="tab-padding clearfix">
+                                    <a href="{{ path('product',{'id':'hive','tipo':'2'}) }}"><img src="{{ asset('bundles/front/img/d1.jpg') }}" alt=""
+                                         class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="b">
+                                <div class="tab-padding clearfix">
+                                    <a href="{{ path('product',{'id':'Thunder','tipo':'3'}) }}"><img src="{{ asset('bundles/front/img/d2.jpg') }}" alt=""
+                                         class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="c">
+                                <div class="tab-padding clearfix">
+                                    <a href="{{ path('product',{'id':'Win','tipo':'4'}) }}"><img src="{{ asset('bundles/front/img/d3.jpg') }}" alt=""
+                                         class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="d">
+                                <div class="tab-padding clearfix">
+                                    <a href="{{ path('product',{'id':'Mind','tipo':'5'}) }}"><img src="{{ asset('bundles/front/img/d4.jpg') }}" alt=""
+                                         class="img-responsive"></a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="e">
+                                <div class="tab-padding clearfix">
+                                    <a href="{{ path('product',{'id':'Global','tipo':'6'}) }}"><img src="{{ asset('bundles/front/img/d5.jpg') }}" alt=""
+                                         class="img-responsive"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <div class="row">
+        <br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <a href="#" class="btn btn-default">{% trans %}Ver nuestros productos{% endtrans %}</a>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <section class="section messagesection custommessage color10">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3><a name="oportunidad">{% trans %}OPORTUNIDAD DE NEGOCIOS{% endtrans %}</a></h3>
+            </div>
+        </div><!-- end row -->
+    </section><!-- end section -->
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="image-box-1">
+                    <div class="image-box-desc">
+                        <h2>{% trans %}Bienvenido a{% endtrans %}<span>NETVIRALPRO</span></h2>
+
+                        <p>
+                            {% trans %}¿ Alguna vez imaginó tener la posibilidad de obtener grandes ingresos por trabajar en una compañía en expansión a nivel internacional? Pues esto es posible gracias a NETVIRALPRO, una importante empresa multinivel que le dará a usted la posibilidad de crear su propio negocio online sin necesidad de invertir grandes sumas y sin correr el riesgo  que le supondría a usted tener un negocio particular. Su única misión en la compañía será  potenciar su grupo de trabajo y su red de clientes para poder llegar a obtener importantes beneficios. Para ello, la empresa le dotará de potentes herramientas de marketing que le permitirán hacer crecer su negocio. Netviralpro se encargará del resto: dar alojamiento y mantenimiento de sus páginas personales, prestar servicio de atención al cliente y  atención al representante y expandir la compañía a nivel internacional.{% endtrans %}
+                        </p>
+                        {% trans %}Trabajar en equipo divide el trabajo y multiplica los resultados. ¡Este es tu momento, aprovéchalo!{% endtrans %}
+
+                        <hr class="invis">
+
+                        <img src="{{ asset('bundles/front/upload/sign.png') }}" alt="">
+
+                    </div><!-- end desc -->
+                </div><!-- end image-box 1 -->
+            </div><!-- end col -->
+        </div>
+        <hr class="invis">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-box-1 colormagnifier">
+                    <div class="image-boxes entry">
+                        <img src="{{ asset('bundles/front/img/1O.jpg') }}" alt="" class="img-responsive">
+
+                        <div class="magnifier">
+                            <a href="#">
+                                <div class="hovericons">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div><!-- end magnifier -->
+                    </div><!-- end image-boxes -->
+                    <div class="image-box-desc">
+                        <h4>{% trans %}Gane su primera comisión rápidamente.{% endtrans %}</h4>
+                    </div><!-- end desc -->
+                </div><!-- end image-box 1 -->
+            </div><!-- end col -->
+
+            <div class="col-md-4">
+                <div class="image-box-1 colormagnifier">
+                    <div class="image-boxes entry">
+                        <img src="{{ asset('bundles/front/img/2O.jpg') }}" alt="" class="img-responsive">
+
+                        <div class="magnifier">
+                            <a href="#">
+                                <div class="hovericons">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div><!-- end magnifier -->
+                    </div><!-- end image-boxes -->
+                    <div class="image-box-desc">
+                        <h4>{% trans %}Cree su propia red de trabajo.{% endtrans %}</h4>
+                    </div><!-- end desc -->
+                </div><!-- end image-box 1 -->
+            </div><!-- end col -->
+
+            <div class="col-md-4">
+                <div class="image-box-1 colormagnifier">
+                    <div class="image-boxes entry">
+                        <img src="{{ asset('bundles/front/img/3O.jpg') }}" alt="" class="img-responsive">
+
+                        <div class="magnifier">
+                            <a href="#">
+                                <div class="hovericons">
+                                    <i class="fa fa-link"></i>
+                                </div>
+                            </a>
+                        </div><!-- end magnifier -->
+                    </div><!-- end image-boxes -->
+                    <div class="image-box-desc">
+                        <h4>{% trans %}Obtenga importantes ingresos.{% endtrans %}</h4>
+                    </div><!-- end desc -->
+                </div><!-- end image-box 1 -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+
+    <div class="row">
+        <br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <a href="{{ path("plan") }}" class="btn btn-default">{% trans %}Ver Planes de Compensación{% endtrans %}</a>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <section class="section db">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="custom_fact_item row">
+                        <div class="icon_holder col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <span class="fa fa-bar-chart"></span>
+                        </div>
+                        <div class="custom_fact_name col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                            <h6>Awards Winning</h6>
+                            <span>We have won awards in a short time</span>
+                        </div>
+                        <span class="col-lg-3 col-md-3 col-sm-2 col-xs-12 stat-count">3331</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="custom_fact_item row">
+                        <div class="icon_holder col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                            <span class="fa fa-braille"></span>
+                        </div>
+                        <div class="custom_fact_name col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                            <h6>Happy Clients</h6>
+                            <span>We have hundreds of happy clients</span>
+                        </div>
+                        <span class="col-lg-3 col-md-3 col-sm-2 col-xs-12 stat-count">561</span>
+                    </div>
+                </div>
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <section class="section messagesection custommessage color2">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1><a name="testimonios">{% trans %}TESTIMONIOS{% endtrans %}</a></h1>
+            </div>
+        </div><!-- end row -->
+    </section><!-- end section -->
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h4>{% trans %}Actualmente somos más de 1000 usuarios y seguimos creciendo!.{% endtrans %}</h4>
+
+                        <h1>{% trans %}Estas son algunas de las opiniones de nuestros clientes...{% endtrans %}</h1>
+                        <hr>
+                    </div><!-- end title -->
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div>
+
+    <section class="section lb">
+        <div class="container-fluid">
+            <div class="portfolio-wrapper">
+                <div class="row">
+                    {% for video in testimonios %}
+
+                        <div class="col-sm-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                            <div class="media-element">
+                                <video class="videoplayer" controls preload="none">
+                                    <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                                    <source type="video/mp4" src="{{ app.request.basePath ~ '/' ~ video.getWebPath() }}" />
+                                </video>
+                            </div><!-- end media -->
+                        </div>
+
+                    {% endfor %}
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+
+    <div class="row">
+        <br><br>
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <a href="#" class="btn btn-primary btn-block btn-lg">{% trans %}Ver más testimonios{% endtrans %}</a>
+            <!-- <a href="#" class="btn btn-default">Empieza Ahora!</a>-->
+        </div>
+    </div>
+
+    <div class="row">
+        <br><br>
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+        </div>
+    </div>
+
+
+
+{% endblock %}

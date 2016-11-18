@@ -1,0 +1,38 @@
+{% extends 'AdminBundle::layout.html.twig' %}
+
+{% block title %}Modificar Tipo de Notificación{% endblock %}
+
+{% block content %}
+    <div class="portlet box yellow">
+        <div class="portlet-title">
+            <div class="caption"><i class="icon-list"></i>Actualizar Tipo de Notificación</div>
+            <div class="tools">
+                <a href="javascript:;" class="collapse"></a>
+                <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                <a href="javascript:;" class="reload"></a>
+                <a href="javascript:;" class="remove"></a>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div class="clearfix">
+                <div class="btn-group">
+                    <a href="{{ path('config_notificationtype') }}" class="btn green">
+                        Volver al listado
+                    </a>
+                </div>
+                <div class="btn-group pull-right">
+                    {{ form(delete_form) }}
+                </div>
+            </div>
+            {{ form(edit_form) }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        {% for flashMessage in app.session.flashbag.get('notice') %}
+        Codes.showMessage('Información', '{{ flashMessage  }}');
+        {% endfor %}
+    </script>
+{% endblock %}

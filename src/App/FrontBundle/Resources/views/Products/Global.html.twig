@@ -1,0 +1,78 @@
+{% extends 'FrontBundle::layout.html.twig' %}
+
+{% block title %}NETVIRALPRO{% endblock %}
+
+{% block body %}
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="col-md-8">
+                    <div id="normalportfolio" class="row portfolio four-col-portfolio-wrapper">
+                        <div class="gallery-item item-w1 item-h1 cat1">
+
+                            <h1 class="title"><a href="#">{% trans %}Global Shopping Team {% endtrans %}</a></h1>
+                            <hr class="titlehr">
+
+                            <small><a href="#">{% trans %}Tenga su propia tienda Online!{% endtrans %}</a></small>
+
+                            <div class="media-element">
+                                <div>
+                                    <img src="{{ asset('bundles/front/img/5J.jpg') }}" alt=""
+                                         class="img-responsive">
+                                </div>
+                            </div><!-- end media -->
+
+                            <div class="gallery-desc-full big-gallery">
+                                <p>{% trans %}Desde Netviralpro.com , le damos la oportunidad de promocionar los servicios y productos que se venden a través de nuestra plataforma online . Con Global Shopping Team le proporcionaremos  una tienda única y personalizada, que podrá compartir, potenciar y con la que obtendrá amplios márgenes de beneficio. Adquiriendo este producto, no sólo ganará dinero de sus ventas, sino también de las ventas de las tiendas de los usuarios que estén en su red de negocio. Los productos que se venden en esta tienda están relacionados con:{% endtrans %} </p>
+                                <li><p>{% trans %}Marketing online.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Redes sociales.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Diseño.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Traducciones e interpretaciones.{% endtrans %}</p></li>
+                                <li><p>{% trans %}Servicios online.{% endtrans %}</p></li>
+
+                                <a href="{{ path('join') }}" class="btn btn-primary">{% trans %}Comprar{% endtrans %}</a>
+                            </div>
+                        </div><!-- item -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="pricing-box-09 white-style">
+                            <div class="pricing-box-09-head">
+                                <div class="ribbon-wrapper-pt1">
+                                    <div class="ribbon-pt1">{% trans %}Anual{% endtrans %}</div>
+                                </div>
+                                <h3><sup>$</sup>{{ precio.cost }} USD</h3>
+                            </div>
+                            <!-- end pricing-box-09-head -->
+
+                            <div class="pricing-box-09-body">
+                            </div>
+                            <!-- end pricing-box-09-body -->
+
+                            <div class="pricing-box-09-foot">
+                                <a href="{{ path('join') }}" class="btn btn-primary btn-block">{% trans %}Comprar{% endtrans %}</a>
+                            </div>
+                            <!-- end pricing-box-09-foot -->
+                        </div>
+                        <!-- end pricing-box-09 -->
+                    </div>
+                </div>
+            </div><!-- end content -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <section class="section messagesection biggermessage colorrizedmessage color10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>{% trans %}¡TENGA SU PROPIA TIENDA ONLINE POR SÓLO{% endtrans %} {{ precio.cost }} {% trans %}USD ANUALES!{% endtrans %}</h3>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="{{ path('join') }}" class="btn btn-primary btn-lg border-radius"><i class="fa fa-check"></i>{% trans %}Comprar{% endtrans %}</a>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+{% endblock %}
